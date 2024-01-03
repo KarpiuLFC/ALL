@@ -1,0 +1,1497 @@
+network,comment,owner_id
+10.87.56.0/23,GNS-Dev/Test - LTM/VNET Dev - Southeast Asia,2
+10.87.52.0/23,GNS-Dev/Test - F5 DO POC - Southeast Asia,2
+10.87.54.0/23,GNS-Dev/Test - LTM/VNET Dev -Southeast Asia,2
+10.84.193.0/24,GNS-Dev - F5 Test Lab - eu-west-2,2
+10.85.44.0/23,GNS VNet Testing - Development - North Europe,2
+10.242.43.0/24,NAAS-DEV,2
+10.85.68.0/23,GNS NaaS SPN Test - Development - North Europe,2
+10.244.172.0/24,TEST - GNS DEV,2
+10.111.228.0/23,NAAS Service VPC,2
+10.244.51.0/24,GNS-NAAS-DEV - dev-awse1-dnsaas,2
+10.244.160.0/24,GNS-DEV GCP HA VPN test - Development - eu-west-2,2
+10.83.222.0/24,EPS - Production - us-east-1,7
+10.82.56.0/24,EPS - Staging - us-east-1,7
+10.82.178.0/24,Blueprint-Staging,7
+10.240.218.0/23,Alfresco - Production - eu-west-1,7
+10.84.32.0/20,Alfresco - Production - eu-west-1,7
+10.82.176.0/24,Blueprint-Production,7
+10.83.0.0/20,Alfresco - Production - us-east-1,7
+10.86.48.0/20,Alfresco - Production - ap-southeast-2,7
+10.82.55.0/24,EPS - Production - us-east-1,7
+10.86.32.0/20,Alfresco - Production - ap-south-1,7
+10.83.64.0/19,Nibiru - Production - us-east-1,9
+10.199.240.0/20,Nibiru-PRD,9
+10.199.0.0/20,Nibiru-PRD,9
+10.198.0.0/20,Nibiru-PRD,9
+10.82.16.0/20,IdAM VPCs - Amazon AWS us-east-1,10
+10.86.72.0/24,IdAM VPCs - POC - ap-southeast-1,10
+10.83.51.0/24,IdAM Internal VPCs (Dev) - us-east-1,10
+10.86.27.0/24,IdAM Internal VPCs (Prod) - ap-southeast-1,10
+10.86.65.0/24,IdAM VPC's - DevOps - ap-southeast-1,10
+10.82.33.0/24,IdAM Prod Transit VPC - us-east-1,10
+10.86.26.0/24,IdAM Internal VPCs - ap-southeast-1,10
+10.86.71.0/24,IdAM Operations Support VPCs - ap-southeast-1,10
+10.84.55.0/24,IdAM Operations Support VPCs - eu-west-1,10
+10.84.16.0/21,IdAM VPCs - Amazon AWS eu-west-1,10
+10.83.50.0/24,IdAM Internal VPCs (Prod) - us-east-1,10
+10.240.42.0/24,IdAM - Development - ca-central-1,10
+10.83.177.0/24,IdAM VPCs - POC - us-east-1,10
+10.84.54.0/24,IdAM VPC's - DevOps - eu-west-1,10
+10.82.32.0/24,IdAM VPCs - Amazon AWS us-west-2 (Test),10
+10.240.35.0/24,IdAM - Test - us-east-1,10
+10.86.197.0/24,IdAM - Staging - ap-southeast-1,10
+10.82.57.0/24,IdAM Analytics - Amazon AWS us-east-1,10
+10.83.49.0/24,IdAM Internal VPCs - ca-central-1,10
+10.240.41.0/24,IdAM - PPE - ca-central-1,10
+10.86.24.0/23,IdAM - Production - ap-northeast-1,10
+10.82.101.0/24,IdAM Analytics - Amazon AWS ca-central-1,10
+10.83.48.0/24,IdAM Internal VPCs - us-east-1,10
+10.83.176.0/24,IdAM VPCs - POC - us-east-1,10
+10.86.28.0/22,IdAM POC VPCs - ap-southeast-1,10
+10.240.34.0/24,IdAM - Staging - us-east-1,10
+10.84.0.0/20,IdAM VPCs - Amazon AWS eu-west-1,10
+10.82.40.0/21,IdAM VPCs - Amazon AWS us-east-1 INC3349727,10
+10.84.53.0/24,IdAM Internal VPCs (Prod) - eu-west-1,10
+10.86.196.0/24,IdAM - Production - ap-southeast-1,10
+10.84.206.0/24,IdAM - Test - eu-west-1,10
+10.84.204.0/24,IdAM - Production - eu-west-1,10
+10.84.205.0/24,IdAM - Staging - eu-west-1,10
+10.84.52.0/24,IdAM Internal VPCs - eu-west-1,10
+10.83.32.0/20,IdAM VPCs - ca-central-1,10
+10.240.39.0/24,IdAM - Staging - ca-central-1,10
+10.84.127.0/24,IdAM Analytics - Amazon AWS eu-west-1,10
+10.240.40.0/24,IdAM - Test - ca-central-1,10
+10.83.152.0/22,IdAM POC VPCs - us-east-1,10
+10.84.58.0/24,IdAM VPCs - POC - eu-west-1,10
+10.86.16.0/21,IdAM VPCs - Amzaon AWS ap-southeast-1 INC3349727,10
+10.86.198.0/24,IdAM - Test - ap-southeast-1,10
+10.240.38.0/24,IdAM - Production - ca-central-1,10
+10.240.37.0/24,IdAM - Development - us-east-1,10
+10.84.48.0/22,IdAM POC VPCs - eu-west-1,10
+10.82.34.0/23,IdAM VPCs - Amazon AWS us-east-1 INC3349727,10
+10.86.73.0/24,IdAM Analytics - Amazon AWS ap-southeast-1,10
+10.82.99.0/24,IdAM VPC's - DevOps - us-east-1,10
+10.86.200.0/24,IdAM - Development - ap-southeast-1,10
+10.84.24.0/23,IdAM - Production - eu-west-2,10
+10.82.98.0/24,IdAM VPC's - DevOps - ca-central-1,10
+10.83.144.0/21,Nibiru - Admin - us-east-1,11
+10.83.224.0/20,Nibiru - Development - us-west-2,11
+10.83.128.0/20,Nibiru - Development - us-east-1,11
+10.82.170.0/24,Nibiru - Development - us-east-1,11
+10.83.96.0/19,Nibiru Dev - us-east-1,11
+10.83.208.0/24,Pearson Cloud Services (PCS) - Development  - us-east-1,12
+10.242.124.0/25,Bitesize Modular Jenkins Server,13
+10.83.209.0/24,Pearson Cloud Services (PCS) - Production - us-east-1,13
+10.82.97.0/24,GSAIR - Production - us-west-2,14
+10.82.135.0/24,CISO - Prod - us-east-2,14
+10.84.26.0/24,GSAIR - Production - eu-west-1,14
+10.83.184.0/23,CISO - Production - us-east-1,14
+10.82.96.0/24,GSAIR - Production - us-east-1,14
+10.84.27.0/24,GSAIR - Production - eu-west-2,14
+10.241.150.0/23,CISO - Production - us-east-1,14
+10.82.142.0/23,CISO Prod - LogAnalytics - us-east-1,14
+10.86.64.0/24,GSAIR - Production - ap-southeast-1,14
+10.82.59.0/24,Pearson English - Development - us-east-1,18
+10.240.88.0/22,Pearson-English - Development - us-east1,18
+10.249.86.0/24,Pearson-English - Development -us-central1,18
+10.241.146.0/23,PearsonEnglish - Development - us-east1,18
+10.82.100.0/24,Pearson English - us-east-1,18
+10.248.6.0/23,PearsonEnglish - Development - us-east1,18
+10.168.196.0/24,Global English - Pearson English - AWS us-east-1,18
+10.168.197.0/24,Global English - Pearson English - AWS us-west-2,18
+10.82.60.0/24,Pearson English - Production - us-west-2,18
+10.85.240.0/20,"UK Qualifications - Development - 	eu-west-2",20
+10.84.88.0/21,UK Quals - Development - eu-west-2,20
+10.84.80.0/21,UK Quals - Production - eu-west-2,21
+10.85.96.0/19,PQS - Production - eu-west-2,21
+10.83.240.0/20,PMC - AWS DEV US block 2,22
+10.241.206.0/23,PMC-DEV-ca-central-1,22
+10.85.172.0/22,PMC-DEV - eu-west-1,22
+10.243.228.0/23,PMC - Development - us-east-1,22
+10.85.142.0/23,PMC-DEV - eu-west-1,22
+10.243.196.0/23,PMC-DEV,22
+10.244.48.0/23,PMC - Development - eu-west-1,22
+10.85.148.0/23,PMC-DEV - eu-west-1,22
+10.248.52.0/22,PMC-DEV(STG4) - Development - us-east-1,22
+10.85.154.0/23,PMC-DEV - eu-central-1,22
+10.243.208.0/23,PMC-DEV - us-east-1,22
+10.86.246.0/23,PMC-DEV - ap-southeast-1,22
+10.86.208.0/20,PMC - Development - ap-southeast-1,22
+10.242.255.0/24,PMC-Gold - Development - us-east-1,22
+10.243.188.0/23,PMC-DEV - us-east-1,22
+10.244.104.0/21,PMC-DEV - eu-west-1,22
+10.243.226.0/23,PMC - Development - us-east-1,22
+10.242.254.0/24,PMC-Gold - Development - us-east-1,22
+10.84.64.0/20,PMC - Gold - non-PRD - Amazon - eu-west-1,22
+10.85.140.0/23,PMC-DEV - eu-west-1,22
+10.243.194.0/23,PMC-DEV,22
+10.85.176.0/23,PMC-DEV - eu-west-1,22
+10.243.232.0/23,PMC - Development - us-east-1,22
+10.244.14.0/23,PMC - Development - eu-west-1,22
+10.244.192.0/23,PMC - Development - eu-west-1,22
+10.249.222.0/23,PMC-DEV - us-east-1,22
+10.83.160.0/20,PMC - Gold - non-PRD - Amazon - US,22
+10.85.158.0/23,PMC-DEV - eu-west-1,22
+10.242.188.0/23,PMC-Gold - Development - us-east-1,22
+10.243.10.0/24,PMC-Gold - Development - us-east-1,22
+10.243.234.0/24,PMC - Development - us-east-1,22
+10.246.156.0/23,PMC-DEV - us-east-1,22
+10.85.132.0/23,PMC - Gold - non-PRD - Amazon - eu-west-1,22
+10.85.170.0/23,PMC-DEV - eu-west-1,22
+10.243.154.0/23,PMC-DEV - us-east-1,22
+10.243.192.0/23,PMC-DEV - us-east-1,22
+10.243.230.0/23,PMC - Development - us-east-1,22
+10.241.182.0/23,PMC-Gold - Development - us-east-1,22
+10.243.166.0/23,PMC-DEV - ca-central-1,22
+10.84.144.0/20,PMC - Dev EU block 2,22
+10.244.158.0/23,PMC - Gold - dev2 - eu-west-1,22
+10.85.150.0/23,PMC-DEV - eu-west-1,22
+10.85.156.0/23,PMC-DEV - eu-central-1,22
+10.243.210.0/23,PMC-DEV - us-east-1,22
+10.85.160.0/23,PMC-DEV - eu-west-1,22
+10.242.186.0/23,PMC-Gold - Development - us-east-1,22
+10.246.154.0/23,PMC-DEV - us-east-1,22
+10.243.217.0/24,PMC-DEV - us-east-1,22
+10.85.130.0/23,PMC - Gold - non-PRD - Amazon - eu-west-1,22
+10.82.112.0/20,PMC - Production - us-west-2,23
+10.85.134.0/23,PMC-PRD - eu-west-1,23
+10.84.96.0/20,PMC - Production - eu-west-1,23
+10.86.224.0/20,PMC - Production - ap-southeast-1,23
+10.241.238.0/23,PMC-PRD - ca-central-1,23
+10.243.212.0/23,PMC-PRD - us-east-1,23
+10.85.18.0/23,cio-production,23
+10.243.168.0/23,PMC-PRD - ca-central-1,23
+10.82.224.0/23,PMC - PRODUCTION - eu-west-1,23
+10.82.62.0/24,SoA - Development - us-east-2,24
+10.83.62.0/24,SOA - Development - us-east-1,24
+10.84.118.0/23,SoA - Development - eu-west-2,24
+10.241.148.0/23,SoA - Development - us-east-1,24
+10.240.45.0/24,SoA-Dev - us-west-2,24
+10.86.13.0/24,India compliance project - ap-southeast-1,24
+10.86.12.0/27,India compliance project - ap-southeast-1,24
+10.86.74.0/23,SoA - Development - ap-southeast-2,24
+10.242.125.0/24,obiee-environment - prod -- us-east-1,24
+10.82.61.0/24,SoA - Development - us-east-1,24
+10.82.245.0/24,SOA-Dev - Development - us-east-2,24
+10.82.104.0/23,SoA - Development - us-east-1,24
+10.82.52.0/23,CISO APPSEC VPCs us-east-1 TOP-757,25
+10.82.102.0/23,CISO - Development - us-east-1,25
+10.84.56.0/23,CISO - Development - eu-west-2,25
+10.85.180.0/23,IBM Integration for project Mojo - Development- eu-west-1,30
+10.245.32.0/20,ESB-DEV - Development 2 - eu-west-1,30
+10.82.108.0/23,Global Integration Services - UAT - us-east-1,30
+10.245.0.0/20,ESB-DEV - Development - eu-west1,30
+10.84.116.0/24,Global Integration Services - Development - eu-west-1,30
+10.86.68.0/23,Global Integration Services - UAT - ap-southeast-2,30
+10.82.110.0/24,Global Integration Services - Development - us-east-1,30
+10.250.176.0/21,ESB-DEV - us-east-1,30
+10.247.148.0/23,Global Integration Services - UAT2 - us-east-1,30
+10.247.84.0/23,Global Integration Services - Development 2 - us-east-1,30
+10.251.0.0/20,Global Integration Services - UAT - us-east-1,30
+10.84.114.0/23,Global Integration Services - UAT1 - eu-west-1,30
+10.86.70.0/24,Global Integration Services - Development - ap-southeast-2,30
+10.244.98.0/23,Global Integration Services - UAT2 - eu-west-1,30
+10.84.112.0/23,Global Integration Services - Production - eu-west-1,31
+10.245.64.0/20,Global Integration Services - Production - eu-west-1,31
+10.247.206.0/23,Global Integration Services - Production - us-east-1,31
+10.82.106.0/23,Global Integration Services - Production - us-east-1,31
+10.251.32.0/20,Global Integration Services - Production - us-east-1,31
+10.86.66.0/23,Global Integration Services - Production - ap-southeast-2,31
+10.244.100.0/23,Global Integration Services - Production - eu-west-1,31
+10.84.126.0/24,CISO - 3rd party POC - eu-west-1,35
+10.83.221.0/24,Pearson Cloud Services (PCS) - CISO 3rd-party GW POC,35
+10.83.210.0/24,Pearson Cloud Services (PCS) - POC - us-east-1,35
+10.82.63.0/24,NaaS Demo in PCS-POC - us-east-2,35
+10.84.59.0/24,Pearson Cloud Services (PCS) - CISO 3rd-party GW POC,35
+10.82.144.0/20,Enterprise Data Management System (EDMS) - Production - us-east-1,36
+10.83.63.0/24,SOA - Production - us-east-1,37
+10.240.54.0/24,SOA-PRD - us-east-1,37
+10.241.222.0/23,SoA - Production - us-east-1,37
+10.82.111.0/24,SoA - Production - us-east-1,37
+10.82.160.0/22,Versant - UAT - us-west-2,38
+10.243.216.0/24,EACP-DEV - us-east-1,40
+10.241.141.0/24,EACP-Dev-Portal - Development - us-east-1,40
+10.83.211.0/24,Pearson Cloud Services (PCS) - EACP - us-east-1,40
+10.247.126.0/24,Robotics Process Automation - Development - us-east-1,41
+10.84.117.0/24,Robotics Process Automation - Development,41
+10.83.220.0/24,EACP Developer Portal,42
+10.241.142.0/24,EACP-Dev-Portal - Production - us-east-1,42
+10.85.26.0/24,GWS - Development - North Europe,43
+10.83.54.0/24,GWS Active Directory - Development - Central US,43
+10.83.52.0/25,GWS AWS Active Directory - Dev - us-east-1,43
+10.87.48.0/23,GWS Active Directory - Development - Southeast Asia,43
+10.250.88.0/24,DWS-Site-Recovery - Development - Virginia,43
+10.86.76.0/25,GWS AWS Active Directory - Dev - ap-southeast-1,43
+10.83.53.0/24,GWS Active Directory - Development - Central US,43
+10.244.210.0/24,DWS-Site-Recovery - Development - UK South,43
+10.84.160.0/25,GWS AWS Active Directory - Dev - eu-west-1,43
+10.85.60.0/23,GWS-WVD - Production - North Europe,44
+10.87.50.0/23,GWS Active Directory - Production - Southeast Asia,44
+10.87.28.0/22,DWS-WVD - Production - Southeast Asia,44
+10.241.192.0/23,GWS-WVD - Production - Central US,44
+10.84.61.0/24,GWS-AD - Production - North Europe,44
+10.250.89.0/24,DWS-Site-Recovery - Production - Virginia,44
+10.242.197.0/24,GWS-WVD - Production - Central US,44
+10.82.177.0/24,GWS-WVD - Production - Central US,44
+10.83.55.0/24,GWS Active Directory - Prod - Central US,44
+10.243.12.0/23,GWS-WVD - Production - Central US,44
+10.86.76.128/25,GWS AWS Active Directory - Prod - ap-southeast-1,44
+10.241.197.0/24,GWS-AD - Production - Central US,44
+10.244.211.0/24,DWS-Site-Recovery - Production - UK South,44
+10.85.63.0/24,GWS-AD - Production - North Europe,44
+10.240.200.0/24,GWS-PropTech - Production - Central US,44
+10.85.136.0/22,GWS-WVD - Production - North Europe,44
+10.85.70.0/24,GWS-WVD - Production - North Europe,44
+10.82.172.0/22,GWS-WVD - Production - Central US,44
+10.87.27.0/24,DWS-WVD - Production - Southeast Asia,44
+10.83.52.128/25,GWS AWS Active Directory - Prod - us-east-1,44
+10.85.128.0/23,GWS-WVD - Production - North Europe,44
+10.84.160.128/25,GWS AWS Active Directory - Prod,44
+10.244.50.0/24,GWS-WVD - Production - North Europe,44
+10.82.208.0/21,ATE I&O,45
+10.84.120.0/23,Robotics Process Automation - Production,46
+10.241.220.0/24,Bitesize - PRD - us-east-1,47
+10.246.153.0/24,soluna-PRD-us-east-1,47
+10.248.152.0/22,Bitesize - PRD - us-east-1,47
+10.243.239.0/24,gpt-fsngos-production,47
+10.240.0.0/24,HEd - Nibiru PRD - us-east-1,47
+10.82.132.0/24,Bitesize - Production - us-east-1,47
+10.248.144.0/21,Bitesize - Development - us-east-1,48
+10.242.228.0/23,Bitesize - Development - us-east-1,48
+10.240.3.0/24,HEd - Nibiru STG - us-east-1,48
+10.248.108.0/22,Bitesize-Development-us-east-1,48
+10.240.126.0/23,Bitesize - Development - us-east-1,48
+10.241.158.0/23,Passport-Development-us-east-1,48
+10.242.226.0/23,Bitesize - Development - us-east-1,48
+10.240.1.0/24,HEd - Nibiru STG - us-east-1,48
+10.242.196.0/24,Bitesize - Development - us-east-1,48
+10.242.192.0/23,Bitesize - Development - us-east-1,48
+10.240.2.0/24,HEd - Nibiru BKR - us-east-1,49
+10.83.16.0/22,HEd ILP non-PRD us-east-1,50
+10.83.212.0/22,Adaptive Learning - Development,50
+10.84.224.0/20,Adaptive Learning - Tableau - eu-west-1,50
+10.243.27.0/24,Tableau - Production - us-east1,50
+10.83.156.128/25,HE - Embanet - Dev (block 2 of 2) - ca-central-1,52
+10.83.217.64/26,HE - Embanet - Dev (block 1 of 2) - ca-central-1,52
+10.240.4.0/22,Div360 - Versant PRD - us-east-1,53
+10.252.0.0/16,eCollege - Cloud PQA/Dev -- Cornell,54
+10.201.0.0/16,HigherEd - Pearson Learning Assessments,54
+10.82.58.0/24,HEd PLA - us-east-1,54
+10.83.216.64/26,HE - CAET-RAD - Dev,55
+10.83.216.0/26,HE - CAET-RAD - Prod,56
+10.83.219.0/26,HE - Canada Tools - Prod - ca-central-1,57
+10.83.157.0/25,HE - InfoTech - Prod (block 2 of 2) - ca-central-1,58
+10.83.218.0/26,HE - InfoTech - Prod (block 1 of 2) - ca-central-1,58
+10.86.102.0/23,India Growth - PP2.0,61
+10.86.78.0/24,Growth Market India - PP2.0,61
+10.86.100.0/24,India Growth - PP2.0,61
+10.86.77.0/25,|Growth Market, India|,62
+10.86.104.0/23,India growth - SAM,62
+10.86.79.0/24,India growth - SAM,62
+10.83.182.0/23,TEP - Development - us-east-1,64
+10.86.203.0/24,TEP - Development - ap-northeast-1,64
+10.244.32.0/20,TEP - Development - eu-west-1,64
+10.84.122.0/23,TEP - Development - eu-west-1,64
+10.86.202.0/24,TEP - Development - ap-southeast-2,64
+10.86.201.0/24,TEP - Development - ap-southeast-1,64
+10.84.200.0/22,TEP - Development - eu-west-1,64
+10.83.216.128/26,HE - Docit - Prod - ca-central-1,65
+10.83.216.192/26,HE - Docit - Dev - ca-central-1,66
+10.83.217.128/26,HE - Science Source - Prod - ca-central-1,67
+10.83.217.192/26,HE - Science Source - Dev - ca-central-1,68
+10.83.158.0/25,HE - ERPI - Prod (block 2 of 2) - ca-central-1,69
+10.83.218.128/26,HE - ERPI - Prod (block 1 of 2) - ca-central-1,69
+10.83.158.128/25,HE - ERPI - Dev (block 2 of 2) - ca-central-1,70
+10.83.218.192/26,HE - ERPI - Dev (block 1 of 2) - ca-central-1,70
+10.83.159.0/25,HE - PIIProxy - Prod (block 2 of 2) - ca-central-1,71
+10.83.219.128/26,HE - PIIProxy - Prod (block 1 of 2) - ca-central-1,71
+10.83.159.128/25,HE - PIIProxy - Dev (block 2 of 2) - ca-central-1,72
+10.83.219.192/26,HE - PIIProxy - Dev (block 1 of 2) - ca-central-1,72
+10.84.162.0/23,CISO PaaS - Logging - Prod,73
+10.241.136.0/23,PAAS Logging - Production - us-east-2,73
+10.240.8.0/23,Alfresco - NALS STG - us-east-1,74
+10.240.14.0/23,Alfresco - NALS STG - us-east-1,74
+10.240.10.0/23,Alfresco - NALS PROD - us-east-1,75
+10.240.12.0/23,Alfresco - NALS BKR - us-east-1,76
+10.240.16.0/23,Revel - GLP - us-east-1,77
+10.240.56.0/23,Revel-DEV,77
+10.84.28.0/22,Alfresco - Development - eu-west-1,78
+10.86.109.0/24,India growth - PP2-CI-CD-Nonprod,78
+10.82.54.0/24,GrowthIndia-DEV - us-east-1,78
+10.82.48.0/22,Alfresco - Development - us-east-1,78
+10.84.128.0/20,Alfresco - Development - eu-west-1,78
+10.86.108.0/24,India Growth - PP2-STG,78
+10.86.110.0/24,India Growth - SAM-CI-CD-Nonprod,78
+10.86.107.0/24,India Growth - PP2-QA,78
+10.86.80.0/21,Alfresco - Development - ap-south-1,78
+10.86.106.0/24,India growth - PP2-DEV,78
+10.82.128.0/22,Alfresco - Development - us-east-1,78
+10.82.239.0/24,GrowthIndia-DEV - us-east-1,78
+10.82.38.0/24,Blueprint - Development - us-east-1,78
+10.82.192.0/20,Alfresco - Development - us-east-1,78
+10.82.226.0/24,GrowthIndia-DEV - us-east-1,78
+10.82.238.0/24,GrowthIndia-DEV - us-east-1,78
+10.87.146.0/23,India Growth - PP2-QA,78
+10.84.188.0/24,AppSec-CISO - Production - eu-west-1,79
+10.84.189.0/24,AppSec-CISO - Staging - eu-west-1,79
+10.84.161.0/24,AppSec-CISO - Development - eu-west-1,79
+10.240.18.0/24,Pearson Writer - HeD - STG - us-east-1,80
+10.240.19.0/24,Pearson Writer - HeD - PROD - us-east-1,81
+10.240.20.0/24,Pearson Writer - HeD - BKR - us-east-1,82
+10.82.136.0/22,ATE I & O - us-east-1,83
+10.82.141.0/24,Y-Connect Prod Jenkins - us-east-1,84
+10.82.140.0/24,Y-Connect Prod - us-east-1,84
+10.86.89.0/24,Mypedia Prod Jenkins - ap-south-1,85
+10.86.88.0/24,Mypedia Prod - ap-south-1,85
+10.86.94.0/24,Mypedia Sandbox - ap-south-1,86
+10.86.92.0/24,Mypedia STG - ap-south-1,86
+10.86.91.0/24,Mypedia QA - ap-south-1,86
+10.86.95.0/24,Mypedia Non-Prod Jenkins - ap-south-1,86
+10.86.93.0/24,Mypedia Perf - ap-south-1,86
+10.86.97.0/24,SAM QA - aws-southeast-2,87
+10.86.116.0/24,Hybris Sandbox - ap-south-1,87
+10.241.152.0/22,SAM-Hybris - Development - us-east-1,87
+10.86.115.0/24,Hyrbis Perf - ap-south-1,87
+10.86.114.0/24,Hybris STG - ap-south-1,87
+10.86.101.0/24,SAM Sandbox - aws-southeast-2,87
+10.86.113.0/24,Hybris QA - ap-south-1,87
+10.86.112.0/24,Hybris Dev - ap-south-1,87
+10.86.99.0/24,SAM Perf - aws-southeast-2,87
+10.86.111.0/24,SAM Non-Prod Jenkins - ap-southeast-2,87
+10.86.98.0/24,SAM STG - aws-southeast-2,87
+10.86.117.0/24,Hybris Non-Prod Jenkins - ap-south-1,87
+10.86.96.0/24,SAM Dev - aws-southeast-2,87
+10.85.20.0/22,SAM-Hybris - Development - eu-west-1,87
+10.86.123.0/24,PP2 Non-Prod Jenkins - ap-southeast-2,88
+10.86.122.0/24,PP2 Sandbox - ap-southeast-2,88
+10.86.90.0/24,PP2 Non-Production - ap-southeast-2,88
+10.86.118.0/24,PP2 Dev - ap-southeast-2,88
+10.86.121.0/24,PP2 Perf - ap-southeast-2,88
+10.86.120.0/24,PP2 STG - ap-southeast-2,88
+10.86.119.0/24,PP2 QA - ap-southeast-2,88
+10.86.126.0/24,iteach Dev - ap-southeast-1,90
+10.86.192.0/24,iteach STG - ap-southeast-1,90
+10.86.127.0/24,iteach QA - ap-southeast-1,90
+10.86.195.0/24,iteach Non-Prod Jenkins - ap-southeast-1,90
+10.86.194.0/24,iteach Sandbox - ap-southeast-1,90
+10.86.193.0/24,iteach Perf - ap-southeast-1,90
+10.82.167.0/24,y-connect Perf - us-east-1,91
+10.82.166.0/24,y-connect STG - us-east-1,91
+10.82.165.0/24,y-connect QA - us-east-1,91
+10.82.169.0/24,y-connect Non-Prod Jenkins - us-east-1,91
+10.82.168.0/24,y-connect Sandbox - us-east-1,91
+10.82.164.0/24,y-connect Dev - us-east-1,91
+10.68.167.0/24,starkverlag Prod Jenkins - eu-central-1,92
+10.84.167.0/24,starkverlag Prod Jenkins - eu-central-1,92
+10.84.166.0/24,starkverlag Prod - eu-central-1,92
+10.84.175.0/24,librio-liquido Prod Jenkins - eu-west-1,93
+10.84.174.0/24,librio-liquido Prod - eu-west-1,93
+10.84.180.0/24,librio-liquido Sandbox - eu-west-1,94
+10.84.181.0/24,librio-liquido Non-Prod Jenkins - eu-west-1,94
+10.84.178.0/24,librio-liquido STG - eu-west-1,94
+10.84.177.0/24,librio-liquido QA - eu-west-1,94
+10.84.176.0/24,librio-liquido Dev - eu-west-1,94
+10.84.179.0/24,librio-liquido Perf - eu-west-1,94
+10.84.183.0/24,ALP QA - eu-west-1,95
+10.84.186.0/24,ALP Sandbox - eu-west-1,95
+10.84.184.0/24,ALP STG - eu-west-1,95
+10.84.182.0/24,ALP Dev - eu-west-1,95
+10.84.187.0/24,ALP Non-Prod Jenkins - eu-west-1,95
+10.85.164.0/23,ALP DEV - eu-west-1,95
+10.84.185.0/24,ALP Perf - eu-west-1,95
+10.244.62.0/23,ALP -nonprod - eu-west-1,95
+10.84.172.0/24,starkverlag Sandbox - eu-central-1,96
+10.84.173.0/24,starkverlag Non-Prod Jenkins - eu-central-1,96
+10.84.170.0/24,starkverlag STG - eu-central-1,96
+10.84.169.0/24,starkverlag QA - eu-central-1,96
+10.84.168.0/24,starkverlag Dev - eu-central-1,96
+10.84.171.0/24,starkverlag Perf - eu-central-1,96
+10.86.125.0/24,iteach Prod Jenkins - ap-southeast-1,97
+10.86.124.0/24,iteach Prod - ap-southeast-1,97
+10.240.22.0/23,HED Revel Course Mgmt - nonprod,98
+10.247.28.0/22,RevelGradeBook - Development - us-east-1,99
+10.83.56.128/25,RevelGradeBook - Development - us-east-1,99
+10.249.167.0/24,revelgradebook-dev- us-east-1,99
+10.246.158.0/23,HED-RevelGradebook-DEV - us-east-1,99
+10.246.138.0/23,Gradebook-Development,99
+10.246.144.0/23,HED-RevelGradebook-DEV - us-east-1,99
+10.251.64.0/22,HED Revel Gradebook - nonprod us-east-1,99
+10.83.181.0/24,Revel Gradebook - Development - us-east-1,99
+10.248.96.0/21,revelgradebook-stage - us-east-1,99
+10.247.64.0/20,RevelGradeBook - Development - us-east-1,99
+10.248.40.0/24,revelgradebook-dev- us-east-1,99
+10.240.220.0/22,revelgradebook-qa - us-east-1,99
+10.82.72.0/23,RevelGradeBook - Development - us-east-1,99
+10.248.112.0/20,revelgradebook-ppe - us-east-1,99
+10.240.24.0/23,HED Revel Gradebook - nonprod,99
+10.247.32.0/21,RevelGradeBook - Development - us-east-1,99
+10.83.180.0/24,Revel Assignment Mgmt - Development - us-east-1,100
+10.240.26.0/23,HED Assignment Mgmt - nonprod,100
+10.83.156.0/25,HE - Embanet - Prod (block 2 of 2) - ca-central-1,101
+10.83.217.0/26,HE - Embanet - Prod (block 1 of 2) - ca-central-1,101
+10.83.218.64/26,HE - InfoTech - Dev (block 1 of 2) - ca-central-1,102
+10.83.157.128/25,HE - InfoTech - Dev (block 1 of 2) - ca-central-1,102
+10.240.21.0/24,Versant - Prod - us-east-1,103
+10.240.44.128/27,Versant - Prod - us-east-1,103
+10.241.64.0/18,Bitesize/GLP2 - Staging - us-west-2,104
+10.241.240.0/20,Bitesize/GLP2 - Peering VPC - us-east-1,104
+10.240.128.0/18,Bitesize/GLP2 - NFT - us-east-2,104
+10.241.0.0/18,Bitesize/GLP2 - Prod - us-west-2,105
+10.253.16.0/20,GLPv2 - Production - us-east-1,105
+10.82.171.0/24,HeD Keystone - Development - us-east-1,106
+10.240.28.0/23,TechOps:Stratus - Prod - us-east-2,107
+10.240.64.0/20,Stratus - Production - us-central1,107
+10.82.134.32/27,Stratus - Production - us-central1,107
+10.82.244.0/24,Stratus-PRD - us-central1,107
+10.83.56.0/27,Stratus - Dev - us-central1,108
+10.240.80.0/22,Stratus - Development - us-central1,108
+10.82.242.0/24,Stratus-DEV us-central1,108
+10.240.30.0/23,TechOps:Stratus - Dev - us-east-2,108
+10.84.196.0/22,ABBY - Non-Prod - eu-west-2,109
+10.84.194.0/24,EDW - GCP - Prod - eu-west-2,111
+10.82.133.0/24,EDWA-UK - Production - us-east1,111
+10.244.250.0/24,EDW-UK-PRD europe-west-1,111
+10.84.190.0/24,GBI-UK - Production - europe-west1,111
+10.84.214.0/23,ABBYY - Production - eu-west-2,112
+10.240.43.0/24,Data Orchestration - Dev - us-east-1,113
+10.241.143.0/24,DataOrchestration - Development - us-east-1,113
+10.241.176.0/23,DataOrchestration - Development - us-east-1,113
+10.84.218.128/25,Conley Readiness Index (CRI) - PROD,115
+10.84.218.0/25,Conley Readiness Index (CRI) - DEV,116
+10.240.46.0/23,ATE I & O (North America Schools) - Prod - us-east-1,118
+10.84.195.0/24,AWS India Growth Market eu-west-1,120
+10.84.220.0/22,AWS India Growth Market eu-west-1,120
+10.86.4.0/24,India Growth Market ap-south-1,121
+10.86.0.0/22,India Growth Market ap-south-1,121
+10.86.8.0/22,India Growth Market ap-southeast-2,122
+10.86.5.0/24,India Growth Market ap-southeast-2,122
+10.240.48.0/24,Memphis Prod,123
+10.240.50.0/23,Memphis - Non-Prod,124
+10.82.216.0/24,None,125
+10.82.217.0/24,None,126
+10.82.218.0/23,None,126
+10.82.220.0/23,QuAD-Prod - us-east-1,127
+10.240.216.0/23,QuAD-Prod - us-east-1,127
+10.84.219.0/24,HNO Non-Pord,128
+10.84.240.0/22,HNO Non-Pord,128
+10.85.25.0/24,HNO - Development - eu-west-1,128
+10.84.248.0/22,PTEG Non-Prod,129
+10.84.244.0/24,PTEG Non-Prod,129
+10.82.243.0/24,Stratus-TST - us-central1,130
+10.240.84.0/22,Stratus - Test - us-central1,130
+10.82.134.0/27,Stratus - test - us-central1,130
+10.249.137.0/24,FSPE-Dev - us-east-1,131
+10.247.60.0/23,FSPE-Dev - us-east-1,131
+10.242.172.0/23,FSPE-Dev - us-east-1,131
+10.247.26.0/24,FPSE-Non-Prod-us-east-1,131
+10.250.26.0/24,GPT-VEE-NONPRD us-east-1,131
+10.240.52.0/23,FPSE-Non-Prod-us-east-1,131
+10.249.204.0/23,FSPE-Dev - us-east-1,131
+10.243.48.0/23,FSPE-Dev - us-east-1,131
+10.249.138.0/23,FSPE-Dev - us-east-1,131
+10.250.28.0/23,GPT-VEE-NONPRD us-east-1,131
+10.250.14.0/23,FSPE-DEV us-east-1,131
+10.249.200.0/23,FSPE-Dev - us-east-1,131
+10.240.49.0/24,FPSE-Prod-us-east-1,132
+10.247.42.0/23,FSPE-prod - us-east-1,132
+10.249.202.0/23,FSPE-prod - us-east-1,132
+10.242.174.0/23,FSPE-prod - us-east-1,132
+10.240.228.0/23,FPSE-Prod-us-east-1,132
+10.246.136.0/24,FPSE-Prod-us-east-1,132
+10.168.32.0/19,A&I  Oregon VPC - Amazon AWS,150
+10.168.0.0/19,A&I US East VPC - Amazon AWS,150
+10.168.64.0/19,A&I  California VPC - Amazon AWS,150
+10.168.96.0/19,A&I Sandbox - Amazon AWS,150
+10.246.146.0/23,HED GradeBook_ILP-PRD-us-east-1,151
+10.82.246.0/23,GradeBook_ILP-Production - us-east-1,151
+10.248.128.0/20,GradeBook_ILP-PRD us-east-1,151
+10.251.56.0/21,GradeBook_ILP-PRD us-east-1,151
+10.244.64.0/20,PQS-POC-DEV - eu-west-2,152
+10.85.0.0/21,PQS-POC - Development - eu-west-2,152
+10.82.248.0/21,PQS - NaaS on-boarding,152
+10.83.20.0/23,ATE I&O-DEV-us-east-1,153
+10.253.48.0/20,BitesizePAAS2 - Development - us-east-1,154
+10.83.24.0/24,TOP-1160 NaaS Onboarding for Data Orchestration Platform,155
+10.84.245.0/24,CloudGovernance - Development - eu-west-1,156
+10.248.48.0/23,EDW-Global-Common - Production - us-east1,157
+10.250.166.0/24,EDW-Global-Common - Production - us-east1,157
+10.247.115.0/24,Enterprise Data Warehouse Mojo - Production - us-east1,157
+10.240.96.0/20,Edward-Global - Production,157
+10.248.50.0/24,EDW-Global-Common - Production - us-east1,157
+10.83.60.0/23,MyDashboard - Development - us-east-1,162
+10.243.120.0/24,ES data center migration - PRD - us-east-1,173
+10.240.58.0/23,ES data center migration - PRD - us-east-1,173
+10.251.128.0/24,ES data center migration - PRD - us-east-1,173
+10.240.60.0/23,NaaS On-boarding -ES data center migration,174
+10.251.131.0/24,NaaS On-boarding -ES data center migration,174
+10.251.129.0/24,NaaS on boarding - ES data center migration,175
+10.240.62.0/23,NaaS on boarding - ES data center migration,175
+10.83.223.0/24,Common-Services - Development - us-central1,176
+10.247.158.0/23,Common-Services - Development - us-central1,176
+10.250.32.0/21,Common-Services - Development - us-east1,176
+10.249.247.0/24,Common-Services - Development - us-east1,176
+10.247.164.0/22,Common Services - Development - us-central1,176
+10.240.55.0/24,InfoTech Parent - Production - us-east-1,177
+10.247.140.0/24,InfoTech-Parent-PRD - us-east-1,177
+10.83.28.0/22,EDMS - Development - ap-south-1,178
+10.244.248.0/23,EDMS - Development - eu-west-1,178
+10.240.240.0/20,EDMS - Development - us-east-1,178
+10.251.68.0/23,gpt-socket - PRD - us-east-1,179
+10.83.26.0/23,gpt-socket - PRD - us-east-1,179
+10.83.25.0/24,gpt-socket - DEV - us-east-1,180
+10.243.128.0/20,GPT-Socket - Development - us-east-1,181
+10.241.134.0/24,Bitesize - Development - us-east-1,181
+10.240.112.0/23,ciso-certapi- Development - us-east-1,182
+10.83.57.0/24,CISO - us-east-2,182
+10.84.246.0/23,CISO - Development - eu-west-2,182
+10.84.252.0/23,CISO - Production - eu-west-2,183
+10.240.114.0/23,ciso-certapi - Production - us-east-1,183
+10.83.58.0/23,CISO - Production - us-east-2,183
+10.240.118.0/23,ciso-tools-DEV,184
+10.85.16.0/24,CISO-Tools - Development - eu-west-2,184
+10.240.123.0/24,Seer Development - us-east-1,185
+10.240.116.0/23,Seer Development - us-east-1,185
+10.240.120.0/23,ciso-tools-PRD,186
+10.85.17.0/24,CISO-Tools - Production - eu-west-2,186
+10.240.122.0/24,Seer - Production,187
+10.85.62.0/24,IDAM-PRD - eu-west-1,188
+10.240.124.0/23,IdAM - Production - us-east-2,188
+10.241.204.0/23,IdAM - Production - ca-central-1,188
+10.85.64.0/23,IdAM - Production - eu-west-1,188
+10.241.178.0/23,IdAM - Production - ca-central-1,188
+10.243.238.0/24,IDAM-PRD - ca-central-1,188
+10.87.2.0/23,IdAM - Production - ap-southeast-1,188
+10.240.33.0/24,IdAM - Production - us-east-1,188
+10.241.202.0/23,IdAM - Production - us-east-1,188
+10.86.207.0/24,IDAM-PRD - ap-southeast-1,188
+10.85.66.0/23,IdAM - Production - eu-west-1,188
+10.240.94.0/23,IdAM - Production - us-east-1,188
+10.87.0.0/23,IdAM - Production - ap-southeast-1,188
+10.85.8.0/21,CIO-TEP-Production,189
+10.240.232.0/21,CIO-TEP-Production,189
+10.244.0.0/21,TEP - Production - eu-west-1,189
+10.87.26.0/24,TEP DCL4 - Development - ap-south-1,190
+10.85.72.0/21,TEP-DCL4 - Development - eu-west-1,190
+10.244.80.0/20,TEP DCL4 - Development - eu-west-1,190
+10.244.16.0/20,TEP DCL4 - Development - eu-west-1,190
+10.111.235.0/24,GNS-Services - Development - us-central1,191
+10.244.54.0/23,GNS-Services - Development - eu-west-2,191
+10.244.162.0/23,Network-Services - Development - eu-west-1,191
+10.244.52.0/23,GNS-Services - Development - eu-west-1,191
+10.250.240.0/23,Network-Services - Development - 02 - us-east-1,191
+10.87.40.0/21,ADC-Training - Development - ap-south-1,191
+10.244.164.0/24,PDA - Development - eu-west-2,191
+10.243.32.0/23,Network-Services - Development - us-east-1,191
+10.82.186.0/23,GNS-Services - Development - us-east-1,191
+10.87.32.0/21,CCW-Training - Development - ap-south-1,191
+10.244.208.0/23,Network-Services - Development - 02 - eu-west-1,191
+10.242.167.0/24,Network-Services PDA - Production - us-east-1,192
+10.242.56.0/24,Network-Services DNSaaS - Production - us-east-2,192
+10.111.226.0/23,NAAS Service VPC,192
+10.244.96.0/23,GNS-Services - Production - eu-central-1,192
+10.82.232.0/23,GNS-Services - Production - us-east-1,192
+10.111.224.0/23,NAAS Service VPC,192
+10.87.4.0/23,GNS-Services - Production - ap-southeast-1,192
+10.244.165.0/24,Network-Services - Production - eu-west-2,192
+10.85.162.0/23,GNS-Services - Production - eu-west-1,192
+10.243.28.0/23,GPT-AELP-DEV - us-east-1,193
+10.243.30.0/23,GPT-AELP-DEV - us-east-1,193
+10.86.244.0/23,GPT AELP - Development - ap-southeast-2,193
+10.241.128.0/23,GPT AELP development - us-east1,193
+10.86.242.0/23,GPT AERO - Development - ap-southeast-2,194
+10.241.130.0/23,GPT-AERO - Development - us-east-1,194
+10.86.240.0/23,GPT AERO - Production - ap-southeast-2,195
+10.241.132.0/23,GPT AERO Production - us-east-1,195
+10.85.32.0/21,cio-ukquals-staging - eu-west-1,196
+10.85.80.0/20,PQS - Staging - eu-west-2,196
+10.244.212.0/22,IDAM-Privacy-Development - eu-west-2,197
+10.86.199.0/24,IdAM - PPE - ap-southeast-1,197
+10.250.92.0/22,IDAM-Privacy - Development - us-east-2,197
+10.241.168.0/21,IDAM-Privacy - Development - us-east-1,197
+10.243.235.0/24,IDAM-Privacy-DEV - ca-central-1,197
+10.240.36.0/24,IDAM-Privacy - Development - us-east-1,197
+10.242.184.0/23,IDAM-Privacy-Development--us-east-1,197
+10.86.252.0/22,IDAM-Privacy - Development - ap-southeast-1,197
+10.84.207.0/24,IdAM - PPE - eu-west-1,197
+10.85.52.0/23,IDAM-Privacy - Development - eu-west-1,197
+10.85.58.0/23,IDAM-Privacy - Development - eu-west-1,197
+10.242.120.0/23,IDAM-Privacy-Development--us-east-2,197
+10.241.236.0/23,IDAM-Privacy-DEV-ca-central-1,197
+10.241.160.0/21,IDAM-Privacy - Development - us-east-1,197
+10.85.50.0/23,IDAM-Privacy - Development - eu-west-1,197
+10.85.56.0/23,IDAM-Privacy - Development - eu-west-1,197
+10.241.234.0/23,IDAM-Privacy-DEV-ca-central-1,197
+10.241.138.0/24,IDAM-Privacy - Development - us-east-1,197
+10.85.30.0/23,IDAM-Privacy - Development - eu-west-2,197
+10.87.164.0/22,IDAM-Privacy - Development - ap-northeast-1,197
+10.86.248.0/22,IDAM-Privacy - Development - ap-southeast-1,197
+10.85.48.0/23,IDAM-Privacy - Development - eu-west-1,197
+10.85.54.0/23,IDAM-Privacy - Development - eu-west-1,197
+10.86.14.0/23,IDAM-Privacy - Development - ap-northeast-1,197
+10.244.11.0/24,IDAM-Internal-DEV - eu-west-1,198
+10.243.24.0/23,IDAM-Internal-DEV - us-east-1,198
+10.243.22.0/24,IDAM-Internal-DEV - us-east-1,198
+10.243.21.0/24,IDAM-Internal-DEV - us-east-1,198
+10.86.204.0/24,IDAM-Internal-DEV - ap-southeast-1,198
+10.244.10.0/24,IDAM-Internal-DEV - eu-west-1,198
+10.241.139.0/24,IDAM-Internal - Development - us-east-1,198
+10.243.20.0/24,IDAM-Internal-DEV - us-east-1,198
+10.86.205.0/24,IDAM-Internal-PRD - ap-southeast-1,199
+10.243.26.0/24,IDAM-Internal-PRD - us-east-1,199
+10.243.23.0/24,IDAM-Internal-PRD - us-east-1,199
+10.244.13.0/24,IDAM-Internal-PRD - eu-west-1,199
+10.241.140.0/24,IDAM-Internal - Production - us-east-1,199
+10.86.206.0/24,IDAM-Internal-PRD - ap-southeast-1,199
+10.244.12.0/24,IDAM-Internal-PRD - eu-west-1,199
+10.241.144.0/23,eStyle Development - us-east-1,200
+10.250.8.0/22,eStyle-DEV us-east-1,200
+10.242.116.0/22,RaaS - Production - us-east-1,201
+10.241.135.0/24,GPT Mediashare Development - us-east-1,202
+10.240.92.0/23,ES - Development - us-east-1,203
+10.251.130.0/24,ES - Development - us-east-1,203
+10.241.156.0/23,ES - Development - us-east-1,203
+10.241.184.0/21,InfoTech Common Services - Production - us-east1,204
+10.242.176.0/22,HED-xlachievement-NPROD -- us-east-1,205
+10.243.171.0/24,HED-XLAchievement-DEV - us-east-1,205
+10.82.182.0/23,Adaptive-MMT-DEV - us-east-1,205
+10.241.194.0/24,SREPod3-MasteringPOC-Dev,205
+10.242.122.0/23,HED-XLACHIEVEMENT-PRD -- us-east-1,206
+10.82.184.0/23,HED-XLACHIEVEMENT-PRD -- us-east-1,206
+10.241.180.0/23,GPT-HIKEM - Development - us-east-1,207
+10.86.6.0/23,Coronavirus Business Continuity VDI - AP-southeast-1,208
+10.244.8.0/23,Coronavirus Business Continuity VDI -eu-west-1,208
+10.242.126.0/23,I&O - Coronavirus Business Continuity VDI -- us-east-1,208
+10.241.195.0/24,CISO-CSR-DEV,209
+10.85.42.0/24,CRS-DEV - Development - eu-west-2,209
+10.85.27.0/24,CSR-PRD - Production - eu-west-2,210
+10.241.196.0/24,CISO-CSR-PROD,210
+10.241.198.0/23,ACM - Production - Central US,211
+10.241.200.0/23,ACM - Development - Central US,212
+10.85.40.0/23,TEP - Bunker - eu-west-2,213
+10.242.180.0/22,cio-gps-nonprod - us-east-1,214
+10.85.28.0/23,techops-ciso-datalake-eu-west-1,215
+10.242.22.0/23,gpt-lif-prd - us-east-1,216
+10.241.208.0/23,gpt-lif-PRD-us-east-1,216
+10.242.28.0/23,gpt-lif-Sandbox-DEV - us-east-1,217
+10.241.210.0/23,gpt-lif-Sanbox-DEV-us-east-1,217
+10.242.20.0/23,gpt-lif-dev - us-east-1,218
+10.241.216.0/22,gpt-lif-DEV-us-east-1,218
+10.242.38.0/23,gpt-lif-dev-qa - us-east-1,218
+10.241.212.0/24,gpt-lif-DEV-us-east-1,218
+10.249.132.0/22,gpt-lif-dev-stg - us-east-1,218
+10.242.30.0/23,gpt-lif-dev - us-east-1,218
+10.248.228.0/22,None,218
+10.242.36.0/23,gpt-lif-dev-stg - us-east-1,218
+10.242.128.0/21,gpt-pegasus-prod - us-east-1,219
+10.243.202.0/23,GPT-Baloo-PRD,219
+10.246.112.0/21,HED ITTools - Production - us-east-1,219
+10.242.100.0/22,gpt-pegasus-nonprod - us-east-1,220
+10.246.176.0/22,HED ITTools - nonprod-stg- us-east-1,220
+10.246.244.0/22,HED ITTools - nonprod-qaint- us-east-1,220
+10.247.242.0/24,HED ITTools - Development - us-east-1,220
+10.248.104.0/22,HED ITTools - nonprod-ppe- us-east-1,220
+10.242.104.0/22,gpt-pegasus-nonprod - us-east-1,220
+10.241.214.0/23,GPT-Baloo-Segregation-Dev,220
+10.246.96.0/22,HED ITTools - Development - us-east-1,220
+10.242.96.0/22,gpt-pegasus-nonprod - us-east-1,220
+10.82.222.0/23,GPT - PRODUCTION - us-east-1,221
+10.247.215.0/24,gpt - non-prod - us-east-1,222
+10.246.184.0/21,GPT - Non-production - us-east-1,222
+10.251.204.0/22,EText2 - Development - us-east-1,222
+10.242.190.0/23,gpt-etext2platform-nonprod - us-east-1,222
+10.242.194.0/23,gpt-etext2platform-nonprod - us-east-1,222
+10.246.168.0/21,GPT - Non-production - us-east-1,222
+10.242.198.0/23,gpt-etext2platform-prod -- us-east-1,223
+10.242.200.0/23,gpt-etext2platform-prod -- us-east-1,223
+10.246.228.0/22,GPT-ETEXT2-PLT-PRD - us-east-1,223
+10.242.204.0/23,gpt-etext2student-nonprod - us-east-1,224
+10.242.202.0/23,gpt-etext2student-nonprod - us-east-1,224
+10.242.208.0/23,gpt-etext2student-prod - us-east-1,225
+10.242.206.0/23,gpt-etext2student-prod - us-east-1,225
+10.242.210.0/23,gpt-etext2instructorredding-nonprod - us-east-1,226
+10.242.212.0/23,gpt-etext2instructorredding-nonprod - us-east-1,226
+10.242.216.0/23,gpt-etext2instructorredding-prod - us-east-1,227
+10.242.214.0/23,gpt-etext2instructorredding-prod - us-east-1,227
+10.250.54.0/23,gpt-etext2instructorcollections-nonprod us-east-1,228
+10.242.220.0/23,gpt-etext2instructorcollections-nonprod -us-east-1,228
+10.249.164.0/23,gpt-etext2instructorcollections-nonprod -us-east-1,228
+10.242.218.0/23,gpt-etext2instructorcollections-nonprod -us-east-1,228
+10.249.163.0/24,gpt-etext2instructorcollections-nonprod - us-east-1,228
+10.242.222.0/23,gpt-etext2instructorcollections-prod -us-east-1,229
+10.250.56.0/23,gpt-etext2instructorcollections-prod  us-east-1,229
+10.242.224.0/23,gpt-etext2instructorcollections-prod -us-east-1,229
+10.85.43.0/24,CIO-Activelearn-Secondary-Non Production,230
+10.241.224.0/23,EDW-Core - Production - us-east1,231
+10.85.46.0/23,SOSP-DEV-eu-west-1,232
+10.240.212.0/23,gpt-oz-nonprod - us-east-1,233
+10.241.228.0/23,gpt-oz-nonprod - us-east-1,233
+10.244.173.0/24,GPT-OZ-NONPRD - eu-west-1,233
+10.248.88.0/23,gpt-oz-nonprod - us-east-1,233
+10.244.196.0/23,gpt-oz-nonprod - eu-west-1,233
+10.242.40.0/23,gpt-oz-nonprod - us-east-1,233
+10.241.226.0/23,gpt-oz-nonprod - us-east-1,233
+10.240.202.0/23,gpt-oz-nonprod - us-east-1,233
+10.248.0.0/24,gpt-oz-nonprod - us-east-1,233
+10.248.90.0/23,gpt-oz-prod - us-east-1,234
+10.244.198.0/23,gpt-oz-prod - eu-west-1,234
+10.241.230.0/23,gpt-oz-prod - us-east-1,234
+10.241.232.0/23,gpt-oz-prod - us-east-1,234
+10.249.238.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.250.27.0/24,gpt-notificationsAPI-nonprod - us-east-1,235
+10.250.242.0/24,gpt-notificationsAPI-nonprod - us-east-1,235
+10.251.78.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.249.240.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.242.232.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.242.230.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.250.104.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.251.70.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.251.76.0/23,gpt-notificationsAPI-nonprod - us-east-1,235
+10.242.236.0/23,gpt-notificationsAPI-prod - us-east-1,236
+10.242.234.0/23,gpt-notificationsAPI-prod - us-east-1,236
+10.243.122.0/23,gptx-notifications_api-prd - us-east-1,236
+10.242.240.0/23,gpt-coursecopyAPI-nonprod -us-east-1,237
+10.242.238.0/23,gpt-coursecopyAPI-nonprod - us-east-1,237
+10.242.242.0/23,gpt-coursecopyAPI-prod - us-east-1,238
+10.242.244.0/23,gpt-coursecopyAPI-prod - us-east-1,238
+10.242.248.0/23,hed-bacchus-nonprod - us-east-1,239
+10.242.246.0/23,hed-bacchus-nonprod - us-east-1,239
+10.243.2.0/23,hed-bacchus - nonprod - us-east-1,239
+10.243.4.0/23,hed-bacchus - nonprod - us-east-1,239
+10.242.252.0/23,hed-bacchus-prod - us-east-1,240
+10.243.8.0/23,hed-bacchus-prod -us-east-1,240
+10.246.2.0/23,hed-bacchus-prod - us-east-1,240
+10.242.250.0/23,hed-bacchus-prod -us-east-1,240
+10.243.6.0/23,hed-bacchus-prod -us-east-1,240
+10.243.0.0/23,GPT-HIKEM-PRD-us-east-1,241
+10.243.14.0/23,nexus-repor-non-prd - us-east-1,242
+10.243.11.0/24,EPAM Logging & Monitoring - Development - us-east1,243
+10.243.16.0/23,nexus-repo -prd - us-east-1,244
+10.246.0.0/23,Pearson KT-ML Research - Development - us-east-1,245
+10.243.18.0/23,PSO-SECURITY-DEV - us-east-1,246
+10.243.152.0/23,OBL-PCX - Development - East US 2,247
+10.243.158.0/23,GPT-BRONTE-STG-DEV - us-east-1,248
+10.243.156.0/23,GPT-BRONTE-STG-DEV - us-east-1,248
+10.243.162.0/23,GPT-BRONTE-DEV - us-east-1,249
+10.243.160.0/23,GPT-BRONTE-DEV - us-east-1,249
+10.243.164.0/23,COGNOS-PRD - us-east-1,250
+10.243.172.0/22,gptx-itpro-video-content - DEV - us-east-1,251
+10.243.176.0/22,gptx-itpro-video-content - Production - us-east-1,252
+10.243.180.0/22,gptx-itpro-learning-app - Production - us-east-1,253
+10.82.234.0/23,gptx-itpro-learning-app - Development - us-east-1,254
+10.243.184.0/22,gptx-itpro-learning-app - Development - us-east-1,254
+10.243.170.0/24,Active-Learn-Secondary-PRD,255
+10.85.71.0/24,Maths-Factor-PRD,256
+10.85.144.0/23,Techops-Ciso-Datalake-Prod,257
+10.85.146.0/24,cio-datahub-nonprod,258
+10.249.244.0/23,GPTX-SPP-DEV - us-east-1,259
+10.243.190.0/23,GPTX-SPP-DEV - us-east-2,259
+10.243.198.0/23,GPTX-SPP-DEV - us-east-2,259
+10.249.246.0/24,GPTX-SPP-DEV - us-east-1,259
+10.243.200.0/23,GPTX-SPP-PRD - us-east-2,260
+10.241.221.0/24,Tableau - Development - us-east1,261
+10.243.204.0/23,CIO-IES - Development - us-east-1,262
+10.247.200.0/22,ePEN2-Assement-Dev-us-east-1,263
+10.243.206.0/23,ePEN2-Assessments-Development,263
+10.243.214.0/23,Cognos-Assessments-Development,264
+10.85.152.0/24,CIO-DATAHUB-PROD - eu-west-1,265
+10.248.44.0/22,gptx-contentservices-gateway-nonprod,266
+10.243.112.0/24,gptx-contentservices-gateway-nonprod - us-east-1,266
+10.248.14.0/23,gptx-contentservices-gateway-nonprod,266
+10.243.218.0/23,gptx-contentservices-gateway-nonprod,266
+10.248.36.0/22,gptx-contentservices-gateway-nonprod,266
+10.243.236.0/23,gptx-contentservices-gateway-nonprod,266
+10.250.251.0/24,gptx-contentservices-gateway-nonprod,266
+10.248.12.0/24,gptx-contentservices-gateway-nonprod,266
+10.248.8.0/22,csg-production us-east-1,267
+10.243.220.0/23,csg-production,267
+10.243.222.0/23,ASMT-DEV - us-east-1,268
+10.243.224.0/23,ASMT-EPRS-PRD - us-east-1,269
+10.243.240.0/20,itec-quad-DEV - us-east-1,270
+10.251.81.0/24,itec-quad-DEV - us-east-1,270
+10.82.0.0/21,PEDA - Pre-production - us-east-1,271
+10.82.8.0/21,PEDA - Production - us-east-1,272
+10.85.166.0/23,misp - Development - eu-west-1,273
+10.250.229.0/24,MISP-CISO us-east-1,273
+10.244.236.0/24,MISP-CISO eu-west-1,273
+10.248.32.0/24,CISO-SecOps - Sandbox - us-east-1,273
+10.82.236.0/23,IT-PERFTEST-PRD - us-east-1,274
+10.241.213.0/24,perftesting-development,274
+10.82.179.0/24,perftesting-development,274
+10.82.180.0/24,perftesting-development,274
+10.82.181.0/24,perftesting-development,274
+10.85.200.0/21,PASUK-PRD - eu-west-1,275
+10.85.184.0/21,PASUK-PRD - eu-west-1,275
+10.85.192.0/21,PASUK-PRD - eu-west-1,275
+10.82.36.0/24,CSDS - Development - us-east-1,276
+10.82.37.0/24,CSDS - Production - us-east-1,276
+10.246.56.0/22,HED Mastering - Development - us-east-1,277
+10.246.4.0/22,HED Mastering - Development/Non-Prod - us-east-1,277
+10.242.24.0/22,MathXL - Development - us-east-1,278
+10.240.199.0/24,HED MathXL - Development - us-east-1,278
+10.240.204.0/23,gptx-xl-2-0-dev-nonprd - us-east-1,278
+10.246.20.0/22,HED MathXL (ECS) - Development/Non-Prod - us-east-1,278
+10.240.198.0/24,HED MathXL - Development/Non-Prod - us-east-1,278
+10.246.12.0/22,HED MathXL (EC2) - Development/Non-Prod - us-east-1,278
+10.246.32.0/20,ALFRESCO&EDMS_DR - Production - us-east-1,279
+10.85.232.0/21,PASAU-DEV - eu-west-1,280
+10.85.224.0/21,PASUK-DEV - eu-west-1,281
+10.85.208.0/21,PASUK-DEV - eu-west-1,281
+10.85.216.0/21,PASUK-DEV - eu-west-1,281
+10.249.172.0/22,HED MathXL (EC2) - Sandbox - us-east-1,282
+10.246.16.0/22,HED MathXL (EC2) - Sandbox - us-east-1,282
+10.85.178.0/23,CISO - Production - eu-west-1,283
+10.248.33.0/24,CISO-SecOps - Production - us-east-1,283
+10.246.128.0/21,PLP PPE - Development - us-east-2,284
+10.247.214.0/24,PLP DEV - Development - us-east-1,284
+10.242.159.0/24,PLP PPE - GitLabRunner - us-west-2,284
+10.246.208.0/21,PLP-DEV - us-west-2,284
+10.247.168.0/21,PLP PPE - Development - us-east-2,284
+10.246.120.0/21,PLP STG - Development - us-west-2,284
+10.246.8.0/22,HED Mastering - Sandbox - us-east-1,285
+10.246.52.0/22,HED Mastering - Sandbox - us-east-1,285
+10.87.24.0/23,itec-longmanplus-PRD ap-southeast-1,286
+10.87.172.0/22,itec-longmanplus-PRD ap-southeast-1,286
+10.87.168.0/22,ITEC-LMP-DEV - ap-southeast-1,287
+10.87.22.0/23,ITEC-LMP-DEV ap-southeast-1,287
+10.87.20.0/23,ITEC-LMP-DEV ap-southeast-1,287
+10.85.168.0/23,ciso-secops-nonprd eu-west-1,288
+10.246.28.0/22,HED Mastering - QAT - us-east-1,289
+10.246.60.0/22,HED Mastering - STG - us-east-1,289
+10.246.76.0/22,HED Mastering - PRF - us-east-1,289
+10.246.64.0/21,HED Mastering - Production - us-east-1,290
+10.247.153.0/24,HED-MathXL-NonPrd - Development - us-east-1,291
+10.246.72.0/22,HED MathXL-Non-Production - STG - us-east-1,291
+10.246.140.0/22,HED MathXL-Non-Production - QAINT - us-east-1,291
+10.246.80.0/21,HED MathXL - Production - us-east-1,292
+10.85.24.0/24,EDW-GPS - Production - eu-west2,293
+10.244.255.0/24,EDW-GPS - Production - eu-west2,293
+10.85.147.0/24,EDW-GPS - Bunker - eu-west3,294
+10.84.255.0/24,EDW-GPS - Development - eu-west2,295
+10.85.153.0/24,EDW-GPS - Development - eu-west2,295
+10.82.68.0/23,gptx-pso-access-governance-prd - us-east-1,296
+10.82.70.0/23,pso-access-governance-dev - us-east-1,297
+10.240.44.192/26,pso-access-governance-dev - us-east-1,297
+10.242.60.0/22,gpt-pegasus-dev-nonprd - us-east-1,298
+10.246.104.0/22,HED ITTools-Non-Production - Development - us-east-1,298
+10.246.88.0/22,HED ITTools - Sandbox - us-east-1,299
+10.82.76.0/23,ASMT-EPEN2-PRD,301
+10.249.44.0/22,LAAS -project-Dev - us-east-1,303
+10.87.8.0/22,CDE - Pre-production - RITM0986874,303
+10.249.100.0/22,CDC - Production - ca-central-1,304
+10.249.48.0/22,LAAS - Project - Prod - us-east-1,304
+10.87.12.0/22,CDC - Production - ap-southeast-1,304
+10.87.16.0/24,GPTX - Development - ap-southeast-2,305
+10.82.39.0/24,gptx-bronte-data-prd us-east-1,306
+10.82.80.0/24,gptx-bronte-datapreprod-nonprd - us-east-1,307
+10.82.78.0/24,gptx-bronte-datapreprod-nonprd - us-east-1,307
+10.82.79.0/24,gptx-bronte-datapreprod-nonprd - us-east-1,307
+10.82.81.0/24,EDWA-BAU-Production-us-east1,308
+10.82.64.0/23,ITEC-BR-HYBRIS-PRD us-east-1,310
+10.251.192.0/22,gptx-enabling-services-sand-DEV us-east-1,311
+10.248.252.0/22,gptx-enabling-services-sand-DEV us-east-1,311
+10.82.66.0/23,gptx-enabling-services-sand-DEV us-east-1,311
+10.82.82.0/23,OpenVellum-V2-Production-us-east-1,312
+10.249.0.0/22,HEPORTAL-DEV - us-east-1,313
+10.246.24.0/23,OpenVellum-V2 - Development - us-east-1,313
+10.246.108.0/22,OpenVellum-V2-DEV - us-east-1,313
+10.246.26.0/23,ITEC-BR-HYBRIS- Development - us-east-1,314
+10.248.244.0/22,HEPORTAL-NONPRD us-east-1,315
+10.248.73.0/24,None,315
+10.249.65.0/24,None,315
+10.247.80.0/22,HED Enabling Services - Non-Production - us-east-1,315
+10.248.248.0/22,HEPORTAL-NONPRD us-east-1,315
+10.246.180.0/22,HED Enabling Services - Non-Production - us-east-1,315
+10.246.148.0/22,HED Enabling Services - qaint - us-east-1,315
+10.82.84.0/22,gptx-enabling-services-nonprd - us-east-1,315
+10.249.128.0/22,HEPORTAL-NONPRD us-east-1,315
+10.82.88.0/21,gptx-plp-dev-nonprd - us-east-2,316
+10.248.240.0/22,HEPORTAL-PRD us-east-1,317
+10.82.188.0/22,ov-migration-prd-us-east-1,317
+10.247.22.0/23,ITEC-BOSTONDR-CDDR01-PRD,318
+10.246.92.0/22,asmt-shipment-tracking-prd - Production - us-east-1,324
+10.246.100.0/22,asmt-shipment-tracking-nonprd - Non-production - us-east-1,325
+10.247.24.0/23,ITEC-BOSTONDR-CDDR02-PRD,326
+10.247.52.0/22,itec-bostondr - Production - us-east-1,331
+10.240.44.160/27,itec-bostondr - Production - us-east-1,331
+10.247.48.0/22,itec-bostondr-2 - Production - us-east-1,338
+10.246.160.0/21,PSO-SECURITY-PROD us-east-1,339
+10.244.156.0/23,itec-virtualclass-PRD - eu-west-1,347
+10.246.152.0/24,itec-virtualclass-PRD - us-east-1,347
+10.247.143.0/24,itec-virtualclass-PRD - us-east-1,347
+10.247.40.0/23,itec-virtualclass-PRD - us-east-1,347
+10.247.142.0/24,itec-virtualclass-DEV - us-east-1,348
+10.247.212.0/23,itec-virtualclass-DEV - us-east-1,348
+10.244.102.0/23,itec-virtualclass-DEV - eu-west-1,348
+10.246.137.0/24,itec-virtualclass-DEV - us-east-1,348
+10.247.141.0/24,itec-virtualclass-DEV - us-east-1,348
+10.246.192.0/21,GPTX-AUTOBAHN - Development - us-east-1,349
+10.246.200.0/23,gradebook-bunker-DR - Development - us-east-2,350
+10.247.20.0/23,gradebook-bunker-DR-DEV us-east-1,350
+10.246.48.0/22,HED MathXL-NONPRD - STG - us-east-1,351
+10.247.234.0/24,HED XL - Non-Production - us-east-1,351
+10.246.204.0/22,HED MathXL-NONPRD - QAINT - us-east-1,351
+10.246.216.0/22,HED MathXL-NONPRD - PERF - us-east-1,351
+10.246.248.0/22,asmt-ats -non-prod -sre-us-east1,352
+10.246.202.0/23,clinical-pearson - Production - us-east-1,353
+10.247.104.0/24,Pearson-Clinical - ca-central-1 - Production,353
+10.247.152.0/24,HED-Mastering-Non-Prd2 - Development - us-east-1,354
+10.246.220.0/22,HED-Mastering-NONPRD-2-STG,354
+10.246.224.0/22,HED-Mastering-NONPRD-2-PPE,354
+10.82.74.0/24,OBL-AADC-DEV,355
+10.240.226.0/24,OBL-AADC - Development - US East,355
+10.240.227.0/24,OBL-AADC - Production - US East,356
+10.82.75.0/24,OBL-AADC-PRD,356
+10.246.232.0/21,gptx-autobahn-west-DEV - us-west-2,357
+10.247.94.0/23,gptx-rbs-DEV - us-east-1,358
+10.247.124.0/23,GPTX-RBS-DEV,358
+10.246.240.0/23,gptx-rbs-DEV - us-east-1,358
+10.247.111.0/24,gptx-rbs-DEV - us-east-1,358
+10.246.252.0/22,GPTX-PDP-PIF - Development - us-east-1,359
+10.246.242.0/23,GPTX-RBS - Development - us-east-2,360
+10.247.114.0/24,GPTX-RBS-DEV - us-east-2,360
+10.247.96.0/21,CLS - Production - us-east-1,361
+10.247.88.0/23,gptx-PDP-PIF-PRD - us-east-1,362
+10.249.66.0/23,gptx-PDPPIF-SE-DEV us-east-1,363
+10.247.90.0/23,gptx-PDPPIF-SE-DEV - us-east-1,363
+10.249.84.0/23,gptx-pdppif-se-prd us-east-1,364
+10.247.86.0/23,gptx-pdppif-se-prd - us-east-1,364
+10.247.127.0/24,gptx-pdp-pif-nonprd - us-east-1,365
+10.247.92.0/23,gptx-pdp-pif-nonprd - us-east-1,365
+10.247.106.0/23,PDPPIF-DEV -us-east-1,365
+10.242.16.0/23,gptx-pdp-pif-nonprd - us-east-1,365
+10.247.145.0/24,EDWA - QA - us-east1,366
+10.247.105.0/24,EDWA-Mojo - QA - us-east1,366
+10.247.108.0/23,GPTX-RBS - Disaster Recovery - us-east-1,367
+10.247.110.0/25,GPTX-RBS - Sandbox-Dev - us-east-1,368
+10.247.112.0/23,GPTX-PDPPIF-SE - Pre-Prod - us-east-1,369
+10.247.150.0/23,GPTX-PDPPIF-SE-DEV - us-east-1,369
+10.249.70.0/23,gptx-pdppif-se-nonprd us-east-1,369
+10.249.82.0/23,gptx-pdppif-se-nonprd us-east-1,369
+10.249.68.0/23,gptx-pdppif-se-nonprd us-east-1,369
+10.249.80.0/23,gptx-pdppif-se-nonprd us-east-1,369
+10.247.122.0/23,gptx-rbs - Production - us-east-1,370
+10.247.116.0/22,gptx-rbs - Production - us-east-1,370
+10.247.120.0/23,Field Research - Non-Prod  - us-east-1,371
+10.242.6.0/23,gptx-lif-dev-nonprd - us-east-1,372
+10.247.128.0/22,LIFV2 - Development - us-east-1,372
+10.242.4.0/23,gptx-lif-dev-nonprd - us-east-1,372
+10.83.56.64/26,DivvyCloud-DEV,373
+10.83.219.64/26,DivvyCloud-PRD,374
+10.248.2.0/24,PCM Governator - Production - us-east-1,374
+10.247.132.0/23,gpt-etext2platform-DEV - us-east-1,375
+10.251.208.0/23,EText2Platform - Development - us-east-1,375
+10.250.144.0/24,gpt-etext2platform-DEV - us-east-1,375
+10.247.134.0/23,gptx-cite-DEV - us-east-1,376
+10.247.138.0/23,gptx-cite-nonprd-DEV - us-east-1,377
+10.247.136.0/23,gptx-cite-nonprd-DEV - us-east-1,377
+10.250.239.0/24,gptx-cite-nonprd-DEV - us-east-1,377
+10.247.204.0/23,gptx-cite-nonprd-DEV - us-east-1,377
+10.244.56.0/23,itec-jcqaao-prd eu-west-1,378
+10.244.60.0/23,itec-jcqaao-nonprd eu-west-1,379
+10.244.58.0/23,itec-jcqaao-nonprd eu-west-1,379
+10.247.144.0/24,Saltare - Production - us-east-1,380
+10.247.146.0/23,Saltare - Nonprod - us-east-1,382
+10.247.156.0/23,field-research-PRD - us-east-1,384
+10.247.154.0/23,Dynamicreporting (drs) - development,385
+10.247.160.0/23,gptx-cite-PRD - us-east-1,386
+10.247.162.0/24,Pols-bigquery- Production - us-east-1,387
+10.247.176.0/21,gptx-rvs-nonprd - us-east-1,388
+10.247.192.0/21,gptx-rvs-nonprd - us-east-2,388
+10.247.184.0/21,gptx-rvs-prd - us-east-1,389
+10.247.62.0/23,Data Centre Estate Optimisation - Bunker - us-east-1,390
+10.240.206.0/23,DCEO  Bunker - us-east-1,390
+10.247.163.0/24,DCEO TSM Backup - Bunker - us-east-1,390
+10.240.210.0/23,DCEO Bunker - us-east-1,390
+10.247.27.0/24,Data Centre Estate Optimisation - Bunker - aws-east-1,390
+10.240.208.0/23,DCEO Bunker - us-east-1,390
+10.244.112.0/20,qualspqs-nonprd eu-west-1,391
+10.247.208.0/22,gptx-autobahn-east-PRD - us-east-1,392
+10.247.220.0/22,paas-PROD - us-east-1,393
+10.247.216.0/22,dynamicreporting-PRD - us-east-1,394
+10.247.224.0/22,metis-nonprd us-east-1,395
+10.247.228.0/22,PA5 FE-NONPRD us-east-1,396
+10.87.6.0/24,itec-ssm-orchestrator-prd ap-southeast-1,397
+10.250.230.0/23,Mediaserver-nonprod - us-east-1,398
+10.248.92.0/24,Mediaserver-nonprod - us-east-1,398
+10.247.232.0/23,Mediaserver-nonprod - us-east-1,398
+10.248.94.0/23,Mediaserver-nonprod - us-east-1,398
+10.244.128.0/20,itec-dws-prod - eu-west-1,399
+10.247.44.0/22,cps-nonprod - us-east-1,406
+10.247.8.0/21,cps-nonprod - us-east-1,406
+10.247.56.0/22,cps-nonprod - us-east-1,406
+10.247.0.0/21,cps-nonprod - us-east-1,406
+10.247.16.0/22,gptx-autobahn-west-prd us-east-1,407
+10.244.144.0/21,itec-dws-nonprod - eu-west-1,408
+10.244.152.0/22,dwsquals-prd   - eu-west-1,409
+10.247.236.0/23,masteraf-prd -us-east-1,410
+10.247.238.0/23,Mediaserver - prd - us-east-1,411
+10.87.7.0/24,itec-ssm3-nonprod ap-southeast-1,412
+10.248.74.0/23,liveresponse-nonprd us-east-1,413
+10.247.235.0/24,liveresponse-nonprd us-east-1,413
+10.248.84.0/22,liveresponse-nonprd us-east-1,413
+10.248.80.0/22,liveresponse-nonprd us-east-1,413
+10.247.240.0/23,liveresponse-dev us-east-1,414
+10.247.244.0/22,asmt-ats-idc-prd - us-east-1,415
+10.249.142.0/23,console-nonprod - us-east-1,416
+10.247.248.0/24,console-nonprod - us-east-1,416
+10.249.150.0/23,console-nonprod - us-east-1,416
+10.242.142.0/23,console-nonprod - us-east-1,416
+10.247.250.0/23,console-dev - us-east-1,417
+10.247.252.0/23,oz-nonprod - us-east-1,418
+10.244.194.0/23,oz-nonprod - eu-west-1,418
+10.247.243.0/24,oz-nonprod - us-east-1,418
+10.248.226.0/23,CPG-NONPRD us-east-1,419
+10.249.110.0/23,CPG-NONPRD - us-east-1,419
+10.249.124.0/23,CPG-NONPRD - us-east-1,419
+10.247.249.0/24,CPG-NONPRD us-east-1,419
+10.247.254.0/23,CPG-DEV us-east-1,420
+10.248.1.0/24,PMC Testanator - Non-Production - us-east-1,421
+10.240.194.0/23,CONTENTSERVICES-GATEWAY-DEV -  us-east-1,422
+10.248.4.0/23,CONTENTSERVICES-GATEWAY-DEV us-east-1,422
+10.248.3.0/24,Contentservices-gateway-sand - DEV,423
+10.248.16.0/20,cps-prod - us-east-1,424
+10.248.13.0/24,ESP-NONPRD us-east-1,425
+10.250.192.0/20,ESP-NONPRD - us-east-1,425
+10.251.30.0/23,gradebook-dev- us-east-1,426
+10.248.34.0/23,gradebook-nonprod - us-east-1,426
+10.240.192.0/23,settingservices-prod - us-west-2,427
+10.240.196.0/24,iodatalake-nonprd - us-east-1,428
+10.240.197.0/24,iodatalake=prd - us-east -1,429
+10.243.150.0/23,registrarservices-nonprd - us-east-1,430
+10.248.41.0/24,registrarservices-nonprd us-east-1,430
+10.243.46.0/23,registrarservices-nonprd - us-east-1,430
+10.242.110.0/23,registrarservices-nonprd - us-east-1,430
+10.248.42.0/23,registrarservices-dev us-east-1,431
+10.248.190.0/23,registrarservices-dev us-east-1,431
+10.248.51.0/24,ABBI-NONPRD us-east-1,432
+10.248.56.0/24,ABBI-PRD us-east-1,433
+10.248.57.0/24,CIO-SLENABLINGSERVICES-DEV us-east-1,434
+10.248.58.0/23,laas-dev us-east-1,435
+10.248.192.0/22,laas-nonprd - us-east-1,436
+10.248.60.0/24,laas-nonprd us-east-1,436
+10.248.196.0/22,laas-nonprd - us-east-1,436
+10.248.200.0/22,Iaas-nonprod - us-east-1,436
+10.87.60.0/22,patchportal-sanbox - ap-southeast-1,437
+10.248.61.0/24,ORGANIZATION-SVC-NONPRD us-east-1,438
+10.242.140.0/23,ORGANIZATION-SVC-NONPRD - us-east-1,438
+10.242.138.0/23,ORGANIZATION-SVC-NONPRD us-east-1,438
+10.242.136.0/23,ORGANIZATION-SVC-NONPRD us-east-1,438
+10.248.62.0/23,ORGANIZATION-SVC-DEV us-east-1,439
+10.248.64.0/22,cops-prd us-east-1,440
+10.248.68.0/22,COPS-NONPRD us-east-1,441
+10.240.214.0/23,d2csocial-dev-nonprd - us-east-1,442
+10.242.12.0/23,d2csocial-dev-nonprd - us-east-1,442
+10.250.172.0/23,d2csocial-nonprd - us-east-1,443
+10.240.201.0/24,d2csocial-nonprd - us-east-1,443
+10.250.184.0/23,d2csocial-nonprd - us-east-1,443
+10.249.178.0/23,d2csocial-nonprd - us-east-1,443
+10.248.178.0/23,d2csocial-nonprd - us-east-1,443
+10.248.220.0/22,d2csocial-nonprd - us-east-1,443
+10.250.174.0/23,d2csocial-nonprd - us-east-1,443
+10.248.72.0/24,CIO-BRWIZME-NONPRD us-east-1,444
+10.248.76.0/22,LIVERESPONSE-PRD us-east-1,445
+10.87.64.0/22,companionwebsite-nonprd - ap-southeast-1,446
+10.87.148.0/22,companionwebsite-prd - ap-southeast-1,447
+10.87.68.0/22,companionwebsite-prd - ap-southeast-1,447
+10.87.72.0/22,coursebuilder-nonprd - ap-southeast-1,448
+10.87.76.0/22,coursebuilder-prd - ap-southeast-1,449
+10.87.80.0/22,HKES-PRD ap-southeast-1,450
+10.87.84.0/22,LEAP-PRD ap-southeast-1,451
+10.87.88.0/22,HKES-NONPRD ap-southeast-1,452
+10.87.92.0/22,LEAP-NONPRD ap-southeast-1,453
+10.87.96.0/22,OAC-nonprod - ap-southeast-1,454
+10.87.100.0/22,OAC - Prd - ap-southeasrt-1,455
+10.87.156.0/22,WORDPRESS-PRD - ap-southeast-1,456
+10.87.104.0/22,WORDPRESS-PRD ap-southeast-1,456
+10.87.108.0/22,WORDPRESS-NONPRD ap-southeast-1,457
+10.87.152.0/22,WORDPRESS-NONPRD ap-southeast-1,457
+10.87.112.0/22,EWORKFLOW-PRD ap-southeast-1,458
+10.87.116.0/22,EWORKFLOW-NONPRD ap-sotheast-1,459
+10.242.0.0/22,SPS-NonProd - us-east-1,460
+10.242.48.0/21,SPS-Prod - us-east-1,461
+10.242.18.0/23,pearsonprep-dev-nonprod - us-east-1,462
+10.243.50.0/23,pearsonprep-nonprod - us-east-1,463
+10.249.224.0/23,pearsonprep-nonprod - us-east-1,463
+10.249.52.0/23,pearsonprep-nonprod - us-east-1,463
+10.242.42.0/24,pearsonprep-nonprod - us-east-1,463
+10.248.156.0/22,TPI-DEV us-east-1,464
+10.248.160.0/22,TPI-NONPRD us-east-1,465
+10.248.168.0/21,TPI-NONPRD us-east-1,465
+10.248.224.0/24,None,465
+10.248.164.0/22,TPI-PRD us-east-1,466
+10.248.176.0/23,Courseassignsetting-DEV us-east-1,467
+10.249.90.0/23,Courseassignsetting-NONPRD - us-east-1,468
+10.242.108.0/24,Courseassignsetting-NONPRD us-east-1,468
+10.248.180.0/23,Courseassignsetting-NONPRD us-east-1,468
+10.249.88.0/23,Courseassignsetting-NONPRD - us-east-1,468
+10.250.106.0/24,Courseassignsetting-NONPRD us-east-1,468
+10.248.182.0/23,Courseassignsetting-PRD us-east-1,469
+10.250.236.0/23,d2csocial-PRD us-east-1,470
+10.248.184.0/23,d2csocial-PRD us-east-1,470
+10.248.186.0/23,Courseassignsetting-bunk-NONPRD us-east-1,471
+10.248.188.0/23,Courseassignsetting-sand-NONPRD us-east-1,472
+10.249.40.0/23,assessmentscoringsvc-nonprd - us-east-1,473
+10.242.57.0/24,assessmentscoringsvc-nonprd - us-east-1,473
+10.249.30.0/23,assessmentscoringsvc-nonprd - us-east-1,473
+10.249.42.0/23,assessmentscoringsvc-nonprd - us-east-1,473
+10.242.58.0/23,assessmentscoringsvc-dev - us-east-1,474
+10.248.204.0/22,AssessmentCapabilities-dev  us-east-1,475
+10.250.78.0/23,AssessmentCapabilities-dev us-east-1,475
+10.248.93.0/24,AssessmentCapabilities-nonprd us-east-1,476
+10.248.208.0/21,AssessmentCapabilities-nonprd us-east-1,476
+10.243.72.0/22,AssessmentCapabilities (STG) - Development - us-east-1,476
+10.242.158.0/24,AssessmentCapabilities-nonprd-us-east-1,476
+10.243.64.0/22,AssessmentCapabilities (PPE) - Development - us-east-1,476
+10.251.230.0/23,AssessmentCapabilities-nonprd us-east-1,476
+10.243.68.0/22,AssessmentCapabilities (QA) - Development - us-east-1,476
+10.251.228.0/23,AssessmentCapabilities-prd-2 - us-east-1,477
+10.248.216.0/22,AssessmentCapabilities-prd us-east-1,477
+10.243.88.0/22,AssessmentCapabilities-prd - us-east-1,477
+10.242.109.0/24,learning2work-nonprd - us-east-1,478
+10.250.107.0/24,Learning2Work - Development - us-east-2,478
+10.248.236.0/23,GPT-Mediashare-NG-PRD us-east-1,479
+10.249.98.0/24,sms-dev-nonprd - us-east-1,480
+10.243.52.0/23,sms-dev-nonprd - us-east-1,480
+10.251.151.0/24,sms-dev-nonprd - us-east-1,480
+10.242.112.0/23,sms-dev-nonprd - us-east-1,480
+10.249.87.0/24,sms-dev-nonprd - us-east-1,480
+10.249.64.0/24,sms-dev-nonprd - us-east-1,480
+10.248.234.0/23,WSOL-DEV-NONPRD us-east-1,481
+10.249.28.0/23,WSOL-DEV-NONPRD us-east-1,482
+10.249.32.0/22,WSOL-DEV-NONPRD us-east-1,482
+10.248.238.0/23,WSOL-DEV-NONPRD us-east-1,482
+10.242.114.0/24,WSOL-DEV-NONPRD us-east-1,482
+10.248.232.0/24,sas-prd us-east-1,484
+10.87.17.0/24,GWS-PUM - Development - Southeast Asia,485
+10.243.36.0/22,AWX-NONPROD - us-east-1,489
+10.243.62.0/23,3plcg-nonprd - us-east-1,490
+10.249.20.0/22,3plcg-nonprd us-east-1,490
+10.249.24.0/22,3plcg-nonprd us-east-1,490
+10.243.34.0/23,3plcg-nonprd - us-east-1,490
+10.249.16.0/22,3plcg-nonprd us-east-1,490
+10.251.80.0/24,3PLCG-DEV us-east-1,491
+10.249.4.0/22,3PLCG-DEV us-east-1,491
+10.242.78.0/23,3PLCG-DEV - us-east-1,491
+10.249.8.0/22,3PLCG-PRD us-east-1,492
+10.243.76.0/23,3PLCG-PRD - us-east-1,492
+10.87.58.0/24,GWS-PUM - Production - Southeast Asia,493
+10.243.40.0/22,engagementstudy-nonprd - us-east-1,494
+10.249.12.0/22,observepipe-nonprd us-east-1,495
+10.243.44.0/23,engagementstudy-prod - us-east-1,496
+10.251.88.0/21,AES-Nonprod - us-east-1,498
+10.243.144.0/22,AES-Nonprod - us-east-1,498
+10.87.18.0/24,HKTABLEAU-PRD - ap-southeast-1,499
+10.87.19.0/24,HKHR-PRD ap-southeast-1,500
+10.248.225.0/24,None,501
+10.251.82.0/23,LEARNINGTOOLS-DEV - us-east-1,502
+10.250.128.0/23,LEARNINGTOOLS-DEV - us-east-1,502
+10.242.115.0/24,LEARNINGTOOLS-DEV - us-east-1,502
+10.251.22.0/23,LEARNINGTOOLS-DEV - us-east-1,502
+10.249.36.0/22,wsol-prd us-east-1,503
+10.111.233.128/26,NAAS-PRD : DNSaaS VPC,504
+10.111.233.64/26,NAAS-PRD : DNSaaS VPC,504
+10.111.233.0/26,NAAS-PRD : DNSaaS VPC,504
+10.111.232.192/26,NAAS-PRD : DNSaaS VPC,504
+10.111.232.128/26,NAAS-PRD : DNSaaS VPC,504
+10.111.232.64/26,NAAS-PRD : DNSaaS VPC,504
+10.111.232.0/26,NAAS-PRD : DNSaaS VPC,504
+10.87.120.0/22,AOT-NONPROD - ap-southeast-1,505
+10.87.124.0/22,AOT-PROD - ap-southeast-1,506
+10.243.148.0/23,assessmentscoringsvc-prd - us-east-1,507
+10.249.56.0/22,ioclouden-nonprd us-east-1,508
+10.251.84.0/22,AES - PROD - us-east-1,509
+10.249.54.0/23,AES - PROD - us-east-1,509
+10.248.233.0/24,AES-DEV-Nonprd - us-east-1,510
+10.251.72.0/22,AES-DEV-Nonprd - us-east-1,510
+10.242.70.0/24,AES-DEV-Nonprd - us-east-1,510
+10.249.60.0/22,lass-prd us-east-1,511
+10.249.72.0/21,OBSERVEPIPE-PRD - us-east-1,512
+10.244.166.0/23,INFORMATICA-ETL-SAND - europe-west2,513
+10.87.128.0/23,INFORMATICA-ETL-SAND-australia-southeast1,513
+10.249.92.0/23,INFORMATICA-ETL-SAND - us-west1,513
+10.87.130.0/23,INFORMATICA-ETL-PRD - australia-southeast1,514
+10.249.94.0/23,INFORMATICA-ETL-PRD -us-west1,514
+10.244.168.0/23,INFORMATICA-ETL-PRD - europe-west2,514
+10.249.181.0/24,INFORMATICA-ETL-NONPRD - us-west1,515
+10.87.132.0/23,INFORMATICA-ETL-NONPRD - australia-southeast1,515
+10.249.96.0/23,INFORMATICA-ETL-NONPRD - us-west1,515
+10.244.179.0/24,INFORMATICA-ETL-NONPRD - europe-west2,515
+10.87.59.0/24,INFORMATICA-ETL-NONPRD - australia-southeast1,515
+10.244.170.0/23,INFORMATICA-ETL-NONPRD - europe-west2,515
+10.249.99.0/24,EDW-Datalake - Production - us-east4,516
+10.249.104.0/24,CISOAPIGateway - us-east-2,517
+10.243.54.0/23,SMS-Prod - us-east-1,518
+10.249.108.0/23,SMS-Prod - us-east-1,518
+10.251.162.0/23,SMS - Production - us-east-1,518
+10.249.105.0/24,SMS-NonProd - us-east-1,519
+10.251.196.0/23,SMS (PPE) - Non-Production - us-east-1,519
+10.251.164.0/24,SMS (CICD) - Non-Production - us-east-1,519
+10.249.106.0/23,SMS-NonProd - us-east-1,519
+10.251.160.0/23,SMS (QAINT) - Development - us-east-1,519
+10.249.226.0/23,SMS-NonProd - us-east-1,519
+10.249.112.0/21,DigitalExhaust-Prd - us-east-1,520
+10.249.120.0/22,AWX-PRD - us-east-1,521
+10.87.136.0/22,INDIACLINICAL-Nonprd - ap-southeast-1,522
+10.87.140.0/22,INDIACLINICAL-PRD - ap-southeast-1,523
+10.249.126.0/23,SOCKETPDP-DEV-Nonprd - us-east-1,524
+10.249.136.0/24,SOCKETPDP-Nonprd - us-east-1,525
+10.250.24.0/23,GPT-VEE-DEV-NONPRD us-east-1,526
+10.249.140.0/23,vee-dev-nonprd us-east-1,526
+10.250.16.0/23,vee-dev-nonprd us-east-1,526
+10.249.144.0/23,organization-svc-prd - us-east-1,527
+10.249.146.0/23,registrarservices-prd us-east-1,528
+10.249.148.0/24,PCDL-nonprd us-east-2,529
+10.249.149.0/24,PCDL-prd us-east-2,530
+10.249.152.0/22,srw-prd us-east-1,531
+10.87.176.0/22,srw-prd ap-southeast-1,531
+10.87.180.0/22,srw-nonprd - ap-southeast-1,532
+10.249.156.0/22,srw-nonprd us-east-1,532
+10.249.160.0/23,CPG - PROD - us-east-1,533
+10.244.174.0/25,CIOORACLESUPPORT-PRD- eu-west-1,534
+10.251.202.0/23,learningtools-prd us-east-1,535
+10.249.162.0/24,LEARNINGTOOLS-PROD - us-east-1,535
+10.250.126.0/23,LEARNINGTOOLS-PROD - us-east-1,535
+10.249.192.0/23,itec-pearsonauthoringframework-nonprd - us-east-1,536
+10.250.145.0/24,itec-pearsonauthoringframework-nonprd - us-east-1,536
+10.249.184.0/21,itec-pearsonauthoringframework-nonprd - us-east-1,536
+10.244.175.0/24,TURKEY-ERP-DR - azre1,537
+10.244.176.0/24,TURKEY-ERP - DEV - azre1,538
+10.244.177.0/24,TURKEY-ERP-PRD - azre1,539
+10.249.166.0/24,MACD- PRD - us-east-1,540
+10.249.176.0/23,console-prod - us-east-1,541
+10.249.194.0/23,itec-pearsonauthoringframework-prd - us-east-1,542
+10.249.168.0/23,pearsonprep-prd us-east-1,543
+10.249.170.0/23,productization-nonprd - us-east-1,544
+10.244.180.0/22,CIO-HNG-PRD eu-west-1,545
+10.249.180.0/24,Forensics-prd us-east-1,546
+10.244.178.0/24,Forensics-prd eu-west-1,546
+10.249.196.0/23,PRODUCTIZATION-PRD - us-east-1,547
+10.249.182.0/23,PRODUCTIZATION-DEV-NONPRD - us-east-1,548
+10.249.198.0/24,Brwiz-legacy-PRD us-east-1,549
+10.249.199.0/24,POLS-PlanningApps-PRD us-east-1,550
+10.249.208.0/21,PLAMLE-NONPRD  us-east-1,551
+10.249.216.0/22,PLAMLE-PROD us-east-1,552
+10.249.206.0/23,gpt-enterpriseeds-prod - us-east-1,553
+10.249.220.0/23,gpt-enterpriseeds-prod - us-east-1,554
+10.249.228.0/22,SACORESERV-NONPRD - us-east-1,555
+10.87.134.0/24,VUETOKYOFILSRV-PRD - ap-southeast-1,556
+10.249.232.0/22,SACORESERV-PRD us-east-1,557
+10.249.236.0/23,SACORESERV-SAND-DEV us-east-1,558
+10.250.120.0/23,HEDEXCHANGE-NONPRD - us-east-1,559
+10.249.242.0/23,HEDEXCHANGE-NONPRD us-east-1,559
+10.250.122.0/23,HEDEXCHANGE-PRD - us-east-1,560
+10.249.248.0/23,HEDEXCHANGE-PRD us-east-1,560
+10.249.252.0/22,RGWS-PRD us-east-1,561
+10.250.0.0/22,RGWS - NonPRD - us-east-1,562
+10.250.4.0/22,eSTYLE-PROD - us-east-1,563
+10.244.184.0/22,ECTA-PROD - eu-west-1,564
+10.244.188.0/22,ECTA-NONPRD eu-west-1,565
+10.250.12.0/23,HEDEXCHANGE-DEV us-east-1,566
+10.250.124.0/23,HEDEXCHANGE-DEV - us-east-1,566
+10.243.115.0/24,NBPTS-NONPRD - us-east-1,567
+10.250.112.0/22,NBPTS-NONPRD us-east-1,567
+10.87.135.0/24,NBPTS-NONPRD ap-southeast-1,567
+10.87.144.0/24,NBPTS-PRD ap-southeast-1,568
+10.243.116.0/24,NBPTS-PRD - us-east-1,568
+10.250.108.0/22,NBPTS-PRD us-east-1,568
+10.250.18.0/23,ASCEND-PRD us-east-1,569
+10.250.20.0/22,ASCEND-NONPRD us-east-1,570
+10.250.40.0/22,GPTX-XL-SAND-DEV us-east-1,571
+10.242.32.0/22,MathXL - Sandbox - us-east-1,571
+10.250.44.0/22,TMS-PROD - us-east-1,572
+10.250.30.0/23,ENTERPRISEEDS-DEV-NONPRD us-east-1,573
+10.250.48.0/23,statcrunch-dev us-east-1,574
+10.250.50.0/23,statcrunch-prd us-east-1,575
+10.250.52.0/23,statcrunch-nonprd us-east-1,576
+10.244.200.0/22,POLS-DACH-WEBSHOP-NONPRD - eu-west-1,577
+10.244.204.0/22,POLS-DACH-WEBSHOP-PRD - eu-west-1,578
+10.250.58.0/23,etext2collections-dev us-east-1,579
+10.250.60.0/22,ate-io-product82-PRD us-east-1,580
+10.250.64.0/23,hecart-dev us-east-1,581
+10.250.138.0/23,HECART-DEV - us-east-1,581
+10.250.140.0/23,HECART-NONPROD - us-east-1,582
+10.250.66.0/23,hecart-nonprd us-east-1,582
+10.250.68.0/23,hecart-prd us-east-1,583
+10.250.142.0/23,HECART-PRD - us-east-1,583
+10.87.145.0/24,awsbackup-sg4-prd ap-southeast-1,584
+10.242.14.0/24,CAPACITYDASHBOARD-prd - us-east-1,585
+10.250.214.0/23,CAPACITYDASHBOARD-prd - us-east-1,585
+10.242.144.0/23,PLA-VIZARDS-PRD - us-east-1,586
+10.242.148.0/22,PLA-VIZARDS-NONPRD - us-east-1,587
+10.251.21.0/24,PLA-VIZARDS-NONPRD - us-east-1,587
+10.242.15.0/24,PLA-VIZARDS-DEV-NONPRD - us-east-1,588
+10.250.250.0/24,PLA-ODYSSEY-PRD - us-east-1,589
+10.242.146.0/23,PLA-ODYSSEY-PRD - us-east-1,589
+10.251.16.0/22,PLA-ODYSSEY-NON-PROD - us-east-1,590
+10.242.152.0/22,PLA-ODYSSEY-NON-PROD - us-east-1,590
+10.242.156.0/24,PLA-ODYSSEY-DEV-NONPROD - us-east-1,591
+10.250.243.0/24,PLA-ODYSSEY-DEV-NONPROD - us-east-1,591
+10.243.56.0/22,TRISUL-PROD - us-east-1,592
+10.242.160.0/22,TRISUL-NONPROD - us-east-1,593
+10.242.157.0/24,TRISUL-DEV-NONPROD - us-east-1,594
+10.242.164.0/23,PLA-ENGIMA-PROD - us-east-1,595
+10.242.168.0/22,PLA-ENGIMA-NONPROD - us-east-1,596
+10.242.166.0/24,PLA-ENGIMA-DEV-NONPROD - us-east-1,597
+10.250.70.0/23,mediashare-nonprd us-east-1,598
+10.250.136.0/23,mediashare-nonprd - us-east-1,598
+10.250.134.0/23,mediashare-prd - us-east-1,599
+10.250.72.0/23,mediashare-prd us-east-1,599
+10.250.132.0/23,mediashare-dev us-east-1,600
+10.250.74.0/23,mediashare-dev us-east-1,600
+10.250.76.0/23,learningtools-nonprd us-east-1,601
+10.251.182.0/23,learningtools-qa-nonprd us-east-1,601
+10.251.200.0/23,learningtools-stg-nonprd us-east-1,601
+10.250.130.0/23,learningtools-nonprd - us-east-1,601
+10.251.198.0/23,learningtools-ppe-nonprd us-east-1,601
+10.251.20.0/24,learningtools-nonprd - us-east-1,601
+10.87.160.0/22,itec-ums-prd ap-southeast-1,602
+10.243.60.0/24,PLAOPERATIONS-NONPRD - us-east-1,603
+10.250.84.0/22,perspective-prd us-east-1,604
+10.250.80.0/22,PERSPECTIVE-NONPROD - us-east-1,605
+10.250.96.0/22,Release-Engineering-nonprd - us-east-1,606
+10.250.100.0/22,Release Engineering-Prd - us-east-1,607
+10.250.90.0/23,mediashare-sand-nonprd,608
+10.244.216.0/22,pols-cms-and-application-portal-nonprd eu-west-1,609
+10.244.220.0/22,pols-cms-and-application-portal-prd eu-west-1,610
+10.250.116.0/22,tosca-automation-prd us-east-1,611
+10.251.212.0/22,pla-everest-prd us-east-1,612
+10.251.216.0/21,pla-everest-nonprd us-east-1,613
+10.251.224.0/22,pla-everest-dev-nonprd  us-east-1,614
+10.250.152.0/22,peacs-nonprd us-east-1,615
+10.250.156.0/22,XPRT-NONPROD - us-east-1,616
+10.250.160.0/22,XPRT-PROD - us-east-1,617
+10.242.124.128/25,LIVERESPONSE-SANDBOX - us-east-1,618
+10.250.164.0/23,MEDIASERVER-BUNK - us-east-1,619
+10.244.224.0/23,ContentMLresearch-sand - eu-west-1,620
+10.250.168.0/22,SWC-AppStream - Development - us-east-1,621
+10.250.167.0/24,ATE-IO-PRODUCT71 - us-east-1,622
+10.250.186.0/24,ate-io-product110 us-east-1,623
+10.250.212.0/23,Capacitydashboard-Nonprod - us-east-1,624
+10.250.187.0/24,Capacitydashboard-Nonprod - us-east-1,624
+10.250.188.0/24,PLA-FRONTLINER-DEVNONPROD - us-east-1,625
+10.250.208.0/22,PLA-FRONTLINER-NONPROD - us-east-1,626
+10.250.190.0/23,PLA-FrontLiner-Prod - us-east-1,627
+10.250.216.0/22,TMS-NONPROD - us-east-1,628
+10.250.220.0/22,Understand Scoring PRD us-east-1,629
+10.250.224.0/22,Understand Scoring TX NONPRD us-east-1,630
+10.250.189.0/24,CIO EPS-nonprod us-east-1,631
+10.250.228.0/24,polsplanningapps-nonprd us-east-1,632
+10.250.232.0/22,asmt-pass-prd us-east-1,633
+10.244.226.0/23,Network-Services  - POC - eu-west-1,634
+10.244.228.0/22,mflvocabgames-nonprd - eu-west-1,635
+10.244.232.0/22,mflvocabgames-prd - eu-west-1,636
+10.250.238.0/24,polstranscriptprocessng-nonprd us-east-4,637
+10.250.244.0/22,peacs-prd us-east-1,638
+10.250.248.0/23,GPTX-NOTIFICATIONSAPI-NONPRD - us-east-1,639
+10.87.184.0/24,SSMDR-NONPROD - ap-southeast-1,640
+10.87.185.0/24,PEARSONPTE-PRD - ap-southeast-1,641
+10.245.48.0/24,PCN-Nutanix-POC-DR - Development - eu-west-2,643
+10.244.237.0/24,PCN-Nutanix-POC-DR - Development - eu-west-2,643
+10.245.31.0/24,PCN-Nutanix-DEV - eu-west-1,643
+10.84.124.0/25,GBI-UK - Development - europe-west1,644
+10.244.238.0/24,GBI-UK - Development - europe-west1,644
+10.242.8.0/22,OSCAR-NONPROD - us-east-1,645
+10.244.240.0/22,OSCAR-NONPROD - eu-west-1,645
+10.244.244.0/22,OSCAR-PROD - eu-west-1,646
+10.242.44.0/22,OSCAR-PROD - us-east-1,646
+10.244.239.0/24,edwhr-prd europe-west2,647
+10.87.188.0/22,HKLONGMANPLUS-PRD - ap-southeast-1,648
+10.242.64.0/24,AdaptiveContentandUI-SAND - us-east-1,649
+10.242.65.0/24,AdaptiveContentandUI- bunk - us-east-1,650
+10.251.132.0/23,AdaptiveContentandUI-dev-NonPrd 2 - us-east-1,651
+10.251.136.0/21,AdaptiveContentandUI-dev-NonPrd 4 - us-east-1,651
+10.251.134.0/23,AdaptiveContentandUI-dev-NonPrd 3 - us-east-1,651
+10.242.66.0/24,AdaptiveContentandUI-dev-NonPrd - us-east-1,651
+10.242.72.0/22,AdaptiveContentandUI-Nonprd - us-east-1,652
+10.242.68.0/24,AdaptieandContentandUI-REC - us-east-1,653
+10.242.76.0/23,AdaptiveContentandUI-PRD - us-east-1,654
+10.251.144.0/22,AdaptiveContentandUI-PRD 2- us-east-1,654
+10.250.252.0/22,ate-io-product70 us-east-1,655
+10.244.251.0/24,uk-opm-dev europe-west-2,656
+10.244.252.0/24,uk-opm-qa europe-west-2,657
+10.244.253.0/24,SPAINMARKETINGWEBSITE-NONPROD - eu-west-1,658
+10.244.254.0/24,SPAINMARKETINGWEBSITE-PROD - eu-wes-1,659
+10.242.80.0/22,asmt-spolight-davis-nonprd - us-east-1,660
+10.242.84.0/22,SRC-REC - us-east-1,661
+10.242.67.0/24,BRUC-NONPROD - us-east-1,662
+10.242.69.0/24,BRPORTALPARCERIAS-NONPROD - us-east-1,663
+10.87.186.0/23,AUSCHOOLS-DEV-NONPRD - ap-southeast-1,664
+10.87.192.0/23,AUSCHOOLS-NONPRD - ap-southeast-2,665
+10.87.194.0/23,AUSCHOOLS-PRD - ap-southeast-2,666
+10.251.24.0/24,polstranscriptprocessing-prd us-east4,667
+10.251.25.0/24,asmt-clinical-sand-nonprd us-east-1,668
+10.251.26.0/24,customerprofile-dev-nonprd us-east-1,669
+10.251.48.0/21,customerprofile-nonprd us-east-1,670
+10.242.88.0/21,BACKSTAGE-NONPRD - us-east-1,671
+10.243.80.0/21,BACKSTAGE-PRD - us-east-1,672
+10.251.27.0/24,INTERNAL-AUDIT-PRD us-east-1,673
+10.251.28.0/24,pearson-de-sit- us-east-1,674
+10.243.119.0/24,evalsystemstest-nonprd - us-east-1,675
+10.243.78.0/23,evalsystemstest-nonprd - us-east-1,675
+10.240.224.0/24,BVECommerce - Production - us-east-1,676
+10.240.225.0/24,PortalDoFornecedor - Development - us-east-1,677
+10.240.230.0/24,ESBSAP - Development - us-east-1,678
+10.240.231.0/24,ESBSAP - Production - us-east-1,679
+10.243.92.0/24,Adpinter - Development - us-east-1,680
+10.243.93.0/24,PortalDoFornecedor - Production - us-east-1,681
+10.242.71.0/24,BVEcommerce - Development - us-east-1,682
+10.243.61.0/24,Adpinter - Production - us-east-1,683
+10.251.29.0/24,UC - Production - us-east-1,684
+10.243.94.0/24,TechNow-PRD - us-east-1,685
+10.243.95.0/24,TechNow-Dev - us-east-1,686
+10.243.96.0/24,TechNow-Bunk - us-east-1,687
+10.243.97.0/24,Trackingdepedidos-PRD - us-east-1,688
+10.243.98.0/24,Trackingdepedidos-PRD - us-east-1,689
+10.243.99.0/24,SAP-NonProduction - us-east-1,690
+10.243.100.0/24,SAP-Production - us-east-1,691
+10.243.101.0/24,Etlnovo-NonProd - us-east-1,692
+10.243.102.0/24,Etlnovo-Prodution - us-east-1,693
+10.243.103.0/24,Mastersaf-NonProd - us-east-1,694
+10.243.104.0/24,Mastersaf-PRD - us-east-1,695
+10.243.105.0/24,Adpinter-bunk - us-east-1,696
+10.243.108.0/24,Salavirtual-bunk - us-east-1,697
+10.243.106.0/24,Salavirtual-NonProd - us-east-1,698
+10.243.107.0/24,Salavirtual-PRD - us-east-1,699
+10.243.109.0/24,Portaldofornecedor-bunk - u-east-1,700
+10.243.110.0/24,EcommerceFranquais - Nonprod - us-east-1,701
+10.243.111.0/24,ElllegacyApps - NonProd - us-east-1,702
+10.251.112.0/23,ConnexusV2 Test (current) - Development - us-east-1,703
+10.251.114.0/23,ConnexusV2 Test - Development - us-east-1,704
+10.251.116.0/23,ConnexusV2 Demo - Production - us-east-1,705
+10.251.96.0/20,ConnexusV2 - Production - us-east-1,706
+10.251.118.0/23,ConnexusV2 Services - Production - us-east-1,707
+10.251.120.0/23,ConnexusV2 BPT - Development - us-east-1,708
+10.251.122.0/23,ConnexusV2 Integration - Development - us-east-1,709
+10.251.124.0/23,ConnexusV2 - POC - us-east-1,710
+10.243.113.0/24,brsgc-prd us-east-1,711
+10.243.114.0/24,BRSGC-NONPRD us-east-1,712
+10.243.117.0/24,Ecommercefranquias-PRD - us-east-1,714
+10.243.118.0/24,ElllegacyApps - Prod - us-east-1,715
+10.251.126.0/24,ELL-MinhasFranquias - Development - us-east-1,716
+10.245.16.0/22,PTEG-PRD - Production - eu-west-1,717
+10.251.127.0/24,ELL-MinhasFranquias - Production - us-east-1,718
+10.245.20.0/22,Active-Learn-PRD eu-west-1,720
+10.245.24.0/22,polsestage-nonprd europe-west2,721
+10.245.28.0/24,dacatalyst-nonprd europe-west2,722
+10.251.148.0/24,"dacatalyst-nonprd 	us-east1",722
+10.245.29.0/24,dacatalyst-prd europe-west2,723
+10.251.149.0/24,dacatalyst-prd us-central1,723
+10.251.152.0/22,pals-prd-us-east-1,724
+10.251.150.0/24,dacatalyst-sand us-central1,725
+10.245.30.0/24,dacatalyst-sand europe-west2,725
+10.251.156.0/22,pals-nonprd-us-east-1,726
+10.168.216.0/21,EO-UK1-DR - AWSE2,728
+10.245.49.0/24,polsestage-prd europe-west2,729
+10.243.124.0/22,PDL-DEV-NONPRD - us-east-1,730
+10.251.168.0/21,PDL-NONPRD - us-east-1,731
+10.251.176.0/22,PDL-PRD - us-east-1,732
+10.249.250.0/23,ClassicXL-Dev-NonPRD - us-east-1,733
+10.243.121.0/24,ClassicXL-NonPRD-runner - us-east-1,734
+10.251.180.0/23,ClassicXL-NonPRD-ppe - us-east-1,734
+10.251.184.0/22,ClassicXL-NonPRD - us-east-1,734
+10.251.166.0/23,ClassicXL-NonPRD-qa-int - us-east-1,734
+10.251.188.0/22,ClassicXL-PRD - us-east-1,735
+10.251.210.0/23,qglobalfedramp-nonprd us-east-1,736
+10.250.148.0/22,customerprofile-prd us-east-1,737
+10.250.146.0/24,customerprofile-sand us-east-1,738
