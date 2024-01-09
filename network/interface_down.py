@@ -23,7 +23,7 @@ remote.send("show interface description | exc up\n")
 time.sleep(5)
 interface = remote.recv(10000)
 #print((interface).decode('ascii'))
-pattern = re.compile('[A-Z].\d\/\d\/\d.|[A-Z].\d\/\d|[A-Z].\d ')
+pattern = re.compile('[A-Z].\d\/\d\/\d.|[A-Z].\d\/\d|[A-Z].\d ') # need to define better regex match
 index = pattern.findall((interface).decode('ascii'))
 for int in index:
     print(int)
