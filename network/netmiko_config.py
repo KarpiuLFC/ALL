@@ -35,7 +35,7 @@ for device in all_devices:
     try:
         net_connect = ConnectHandler(**device) # create a netmiko ConnectHandler object
         net_connect.enable()
-        config_commands = ['vlan 200' , 'name vlan_200'] # netmiko config_commands
+        config_commands = ['no vlan 200'] # netmiko config_commands
         net_connect.send_config_set(config_commands) # send netmiko send_config_set
         time.sleep(3)
         output = net_connect.send_command("show vlan brief | inc vlan_200")# send a show command to
