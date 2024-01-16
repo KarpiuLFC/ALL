@@ -1,0 +1,1 @@
+dlaczego, kurwa dlaczego?
