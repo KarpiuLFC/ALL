@@ -1,1 +1,1 @@
-dlaczego, kurwa dlaczego?
+GNS Demo
