@@ -1,3 +1,4 @@
+# 0
 - action: update
   record_type: txt
   record_name: Record Name
@@ -6,6 +7,7 @@
   new_record_name: Record Name
   new_text: New Value
 
+# 1
 - action: update
   record_type: txt
   record_name: ciscopress.com
@@ -14,6 +16,7 @@
   new_record_name: ciscopress.com
   new_text: v=spf1 include:_spf.ciscopress_com._d.easydmarc.pro ~all
 
+# 2
 - action: update
   record_type: txt
   record_name: collegeplus.org
@@ -22,6 +25,7 @@
   new_record_name: collegeplus.org
   new_text: v=spf1 include:_spf.collegeplus_org._d.easydmarc.pro ~all
 
+# 3
 - action: update
   record_type: txt
   record_name: cti.co.za
@@ -30,6 +34,7 @@
   new_record_name: cti.co.za
   new_text: v=spf1 include:_spf.cti_co_za._d.easydmarc.pro ~all
 
+# 4
 - action: update
   record_type: txt
   record_name: ecpa.fr
@@ -38,6 +43,7 @@
   new_record_name: ecpa.fr
   new_text: v=spf1 include:_spf.ecpa_fr._d.easydmarc.pro ~all
 
+# 5
 - action: update
   record_type: txt
   record_name: edexcel.com
@@ -46,6 +52,7 @@
   new_record_name: edexcel.com
   new_text: v=spf1 include:_spf.edexcel_com._d.easydmarc.pro ~all
 
+# 6
 - action: update
   record_type: txt
   record_name: edexcel.org.uk
@@ -54,6 +61,7 @@
   new_record_name: edexcel.org.uk
   new_text: v=spf1 include:_spf.edexcel_org.uk._d.easydmarc.pro ~all
 
+# 7
 - action: update
   record_type: txt
   record_name: ediplc.com
@@ -62,6 +70,7 @@
   new_record_name: ediplc.com
   new_text: v=spf1 include:_spf.ediplc_com._d.easydmarc.pro ~all
 
+# 8
 - action: update
   record_type: txt
   record_name: Lumerit.com
@@ -70,6 +79,7 @@
   new_record_name: Lumerit.com
   new_text: v=spf1 include:_spf.Lumerit_com._d.easydmarc.pro ~all
 
+# 9
 - action: update
   record_type: txt
   record_name: mathology.ca
@@ -78,6 +88,7 @@
   new_record_name: mathology.ca
   new_text: v=spf1 include:_spf.mathology_ca._d.easydmarc.pro ~all
 
+# 10
 - action: update
   record_type: txt
   record_name: microsoftpressstore.com
@@ -86,6 +97,7 @@
   new_record_name: microsoftpressstore.com
   new_text: v=spf1 include:_spf.microsoftpressstore_com._d.easydmarc.pro ~all
 
+# 11
 - action: update
   record_type: txt
   record_name: pearson.ch
@@ -94,6 +106,7 @@
   new_record_name: pearson.ch
   new_text: v=spf1 include:_spf.pearson_ch._d.easydmarc.pro ~all
 
+# 12
 - action: update
   record_type: txt
   record_name: pearson.com
@@ -102,6 +115,7 @@
   new_record_name: pearson.com
   new_text: v=spf1 include:_spf.pearson_com._d.easydmarc.pro ~all
 
+# 13
 - action: update
   record_type: txt
   record_name: pearson.de
@@ -110,6 +124,7 @@
   new_record_name: pearson.de
   new_text: v=spf1 include:_spf.pearson_de._d.easydmarc.pro ~all
 
+# 14
 - action: update
   record_type: txt
   record_name: pearson.vc
@@ -118,6 +133,7 @@
   new_record_name: pearson.vc
   new_text: v=spf1 include:_spf.pearson_vc._d.easydmarc.pro ~all
 
+# 15
 - action: update
   record_type: txt
   record_name: pearsonacademy.com.au
@@ -126,6 +142,7 @@
   new_record_name: pearsonacademy.com.au
   new_text: v=spf1 include:_spf.pearsonacademy_com.au._d.easydmarc.pro ~all
 
+# 16
 - action: update
   record_type: txt
   record_name: pearsonactivelearn.com
@@ -134,6 +151,7 @@
   new_record_name: pearsonactivelearn.com
   new_text: v=spf1 include:_spf.pearsonactivelearn_com._d.easydmarc.pro ~all
 
+# 17
 - action: update
   record_type: txt
   record_name: pearsoncanada.com
@@ -142,6 +160,7 @@
   new_record_name: pearsoncanada.com
   new_text: v=spf1 include:_spf.pearsoncanada_com._d.easydmarc.pro ~all
 
+# 18
 - action: update
   record_type: txt
   record_name: pearsonclinical.asia
@@ -150,6 +169,7 @@
   new_record_name: pearsonclinical.asia
   new_text: v=spf1 include:_spf.pearsonclinical_asia._d.easydmarc.pro ~all
 
+# 19
 - action: update
   record_type: txt
   record_name: pearsonclinical.co.uk
@@ -158,6 +178,7 @@
   new_record_name: pearsonclinical.co.uk
   new_text: v=spf1 include:_spf.pearsonclinical_co_uk._d.easydmarc.pro ~all
 
+# 20
 - action: update
   record_type: txt
   record_name: pearsonclinical.in
@@ -166,6 +187,7 @@
   new_record_name: pearsonclinical.in
   new_text: v=spf1 include:_spf.pearsonclinical_in._d.easydmarc.pro ~all
 
+# 21
 - action: update
   record_type: txt
   record_name: pearsoncustom.com
@@ -174,6 +196,7 @@
   new_record_name: pearsoncustom.com
   new_text: v=spf1 include:_spf.pearsoncustom_com._d.easydmarc.pro ~all
 
+# 22
 - action: update
   record_type: txt
   record_name: pearsoned.com
@@ -182,6 +205,7 @@
   new_record_name: pearsoned.com
   new_text: v=spf1 include:_spf.pearsoned_com._d.easydmarc.pro ~all
 
+# 23
 - action: update
   record_type: txt
   record_name: pearsoned.com.au
@@ -190,6 +214,7 @@
   new_record_name: pearsoned.com.au
   new_text: v=spf1 include:_spf.pearsoned_com.au._d.easydmarc.pro ~all
 
+# 24
 - action: update
   record_type: txt
   record_name: pearsoned-ema.com
@@ -198,6 +223,7 @@
   new_record_name: pearsoned-ema.com
   new_text: v=spf1 include:_spf.pearsoned-ema_com._d.easydmarc.pro ~all
 
+# 25
 - action: update
   record_type: txt
   record_name: pearsonelt.ca
@@ -206,6 +232,7 @@
   new_record_name: pearsonelt.ca
   new_text: v=spf1 include:_spf.pearsonelt_ca._d.easydmarc.pro ~all
 
+# 26
 - action: update
   record_type: txt
   record_name: pearsonerpi.com
@@ -214,6 +241,7 @@
   new_record_name: pearsonerpi.com
   new_text: v=spf1 include:_spf.pearsonerpi_com._d.easydmarc.pro ~all
 
+# 27
 - action: update
   record_type: txt
   record_name: pearson-inc.com
@@ -222,6 +250,7 @@
   new_record_name: pearson-inc.com
   new_text: v=spf1 include:_spf.pearson-inc_com._d.easydmarc.pro ~all
 
+# 28
 - action: update
   record_type: txt
   record_name: pearsontc.com
@@ -230,6 +259,7 @@
   new_record_name: pearsontc.com
   new_text: v=spf1 include:_spf.pearsontc_com._d.easydmarc.pro ~all
 
+# 29
 - action: update
   record_type: txt
   record_name: smarthinking.com
@@ -238,6 +268,7 @@
   new_record_name: smarthinking.com
   new_text: v=spf1 include:_spf.smarthinking_com._d.easydmarc.pro ~all
 
+# 30
 - action: update
   record_type: txt
   record_name: talentlens.co.uk
@@ -246,6 +277,7 @@
   new_record_name: talentlens.co.uk
   new_text: v=spf1 include:_spf.talentlens_co_uk._d.easydmarc.pro ~all
 
+# 31
 - action: update
   record_type: txt
   record_name: prod.pearson.com
@@ -254,6 +286,7 @@
   new_record_name: prod.pearson.com
   new_text: v=spf1 include:_spf.prod.pearson_com._d.easydmarc.pro ~all
 
+# 32
 - action: update
   record_type: txt
   record_name: canada.pearson.com
@@ -262,6 +295,7 @@
   new_record_name: canada.pearson.com
   new_text: v=spf1 include:_spf.canada.pearson_com._d.easydmarc.pro ~all
 
+# 33
 - action: update
   record_type: txt
   record_name: alerts.pearson.com
@@ -270,6 +304,7 @@
   new_record_name: alerts.pearson.com
   new_text: v=spf1 include:_spf.alerts.pearson_com._d.easydmarc.pro ~all
 
+# 34
 - action: update
   record_type: txt
   record_name: eu.pearson.com
@@ -278,6 +313,7 @@
   new_record_name: eu.pearson.com
   new_text: v=spf1 include:_spf.eu.pearson_com._d.easydmarc.pro ~all
 
+# 35
 - action: update
   record_type: txt
   record_name: support.pearson.com
@@ -286,6 +322,7 @@
   new_record_name: support.pearson.com
   new_text: v=spf1 include:_spf.support.pearson_com._d.easydmarc.pro ~all
 
+# 36
 - action: update
   record_type: txt
   record_name: feedback.pearson.com
@@ -294,6 +331,7 @@
   new_record_name: feedback.pearson.com
   new_text: v=spf1 include:_spf.feedback.pearson_com._d.easydmarc.pro ~all
 
+# 37
 - action: update
   record_type: txt
   record_name: services.pearson.com
@@ -302,6 +340,7 @@
   new_record_name: services.pearson.com
   new_text: v=spf1 include:_spf.services.pearson_com._d.easydmarc.pro ~all
 
+# 38
 - action: update
   record_type: txt
   record_name: grp.pearson.com
@@ -310,6 +349,7 @@
   new_record_name: grp.pearson.com
   new_text: v=spf1 include:_spf.grp.pearson_com._d.easydmarc.pro ~all
 
+# 39
 - action: update
   record_type: txt
   record_name: marketing.pearson.com
@@ -318,6 +358,7 @@
   new_record_name: marketing.pearson.com
   new_text: v=spf1 include:_spf.marketing.pearson_com._d.easydmarc.pro ~all
 
+# 40
 - action: update
   record_type: txt
   record_name: anz.pearson.com
@@ -326,6 +367,7 @@
   new_record_name: anz.pearson.com
   new_text: v=spf1 include:_spf.anz.pearson_com._d.easydmarc.pro ~all
 
+# 41
 - action: update
   record_type: txt
   record_name: sales.pearson.com
@@ -334,6 +376,7 @@
   new_record_name: sales.pearson.com
   new_text: v=spf1 include:_spf.sales.pearson_com._d.easydmarc.pro ~all
 
+# 42
 - action: update
   record_type: txt
   record_name: uk.mail.pearson.com
@@ -342,6 +385,7 @@
   new_record_name: uk.mail.pearson.com
   new_text: v=spf1 include:_spf.uk.mail.pearson_com._d.easydmarc.pro ~all
 
+# 43
 - action: update
   record_type: txt
   record_name: accelerated.pearson.com
@@ -350,6 +394,7 @@
   new_record_name: accelerated.pearson.com
   new_text: v=spf1 include:_spf.accelerated.pearson_com._d.easydmarc.pro ~all
 
+# 44
 - action: update
   record_type: txt
   record_name: brasil.pearson.com
@@ -358,6 +403,7 @@
   new_record_name: brasil.pearson.com
   new_text: v=spf1 include:_spf.brasil.pearson_com._d.easydmarc.pro ~all
 
+# 45
 - action: update
   record_type: txt
   record_name: gr.pearson.com
@@ -366,6 +412,7 @@
   new_record_name: gr.pearson.com
   new_text: v=spf1 include:_spf.gr.pearson_com._d.easydmarc.pro ~all
 
+# 46
 - action: update
   record_type: txt
   record_name: innerview.pearson.com
@@ -374,6 +421,7 @@
   new_record_name: innerview.pearson.com
   new_text: v=spf1 include:_spf.innerview.pearson_com._d.easydmarc.pro ~all
 
+# 47
 - action: update
   record_type: txt
   record_name: learn.pearson.com
@@ -382,6 +430,7 @@
   new_record_name: learn.pearson.com
   new_text: v=spf1 include:_spf.learn.pearson_com._d.easydmarc.pro ~all
 
+# 48
 - action: update
   record_type: txt
   record_name: notifications.pearson.com
@@ -390,6 +439,7 @@
   new_record_name: notifications.pearson.com
   new_text: v=spf1 include:_spf.notifications.pearson_com._d.easydmarc.pro ~all
 
+# 49
 - action: update
   record_type: txt
   record_name: ocrm10.pearson.com
@@ -398,6 +448,7 @@
   new_record_name: ocrm10.pearson.com
   new_text: v=spf1 include:_spf.ocrm10.pearson_com._d.easydmarc.pro ~all
 
+# 50
 - action: update
   record_type: txt
   record_name: ocrm4.pearson.com
@@ -406,6 +457,7 @@
   new_record_name: ocrm4.pearson.com
   new_text: v=spf1 include:_spf.ocrm4.pearson_com._d.easydmarc.pro ~all
 
+# 51
 - action: update
   record_type: txt
   record_name: opm.pearson.com
@@ -414,6 +466,7 @@
   new_record_name: opm.pearson.com
   new_text: v=spf1 include:_spf.opm.pearson_com._d.easydmarc.pro ~all
 
+# 52
 - action: update
   record_type: txt
   record_name: oracle.pearson.com
@@ -422,6 +475,7 @@
   new_record_name: oracle.pearson.com
   new_text: v=spf1 include:_spf.oracle.pearson_com._d.easydmarc.pro ~all
 
+# 53
 - action: update
   record_type: txt
   record_name: p2o.pearson.com
@@ -430,6 +484,7 @@
   new_record_name: p2o.pearson.com
   new_text: v=spf1 include:_spf.p2o.pearson_com._d.easydmarc.pro ~all
 
+# 54
 - action: update
   record_type: txt
   record_name: rooms.pearson.com
@@ -438,6 +493,7 @@
   new_record_name: rooms.pearson.com
   new_text: v=spf1 include:_spf.rooms.pearson_com._d.easydmarc.pro ~all
 
+# 55
 - action: update
   record_type: txt
   record_name: sg.pearson.com
@@ -446,6 +502,7 @@
   new_record_name: sg.pearson.com
   new_text: v=spf1 include:_spf.sg.pearson_com._d.easydmarc.pro ~all
 
+# 56
 - action: update
   record_type: txt
   record_name: thinkfuture.pearson.com
@@ -454,6 +511,7 @@
   new_record_name: thinkfuture.pearson.com
   new_text: v=spf1 include:_spf.thinkfuture.pearson_com._d.easydmarc.pro ~all
 
+# 57
 - action: update
   record_type: txt
   record_name: pearson.it

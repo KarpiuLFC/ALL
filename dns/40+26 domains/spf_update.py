@@ -1,21 +1,17 @@
-#import yaml
-import csv
+file = open('spf_update.csv', 'r+', encoding='UTF8', errors='ignore') # open csv file with only one TAB, .csv file with utf-8 encoding and seprated with ";" 
 
-file = open('spf_update.csv', 'r+', encoding='UTF8', errors='ignore')
+action = input(str("Provide an action: ")) # ask for action type, however this script is dedicated for update action
+record = input(str("Provide an record_type: ")) # ask for record type 
+view = input(str("Provide a view: ")) # ask for common 
+index=0
 
-action = input(str("Provide an action: "))
-record = input(str("Provide an record_type: "))
-#txt = input(str("Provide a text: "))
-view = input(str("Provide a view: "))
+final = open('spf_update.yaml', 'w+', newline='') # open a final .yaml file with our output
 
-
-final = open('spf_update.yaml', 'w+', newline='')
-
-for line in file.readlines():
-    current = str(line.split(';')[3])
-    new = str(line.split(';')[5])
-    name = str(line.split(';')[2])
-    
+for line in file.readlines(): # read all lines in csv file
+    current = str(line.split(';')[3]) # take 4 column (current TXT value)
+    new = str(line.split(';')[5]) # take 6 column (new TXT value)
+    name = str(line.split(';')[2]) 
+    print("#" + str(index))
     print("- action: "+ action)
     print("  record_type: " + record)
     print("  record_name: " + name.strip())
@@ -24,6 +20,7 @@ for line in file.readlines():
     print("  new_record_name: " + name.strip())
     print("  new_text: " + new.strip())
     print()
+    final.write("# "+ str(index) + "\n")
     final.write("- action: "+ action + "\n")
     final.write("  record_type: " + record + "\n")
     final.write("  record_name: " + name.strip() + "\n")
@@ -32,6 +29,7 @@ for line in file.readlines():
     final.write("  new_record_name: " + name.strip() + "\n")
     final.write("  new_text: " + new.strip() + "\n")
     final.write("\n")
+    index += 1
 file.close()
 final.close()
 
