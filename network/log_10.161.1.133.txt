@@ -1,0 +1,1913 @@
+show run
+
+!Command: show running-config
+!Time: Thu Feb 29 14:51:56 2024
+
+version 5.2(1)N1(7)
+logging level feature-mgr 0
+hostname au-mlbdc-nxs5596-core2
+
+feature telnet
+feature tacacs+
+cfs eth distribute
+feature bgp
+feature eigrp
+feature udld
+feature interface-vlan
+feature hsrp
+feature lacp
+feature vpc
+feature lldp
+feature fex
+
+username admin password 5 $1$H0tpH/PM$KMigYS2FxZuxQMBiEuf8e0  role network-admin
+username netadmin password 5 $1$24w.Bxyw$tN8UFtBDlFbZwqAShe6Uz.  role network-admin
+
+banner motd @
+This device is private property intended for the exclusive use of
+authorized personnel for business purposes. Anyone using this
+system consents to monitoring, review and recording of such
+activity. Passwords must be kept confidential and unauthorized
+access is strictly prohibited. Unauthorized use of this system
+may subject you to criminal prosecution and penalties.
+@
+
+no ip domain-lookup
+ip domain-name ptns.pearson.com
+tacacs-server host 10.111.160.11 key 7 "O3bQmtc0j" 
+tacacs-server host 10.111.164.10 key 7 "O3bQmtc0j" 
+aaa group server tacacs+ TACSERVS 
+    server 10.111.160.11 
+    server 10.111.164.10 
+    use-vrf management
+    source-interface mgmt0
+logging level ethpm link-up error
+ip access-list 99
+  10 remark SNMPManager
+  20 permit ip 10.111.0.0/16 any
+ip access-list snmp-acl
+  10 permit udp 10.111.0.0/16 any eq snmp
+  20 permit udp 10.61.20.166/32 any eq snmp
+ip access-list vty-acl-in
+  10 permit tcp 10.111.0.0/16 any eq 22
+  20 permit tcp 10.61.20.179/32 any eq 22
+  30 permit tcp 10.61.20.166/32 any eq 22
+  40 permit tcp 10.61.12.78/32 any eq 22
+policy-map type network-qos jumbo
+  class type network-qos class-default
+    mtu 9216
+    multicast-optimize
+system qos
+  service-policy type network-qos jumbo
+policy-map type control-plane copp-system-policy-customized 
+  class copp-system-class-default
+    police cir 2048 kbps bc 6400000 bytes 
+fex 102
+  pinning max-links 1
+  description "nxs2248-core2-102"
+fex 104
+  pinning max-links 1
+  description "nxs2248-core2-104"
+snmp-server location  MLBDC : Australia
+snmp-server user admin network-admin auth md5 0x8db9057bd00dcdd9580eb58644f23a69 priv 0x8db9057bd00dcdd9580eb58644f23a69 localizedkey
+snmp-server user netadmin network-admin auth md5 0x309ef87a331c74fcfae293316ee3f71d priv 0x309ef87a331c74fcfae293316ee3f71d localizedkey
+snmp-server community Krypt0n!t3 group network-admin
+snmp-server community Sup3rMan group network-operator
+snmp-server community Krypt0n!t3 use-acl 99
+snmp-server community Sup3rMan use-acl 99
+ntp server 10.50.0.100 use-vrf management
+ntp server 10.111.0.100 prefer use-vrf management
+ntp server 10.111.18.100 use-vrf management
+aaa authentication login default group TACSERVS local 
+aaa authentication login console local 
+aaa authorization config-commands default group TACSERVS local 
+aaa authorization commands default group TACSERVS local 
+aaa accounting default group TACSERVS 
+
+vrf context management
+  ip domain-name ptns.pearson.com
+  ip route 0.0.0.0/0 10.161.1.129
+vrf context vpc_health
+vlan configuration 760
+  ip igmp snooping querier 172.20.118.7
+vlan 1
+vlan 100
+  name 10.161.0.0/25_Core_POP1
+vlan 101
+  name 10.161.0.128/25_Core_POP2
+vlan 102
+  name 10.161.1.0/25_FW_POP
+vlan 103
+  name 10.161.1.128/25_NW_Dvc_Mgmt
+vlan 104
+  name 10.161.2.0/24_DRAC/Mgmt
+vlan 105
+  name 10.161.3.0/24_UCS_KVM/CIMC
+vlan 106
+  name 10.161.4.0/24_UCS_Mgmt
+vlan 107
+  name 10.161.5.0/24_Core_Servers
+vlan 130
+  name 10.161.6.0/24_CLM_Core_1
+vlan 140
+  name 10.161.15.0/25_DC-DC_Replication
+vlan 150
+  name 172.20.250.0/24_DMVPN_FileServ
+vlan 160
+  name 10.111.160.0/24_NW_Monitor
+vlan 161
+  name 10.123.33.0/24_SERVER_MONITORING
+vlan 195
+  name 172.20.4.224/30_FWH_SYNC
+vlan 196
+  name CA_FW_Sync_10.61.200.40/30
+vlan 197
+  name VSA_FW_Sync
+vlan 198
+  name IA_FW_Sync
+vlan 199
+  name WH_FW_Sync
+vlan 200
+  name 10.61.58.0/23_GuestWireless_DMZ
+vlan 210
+  name 10.80.16.96/28_vDC_Inet_Fw_Trans
+vlan 257
+  name 10.61.157.0/24_CA/F1_DMZ
+vlan 264
+  name 168.146.98.0/24_EXT_WEB_FE_1
+vlan 265
+  name 168.146.99.0/24_EXT_WEB_FE_2
+vlan 280
+  name 159.182.60.0/24_Web_DMZ
+vlan 281
+  name 159.182.61.0/24_CLM_WebDMZ_1
+vlan 284
+  name 10.61.28.0/24_App_DMZ
+vlan 285
+  name 10.161.9.0/24_CLM_AppDMZ_1
+vlan 286
+  name 159.182.62.0/24_WEB_PCI_DMZ
+vlan 287
+  name 10.161.13.0/24_APP_PCI_DMZ
+vlan 290
+  name 10.61.30.0/24_DB_DMZ
+vlan 291
+  name 10.161.11.0/24_CLM_DB_DMZ_1
+vlan 292
+  name 10.161.12.0/24_DB_PCI_DMZ
+vlan 296
+  name 10.61.29.0/24_PRH_directconnect
+vlan 298
+  name 10.161.14.128/26_LBDB_FE_1
+vlan 299
+  name 10.161.14.0/28_UCS_ESX_MGMT_PCI
+vlan 307
+  name 10.32.174.0/24_BigIP_Core_Back
+vlan 330
+  name 10.32.175.0/24_CLM_Bip_Core_Back
+vlan 364
+  name 10.33.18.0/23_EXT_WEB_BE_1
+vlan 365
+  name 10.33.20.0/23_EXT_WEB_BE_2
+vlan 380
+  name 10.32.168.0/24_BigIP_Web_Backend
+vlan 381
+  name 10.32.169.0/24_CLM_Bip_Web_Back
+vlan 384
+  name 10.32.172.0/24_BigIP_App_Backend
+vlan 385
+  name 10.32.173.0/24_CLM_Bip_App_Back
+vlan 386
+  name 10.32.170.0/24_WEB_PCI_Web_BE
+vlan 387
+  name 10.32.171.0/24_App_PCI_APP_BE
+vlan 398
+  name 10.33.16.0/25_LBDB_BE_1
+vlan 400
+  name 172.20.68.0/28_DB_Interconnect
+vlan 401
+  name 172.20.68.16/28_DB_Interconnect
+vlan 402
+  name 172.20.68.32/28_DB_Interconnect
+vlan 403
+  name 172.20.68.48/28_DB_Interconnect
+vlan 404
+  name 172.20.68.64/28_DB_Interconnect
+vlan 405
+  name 172.20.68.80/28_DB_Interconnect
+vlan 406
+  name 172.20.68.96/28_DB_Interconnect
+vlan 450
+  name FWL_HB_1
+vlan 498
+  name 172.20.23.176/30_LBR_FAILOVER
+vlan 499
+  name 172.20.23.180/30_LBR_SYNC
+vlan 500
+  name 10.61.20.0/24_AU-Core-Svrs-1
+vlan 501
+  name 10.61.21.0/24_AU-Core-Svrs-2
+vlan 502
+  name 10.61.22.0/24_AU-Core-Svrs-3
+vlan 504
+  name 10.46.0.0/24_VoIP_Avaya
+vlan 505
+  name 10.46.1.0/24_VoIP_Avaya_2
+vlan 507
+  name 10.61.207.0/24_Isilon_SMB/CIFS
+vlan 508
+  name 10.61.208.0/24_Isilon_NFS
+vlan 750
+  name 172.20.69.0/24_VMotion
+vlan 751
+  name 172.20.124.0/24_VMOTION_PCI
+vlan 754
+  name 172.20.70.0/24_VM_Fault_Tol
+vlan 755
+  name 172.20.125.0/24_VM_FT
+vlan 760
+  name 172.20.118.0/24_VxLAN
+vlan 762
+  name 159.182.49.0/24_vDC_Transmission
+vlan 900
+  name 159.182.63.0/26_Inet_POP
+vlan 951
+  name 172.28.205.0/27_ERG_PEARSON
+no cdp enable
+spanning-tree port type edge bpduguard default
+spanning-tree port type edge bpdufilter default
+spanning-tree vlan 1-499,501-3967,4048-4093 priority 4096
+spanning-tree vlan 500 priority 61440
+ip prefix-list DEFAULT seq 1 permit 0.0.0.0/0 
+ip prefix-list INFOBLOX_ANYCAST seq 5 permit 10.10.10.0/24 ge 32 le 32 
+ip prefix-list NO_ROUTES seq 1 deny 0.0.0.0/0 le 32 
+ip prefix-list STATIC seq 2 permit 0.0.0.0/0 
+ip prefix-list STATIC seq 5 permit 10.32.168.0/24 
+ip prefix-list STATIC seq 7 permit 10.32.169.0/24 
+ip prefix-list STATIC seq 10 permit 10.32.172.0/24 
+ip prefix-list STATIC seq 12 permit 10.32.173.0/24 
+ip prefix-list STATIC seq 15 permit 10.61.164.0/23 
+ip prefix-list STATIC seq 20 permit 10.61.166.0/23 
+ip prefix-list STATIC seq 25 permit 10.61.28.0/24 
+ip prefix-list STATIC seq 27 permit 10.161.9.0/24 
+ip prefix-list STATIC seq 30 permit 10.61.30.0/24 
+ip prefix-list STATIC seq 32 permit 10.161.11.0/24 
+ip prefix-list STATIC seq 35 permit 159.182.60.0/23 
+ip prefix-list STATIC seq 40 permit 172.24.25.5/32 
+ip prefix-list STATIC seq 45 permit 172.24.25.6/32 
+ip prefix-list STATIC seq 55 permit 10.32.174.0/24 
+ip prefix-list STATIC seq 60 permit 10.32.175.0/24 
+ip prefix-list STATIC seq 65 permit 10.61.58.0/23 
+ip prefix-list STATIC seq 70 permit 10.111.171.0/25 
+ip prefix-list STATIC seq 75 permit 10.111.171.128/25 
+ip prefix-list STATIC seq 80 permit 10.110.208.0/20 
+ip prefix-list STATIC seq 85 permit 10.110.248.0/21 
+ip prefix-list STATIC seq 90 permit 10.109.0.0/16 
+ip prefix-list STATIC seq 95 permit 103.252.102.0/23 
+ip prefix-list STATIC seq 100 permit 172.21.247.0/24 
+ip prefix-list STATIC seq 105 permit 172.21.248.0/24 
+ip prefix-list STATIC seq 110 permit 172.21.249.0/24 
+ip prefix-list STATIC seq 115 permit 10.61.29.0/24 
+ip prefix-list STATIC seq 120 permit 159.182.49.0/24 
+ip prefix-list STATIC seq 125 permit 10.73.128.0/18 
+ip prefix-list STATIC seq 130 permit 10.77.128.0/18 
+ip prefix-list STATIC seq 135 permit 10.80.6.0/24 
+ip prefix-list STATIC seq 140 permit 10.80.16.96/28 
+ip prefix-list STATIC seq 145 permit 10.46.4.0/24 
+ip prefix-list STATIC seq 150 permit 10.46.30.0/24 
+ip prefix-list STATIC seq 155 permit 10.61.10.0/24 
+ip prefix-list STATIC seq 160 permit 10.61.12.0/22 
+ip prefix-list STATIC seq 165 permit 10.61.62.32/27 
+ip prefix-list STATIC seq 170 permit 172.30.70.56/29 
+ip prefix-list STATIC seq 175 permit 192.168.247.128/27 
+ip prefix-list STATIC seq 185 permit 172.30.70.49/32 
+ip prefix-list STATIC seq 195 permit 159.182.62.0/24 
+ip prefix-list STATIC seq 200 permit 10.32.170.0/24 
+ip prefix-list STATIC seq 205 permit 10.161.13.0/24 
+ip prefix-list STATIC seq 210 permit 10.32.171.0/24 
+ip prefix-list STATIC seq 215 permit 10.161.12.0/24 
+ip prefix-list STATIC seq 220 permit 10.161.14.0/28 
+ip prefix-list STATIC seq 230 permit 10.162.14.128/26 
+ip prefix-list STATIC seq 235 permit 10.33.16.0/25 
+ip prefix-list STATIC seq 240 permit 10.33.18.0/23 
+ip prefix-list STATIC seq 245 permit 10.33.20.0/23 
+ip prefix-list STATIC seq 250 permit 10.123.35.0/25 
+ip prefix-list STATIC seq 255 permit 10.123.35.128/25 
+ip prefix-list STATIC seq 260 permit 159.182.63.0/26 
+ip prefix-list STATIC seq 265 permit 172.16.5.0/29 
+ip community-list standard ERG_BACKUP permit 1:900 
+route-map DIRECT_TO_BGP permit 10
+  set local-preference 110
+  set origin igp 
+  set community 64519:100 64523:64519 
+route-map IBGP_IN permit 10
+  set community 64519:200 additive 
+route-map INFOBLOX_IN permit 10
+  set local-preference 340
+  set community 200:65515 64519:200 64523:64519 
+route-map MLBDC_AGGREGATE permit 10
+  set local-preference 110
+  set community 64519:100 64523:64519 
+route-map STATIC_TO_BGP permit 5
+  match ip address prefix-list DEFAULT 
+  set local-preference 340
+  set origin igp 
+  set community 200:0 64519:100 
+route-map STATIC_TO_BGP permit 10
+  match ip address prefix-list STATIC 
+  set local-preference 110
+  set origin igp 
+  set community 64519:100 64523:64519 
+vpc domain 41
+  role priority 16384
+  peer-keepalive destination 172.20.251.9 source 172.20.251.10 vrf vpc_health interval 400 timeout 3
+  delay restore 150
+  peer-gateway
+  ip arp synchronize
+port-profile default max-ports 512
+
+
+interface Vlan1
+
+interface Vlan100
+  no shutdown
+  description Core POP1
+  no ip redirects
+  ip address 10.161.0.3/25
+  ip router eigrp 1
+  hsrp version 2
+  hsrp 100 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.0.1 
+
+interface Vlan101
+  no shutdown
+  description Core POP2
+  no ip redirects
+  ip address 10.161.0.131/25
+  ip router eigrp 1
+  hsrp version 2
+  hsrp 101 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.0.129 
+
+interface Vlan102
+  no shutdown
+  description Firewall POP
+  no ip redirects
+  ip address 10.161.1.3/25
+  hsrp version 2
+  hsrp 102 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.1.1 
+
+interface Vlan103
+  no shutdown
+  description Network Device Management
+  no ip redirects
+  ip address 10.161.1.131/25
+  hsrp version 2
+  hsrp 103 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.1.129 
+
+interface Vlan104
+  no shutdown
+  description DRAC/Management
+  no ip redirects
+  ip address 10.161.2.3/24
+  hsrp version 2
+  hsrp 104 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.2.1 
+
+interface Vlan105
+  no shutdown
+  description UCS KVM/CIMC
+  no ip redirects
+  ip address 10.161.3.3/24
+  hsrp version 2
+  hsrp 105 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.3.1 
+
+interface Vlan106
+  no shutdown
+  description UCS Management
+  no ip redirects
+  ip address 10.161.4.3/24
+  hsrp version 2
+  hsrp 106 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.4.1 
+
+interface Vlan107
+  no shutdown
+  description Core Servers
+  no ip redirects
+  ip address 10.161.5.3/24
+  hsrp version 2
+  hsrp 107 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.5.1 
+
+interface Vlan130
+  no shutdown
+  description CLM Core Servers 1
+  no ip redirects
+  ip address 10.161.6.3/24
+  hsrp version 2
+  hsrp 130 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.6.1 
+
+interface Vlan140
+  no shutdown
+  description EMC RPA Replication Network
+  no ip redirects
+  ip address 10.161.15.3/25
+  hsrp version 2
+  hsrp 140 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.161.15.1 
+
+interface Vlan160
+  no shutdown
+  description Network Monitoring
+  ip address 10.111.160.3/24
+  hsrp version 2
+  hsrp 160 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    ip 10.111.160.1 
+
+interface Vlan161
+  no shutdown
+  description SERVER_MONITORING
+  no ip redirects
+  ip address 10.123.33.3/24
+  hsrp version 2
+  hsrp 161 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    ip 10.123.33.1 
+
+interface Vlan500
+  no shutdown
+  description AU-Core-Servers-1
+  no ip redirects
+  ip address 10.61.20.3/24
+  hsrp version 2
+  hsrp 500 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.61.20.1 
+
+interface Vlan501
+  no shutdown
+  description AU-Core-Servers-2
+  no ip redirects
+  ip address 10.61.21.3/24
+  hsrp version 2
+  hsrp 501 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.61.21.1 
+
+interface Vlan502
+  no shutdown
+  description AU-Core-Servers-3
+  no ip redirects
+  ip address 10.61.22.3/24
+  hsrp version 2
+  hsrp 502 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.61.22.1 
+
+interface Vlan504
+  no shutdown
+  description VoIP_Avaya_Subnet
+  no ip redirects
+  ip address 10.46.0.3/24
+  hsrp version 2
+  hsrp 504 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.46.0.1 
+
+interface Vlan505
+  no shutdown
+  description VoIP_Avaya_2
+  no ip redirects
+  ip address 10.46.1.3/24
+  hsrp version 2
+  hsrp 505 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.46.1.1 
+
+interface Vlan507
+  no shutdown
+  description Isilon Subnet-0 SMB/CIFS
+  no ip redirects
+  ip address 10.61.207.3/24
+  hsrp version 2
+  hsrp 507 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.61.207.1 
+
+interface Vlan508
+  no shutdown
+  description Isilon Subnet-1 NFS
+  no ip redirects
+  ip address 10.61.208.3/24
+  hsrp version 2
+  hsrp 508 
+    authentication md5 key-string P3ar5on
+    preempt 
+    priority 85
+    timers  1  4
+    ip 10.61.208.1 
+
+interface port-channel3
+  description [F] au-mlbdc-rtr07 2
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  spanning-tree port type edge trunk
+  speed 1000
+  vpc 3
+
+interface port-channel4
+  description [F] au-mlbdc-rtr08 2
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  spanning-tree port type edge trunk
+  speed 1000
+  vpc 4
+
+interface port-channel19
+  description [F] au-mlbdc-vpn01 1
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  spanning-tree port type edge trunk
+  vpc 19
+
+interface port-channel20
+  description [F] au-mlbdc-vpn01 2
+  switchport mode trunk
+  switchport trunk allowed vlan 102
+  spanning-tree port type edge trunk
+  vpc 20
+
+interface port-channel21
+  description [F] au-mlbdc-vpn02 1
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  spanning-tree port type edge trunk
+  vpc 21
+
+interface port-channel22
+  description [F] au-mlbdc-vpn02 2
+  switchport mode trunk
+  switchport trunk allowed vlan 102
+  spanning-tree port type edge trunk
+  vpc 22
+
+interface port-channel23
+  description [F] au-mlbdc-fwh01 (VPC)
+  switchport mode trunk
+  switchport trunk allowed vlan 102,210,264-265,280-281,284-287,290-292,296,298-299,900,951
+  spanning-tree port type edge trunk
+  speed 1000
+  vpc 23
+
+interface port-channel24
+  description [F] au-mlbdc-fwh02 (VPC)
+  switchport mode trunk
+  switchport trunk allowed vlan 102,210,264-265,280-281,284-287,290-292,296,298-299,900,951
+  spanning-tree port type edge trunk
+  speed 1000
+  vpc 24
+
+interface port-channel40
+  description [F] au-mlbdc-nxs5596-core1 40 (VPC-PL)
+  switchport mode trunk
+  switchport trunk allowed vlan 1-951,953-4094
+  spanning-tree port type network
+  speed 10000
+  vpc peer-link
+
+interface port-channel41
+  description EC ucs6248-01-a
+  switchport mode trunk
+  switchport trunk allowed vlan 103-107,130,160-161,200,210,264-265,280-281,284-287,290-292,298-299,307,330,364-365,380-381,384-387,398,400-406,450,500-502,504-505,750-751,754-755,760,762,900
+  spanning-tree port type edge trunk
+  vpc 41
+
+interface port-channel42
+  description EC ucs6248-01-b
+  switchport mode trunk
+  switchport trunk allowed vlan 103-107,130,160-161,200,210,264-265,280-281,284-287,290-292,298-299,307,330,364-365,380-381,384-387,398,400-406,450,500-502,504-505,750-751,754-755,760,762,900
+  spanning-tree port type edge trunk
+  vpc 42
+
+interface port-channel45
+  description [F] au-mlbdc-bip6900-02 1
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  speed 1000
+
+interface port-channel46
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  speed 1000
+
+interface port-channel62
+  description mlbupntapfil01-01 veth0
+  switchport mode trunk
+  switchport trunk allowed vlan 107,284-285,290,384-385
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 62
+
+interface port-channel63
+  description mlbupntapfil01-02 veth0
+  switchport mode trunk
+  switchport trunk allowed vlan 107,284-285,290,384-385
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 63
+
+interface port-channel71
+  description aumeldcvam1app Avaya LACP PortChannel
+  switchport access vlan 504
+  vpc 71
+
+interface port-channel72
+  description aumeldcvam2app Avaya LACP PortChannel
+  switchport access vlan 504
+  vpc 72
+
+interface port-channel73
+  description aumeldcvcc1app Avaya LACP PortChannel
+  switchport access vlan 504
+  vpc 73
+
+interface port-channel74
+  description aumeldcvcc2app Avaya LACP PortChannel
+  switchport access vlan 504
+  vpc 74
+
+interface port-channel81
+  description nas3600-1 LACP Port Channel
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  vpc 81
+
+interface port-channel82
+  description nas3600-2 LACP Port Channel
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 82
+
+interface port-channel83
+  description nas3600-3 LACP Port Channel
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 83
+
+interface port-channel84
+  description nas3600-4 LACP Port Channel
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 84
+
+interface port-channel85
+  description nas3600-5 LACP Port Channel
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 85
+
+interface port-channel86
+  description au1upcoretsm03
+  switchport mode trunk
+  switchport trunk allowed vlan 107,280,292,380,384,386-387
+  spanning-tree port type edge trunk
+  speed 10000
+  vpc 86
+
+interface port-channel91
+  description [F] au-mlbdc-rtr07 1
+  switchport mode trunk
+  switchport trunk allowed vlan 103,951
+  spanning-tree port type edge trunk
+  vpc 91
+
+interface port-channel92
+  description [F] au-mlbdc-rtr08 1
+  switchport mode trunk
+  switchport trunk allowed vlan 103,951
+  spanning-tree port type edge trunk
+  vpc 92
+
+interface port-channel102
+  description [F] au-mlbdc-fex102 1
+  switchport mode fex-fabric
+  fex associate 102
+
+interface port-channel104
+  description [F] au-mlbdc-fex104 1
+  switchport mode fex-fabric
+  fex associate 104
+
+interface port-channel200
+  description wlc5508-guest01 VPC trunk to p1-2
+  switchport mode trunk
+  switchport trunk allowed vlan 103,200
+  spanning-tree port type edge trunk
+  vpc 200
+
+interface Ethernet1/1
+  description ucs6248-01-a e1/3
+  switchport mode trunk
+  switchport trunk allowed vlan 103-107,130,160-161,200,210,264-265,280-281,284-287,290-292,298-299,307,330,364-365,380-381,384-387,398,400-406,450,500-502,504-505,750-751,754-755,760,762,900
+  spanning-tree port type edge trunk
+  channel-group 41 mode active
+
+interface Ethernet1/2
+  description ucs6248-01-a e1/4
+  switchport mode trunk
+  switchport trunk allowed vlan 103-107,130,160-161,200,210,264-265,280-281,284-287,290-292,298-299,307,330,364-365,380-381,384-387,398,400-406,450,500-502,504-505,750-751,754-755,760,762,900
+  spanning-tree port type edge trunk
+  channel-group 41 mode active
+
+interface Ethernet1/3
+  description ucs6248-01-b e1/3
+  switchport mode trunk
+  switchport trunk allowed vlan 103-107,130,160-161,200,210,264-265,280-281,284-287,290-292,298-299,307,330,364-365,380-381,384-387,398,400-406,450,500-502,504-505,750-751,754-755,760,762,900
+  spanning-tree port type edge trunk
+  channel-group 42 mode active
+
+interface Ethernet1/4
+  description ucs6248-01-b e1/4
+  switchport mode trunk
+  switchport trunk allowed vlan 103-107,130,160-161,200,210,264-265,280-281,284-287,290-292,298-299,307,330,364-365,380-381,384-387,398,400-406,450,500-502,504-505,750-751,754-755,760,762,900
+  spanning-tree port type edge trunk
+  channel-group 42 mode active
+
+interface Ethernet1/5
+  description [F] au-mlbdc-fex102 1
+  switchport mode fex-fabric
+  fex associate 102
+  channel-group 102
+
+interface Ethernet1/6
+  description [F] au-mlbdc-fex102 2
+  switchport mode fex-fabric
+  fex associate 102
+  channel-group 102
+
+interface Ethernet1/7
+  description [F] au-mlbdc-fex102 3
+  switchport mode fex-fabric
+  fex associate 102
+  channel-group 102
+
+interface Ethernet1/8
+  description [F] au-mlbdc-fex102 4
+  switchport mode fex-fabric
+  fex associate 102
+  channel-group 102
+
+interface Ethernet1/9
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport access vlan 102
+  spanning-tree port type edge
+  speed 1000
+
+interface Ethernet1/10
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  spanning-tree port type edge
+  speed 1000
+  channel-group 46 mode active
+
+interface Ethernet1/11
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  spanning-tree port type edge
+  speed 1000
+  channel-group 46 mode active
+
+interface Ethernet1/12
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  spanning-tree port type edge
+  speed 1000
+  channel-group 46 mode active
+
+interface Ethernet1/13
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  spanning-tree port type edge
+  speed 1000
+  channel-group 46 mode active
+
+interface Ethernet1/14
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  spanning-tree port type edge
+  speed 1000
+  channel-group 46 mode active
+
+interface Ethernet1/15
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport mode trunk
+  switchport trunk allowed vlan 210,264-265,280-281,284-287,290-292,296,298-299,951
+  spanning-tree port type edge
+  speed 1000
+  channel-group 46 mode active
+
+interface Ethernet1/16
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport access vlan 900
+  spanning-tree port type edge
+  speed 1000
+
+interface Ethernet1/17
+  description [F] au-mlbdc-chk3075-ia2 1/1
+  switchport access vlan 102
+  spanning-tree port type edge
+  speed 1000
+
+interface Ethernet1/18
+  description [F] au-mlbdc-chk3075-ia2 1/2
+  switchport access vlan 900
+  spanning-tree port type edge
+  speed 1000
+
+interface Ethernet1/19
+  description DECOMMISSIONED WAN-236
+  shutdown
+
+interface Ethernet1/20
+  shutdown
+
+interface Ethernet1/21
+  shutdown
+
+interface Ethernet1/22
+  description DECOMMISSIONED WAN-236
+  shutdown
+
+interface Ethernet1/23
+  description [F] au-mlbdc-bip6900-02 1.1
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  spanning-tree port type edge
+  speed 1000
+  channel-group 45 mode active
+
+interface Ethernet1/24
+  description [F] au-mlbdc-bip6900-02 1.2
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  spanning-tree port type edge
+  speed 1000
+  channel-group 45 mode active
+
+interface Ethernet1/25
+  description [F] au-mlbdc-bip6900-02 1.3
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  spanning-tree port type edge
+  speed 1000
+  channel-group 45 mode active
+
+interface Ethernet1/26
+  description [F] au-mlbdc-bip6900-02 1.4
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  spanning-tree port type edge
+  speed 1000
+  channel-group 45 mode active
+
+interface Ethernet1/27
+  description [F] au-mlbdc-bip6900-02 1.5
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  spanning-tree port type edge
+  speed 1000
+  channel-group 45 mode active
+
+interface Ethernet1/28
+  description [F] au-mlbdc-bip6900-02 1.6
+  switchport mode trunk
+  switchport trunk allowed vlan 107,130,264-265,280-281,284-287,298,307,330,364-365,380-381,384-387,398,498-499
+  spanning-tree port type edge
+  speed 1000
+  channel-group 45 mode active
+
+interface Ethernet1/29
+  shutdown
+
+interface Ethernet1/30
+  shutdown
+
+interface Ethernet1/31
+  description DECOMMISSIONED WAN-195
+  shutdown
+
+interface Ethernet1/32
+  description DECOMMISSIONED WAN-195
+  shutdown
+
+interface Ethernet1/33
+  description DECOMMISSIONED WAN-236
+  shutdown
+
+interface Ethernet1/34
+  description DECOMMISSIONED WAN-195
+  shutdown
+
+interface Ethernet1/35
+  description Alfresco Snowball
+  shutdown
+  switchport access vlan 385
+  spanning-tree port type edge
+
+interface Ethernet1/36
+  description CHG0326718
+  shutdown
+
+interface Ethernet1/37
+  description DECOMISSIONED CHG0323318
+  shutdown
+
+interface Ethernet1/38
+  shutdown
+
+interface Ethernet1/39
+  shutdown
+
+interface Ethernet1/40
+  shutdown
+
+interface Ethernet1/41
+  description [F] au-mlbdc-fex104 1
+  switchport mode fex-fabric
+  fex associate 104
+  channel-group 104
+
+interface Ethernet1/42
+  description [F] au-mlbdc-fex104 2
+  switchport mode fex-fabric
+  fex associate 104
+  channel-group 104
+
+interface Ethernet1/43
+  description [F] au-mlbdc-fex104 3
+  switchport mode fex-fabric
+  fex associate 104
+  channel-group 104
+
+interface Ethernet1/44
+  description [F] au-mlbdc-fex104 4
+  switchport mode fex-fabric
+  fex associate 104
+  channel-group 104
+
+interface Ethernet1/45
+  shutdown
+  switchport access vlan 900
+  spanning-tree port type edge
+
+interface Ethernet1/46
+  description [F] au-mlbdc-nxs5596-core1 1/46 (VPC-PK)
+  no switchport
+  vrf member vpc_health
+  ip address 172.20.251.10/30
+
+interface Ethernet1/47
+  description [F] au-mlbdc-nxs5596-core1 1/47
+  switchport mode trunk
+  switchport trunk allowed vlan 1-951,953-4094
+  channel-group 40 mode active
+
+interface Ethernet1/48
+  description [F] au-mlbdc-nxs5596-core1 1/48
+  switchport mode trunk
+  switchport trunk allowed vlan 1-951,953-4094
+  channel-group 40 mode active
+
+interface Ethernet3/1
+  description au-meldc-nas3600-1 port 1
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  channel-group 81 mode active
+
+interface Ethernet3/2
+  description au-meldc-nas3600-2 port 1
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  channel-group 82 mode passive
+
+interface Ethernet3/3
+  description au-meldc-nas3600-3 port 1
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  channel-group 83 mode passive
+
+interface Ethernet3/4
+  description au-meldc-nas3600-4 port 1
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  channel-group 84 mode passive
+
+interface Ethernet3/5
+  description au-meldc-nas3600-5 port 1
+  switchport mode trunk
+  switchport trunk allowed vlan 507-508
+  spanning-tree port type edge trunk
+  channel-group 85 mode passive
+
+interface Ethernet3/6
+  description AUMELBMAC101 e2
+  switchport access vlan 507
+  spanning-tree port type edge
+
+interface Ethernet3/7
+  description mlbupntapfil01-01 e0g
+  switchport mode trunk
+  switchport trunk allowed vlan 107,284-285,290,384-385
+  logging event port link-status
+  channel-group 62 mode active
+
+interface Ethernet3/8
+  description [F] au-mlbdc-rtr07 0/3
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  speed 1000
+  logging event port link-status
+  channel-group 3
+
+interface Ethernet3/9
+  shutdown
+
+interface Ethernet3/10
+  description au-mlbdc-ftn600c-ia2 wan1
+  shutdown
+  speed 1000
+
+interface Ethernet3/11
+  description au-mlbdc-ftn600c-ia2 p21
+  shutdown
+  speed 1000
+
+interface Ethernet3/12
+  description au-mlbdc-ftn600c-ia2 mgmt1
+  shutdown
+  speed 1000
+
+interface Ethernet3/13
+  description PRH direct connect
+  shutdown
+  switchport access vlan 296
+  spanning-tree port type edge
+  speed 1000
+
+interface Ethernet3/14
+  shutdown
+
+interface Ethernet3/15
+  shutdown
+
+interface Ethernet3/16
+  shutdown
+
+interface Ethernet4/1
+  description mlbupntapfil01-02 e0g
+  switchport mode trunk
+  switchport trunk allowed vlan 107,284-285,290,384-385
+  logging event port link-status
+  channel-group 63 mode active
+
+interface Ethernet4/2
+  description au1upcoretsm03 eth2
+  switchport mode trunk
+  switchport trunk allowed vlan 107,280,292,380,384,386-387
+  spanning-tree port type edge trunk
+  channel-group 86 mode active
+
+interface Ethernet4/3
+  description [F] au-mlbdc-rtr08 0/3
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  speed 1000
+  logging event port link-status
+  channel-group 4
+
+interface Ethernet4/4
+  description [F] au-mlbdc-fwh02 eth1
+  switchport access vlan 195
+  spanning-tree port type edge
+  speed 1000
+
+interface Ethernet4/5
+  description [F] au-mlbdc-fwh02 eth2
+  switchport mode trunk
+  switchport trunk allowed vlan 102,210,264-265,280-281,284-287,290-292,296,298-299,900,951
+  speed 1000
+  channel-group 24 mode active
+
+interface Ethernet4/6
+  description [F] au-mlbdc-fwh02 eth3
+  switchport mode trunk
+  switchport trunk allowed vlan 102,210,264-265,280-281,284-287,290-292,296,298-299,900,951
+  speed 1000
+  channel-group 24 mode active
+
+interface Ethernet4/7
+  description [F] au-mlbdc-fwh01 eth4
+  switchport mode trunk
+  switchport trunk allowed vlan 102,210,264-265,280-281,284-287,290-292,296,298-299,900,951
+  speed 1000
+  channel-group 23 mode active
+
+interface Ethernet4/8
+  description [F] au-mlbdc-fwh01 eth5
+  switchport mode trunk
+  switchport trunk allowed vlan 102,210,264-265,280-281,284-287,290-292,296,298-299,900,951
+  speed 1000
+  channel-group 23 mode active
+
+interface Ethernet4/9
+
+interface Ethernet4/10
+
+interface Ethernet4/11
+
+interface Ethernet4/12
+
+interface Ethernet4/13
+
+interface Ethernet4/14
+
+interface Ethernet4/15
+
+interface Ethernet4/16
+
+interface mgmt0
+  description [F] au-mlbdc-nxs5596-core2 102/1/6
+  ip address 10.161.1.133/25
+
+interface loopback0
+  ip address 172.24.25.2/32
+  ip router eigrp 1
+  ip passive-interface eigrp 1
+
+interface Ethernet102/1/1
+  description DECOMMISSIONED
+  shutdown
+
+interface Ethernet102/1/2
+  description DECOMMISSIONED
+  shutdown
+
+interface Ethernet102/1/3
+  description [F] au-mlbdc-trm6032-01 1
+  switchport access vlan 103
+  spanning-tree port type edge
+
+interface Ethernet102/1/4
+  description acs1121
+  switchport access vlan 160
+  spanning-tree port type edge
+
+interface Ethernet102/1/5
+  description SIP Router
+  switchport access vlan 280
+  spanning-tree port type edge
+
+interface Ethernet102/1/6
+  description [F] au-mlbdc-nxs5596-core2 mgmt0
+  switchport access vlan 103
+  spanning-tree port type edge
+
+interface Ethernet102/1/7
+  description DECOMMISSIONED CHG0253143
+  shutdown
+  switchport access vlan 199
+  spanning-tree port type edge
+
+interface Ethernet102/1/8
+  description [F] au-mlbdc-chk3075-ia2 LAN1
+  switchport access vlan 198
+  spanning-tree port type edge
+
+interface Ethernet102/1/9
+  description ucs6248-01-b MGMT @I10
+  switchport access vlan 105
+  spanning-tree port type edge
+
+interface Ethernet102/1/10
+  description br5100-02 mgmt @I7
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet102/1/11
+
+interface Ethernet102/1/12
+  description [F] au-mlbdc-bip6900-02 mgmt
+  switchport access vlan 103
+  spanning-tree port type edge
+
+interface Ethernet102/1/13
+  description Tape Library Camera
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet102/1/14
+  description [F] au-mlbdc-irt1002-02 Gi0/0/0
+  switchport access vlan 900
+  spanning-tree port type edge
+
+interface Ethernet102/1/15
+  description [F] au-mlbdc-trm6032-02 1
+  switchport access vlan 103
+  spanning-tree port type edge
+
+interface Ethernet102/1/16
+  description [F] au-mlbdc-rtr07 0/1
+  switchport mode trunk
+  switchport trunk allowed vlan 103,951
+  spanning-tree port type edge
+  channel-group 91
+
+interface Ethernet102/1/17
+  description [F] au-mlbdc-rtr08 0/1
+  switchport mode trunk
+  switchport trunk allowed vlan 103,951
+  spanning-tree port type edge
+  channel-group 92
+
+interface Ethernet102/1/18
+  description melbas063 NIC2
+  switchport access vlan 284
+  spanning-tree port type edge
+
+interface Ethernet102/1/19
+  description AUMELBAS068_nic2
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/20
+  description AUMELBAS068_DRAC
+  switchport access vlan 104
+  spanning-tree port type edge
+  speed 100
+  duplex full
+
+interface Ethernet102/1/21
+  description melbas039 nic2
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/22
+  description MELBAS038_NIC2
+  switchport access vlan 500
+  spanning-tree port type edge
+  speed 1000
+  duplex full
+
+interface Ethernet102/1/23
+  description aumelb-ad-842 NIC
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/24
+  description aumelb-ad-842 DRAC
+  switchport access vlan 104
+  spanning-tree port type edge
+  speed 100
+  duplex full
+
+interface Ethernet102/1/25
+  description aumelbas101 NIC
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/26
+  description aumelbas101 DRAC
+  switchport access vlan 104
+  spanning-tree port type edge
+  speed 100
+  duplex full
+
+interface Ethernet102/1/27
+  description aumelbas102 NIC
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/28
+  description aumelbas102 DRAC
+  switchport access vlan 104
+  spanning-tree port type edge
+  speed 100
+  duplex full
+
+interface Ethernet102/1/29
+  description aumelb-ad-840 nic2
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/30
+  description aumelb-ad-840 DRAC
+  switchport access vlan 104
+  spanning-tree port type edge
+  speed 100
+  duplex full
+
+interface Ethernet102/1/31
+  description AUMELBMAC601 e1
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/32
+  description AUMELBMAC101 e1
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/33
+  description AUMELBMAC102 e1
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/34
+  description MELBMAC11 e1
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/35
+  description au-mlbdc-fwh02 Mgmt
+  switchport access vlan 103
+  spanning-tree port type edge
+
+interface Ethernet102/1/36
+  description MELBAS056
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/37
+  description aumelb-e3mb-005 NIC
+  switchport access vlan 500
+  spanning-tree port type edge
+
+interface Ethernet102/1/38
+  description aumelb-e3mb-005 DRAC
+  switchport access vlan 104
+  spanning-tree port type edge
+  speed 100
+  duplex full
+
+interface Ethernet102/1/39
+  description san mgmt network
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet102/1/40
+  description san mgmt network
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet102/1/41
+  description replication network
+  switchport access vlan 140
+  spanning-tree port type edge
+
+interface Ethernet102/1/42
+  description [F] au-mlbdc-wlc01 0/0/2
+  switchport mode trunk
+  switchport trunk allowed vlan 103,200
+  spanning-tree port type edge
+  channel-group 200
+
+interface Ethernet102/1/43
+  description [F] au-mlbdc-chk3075-ia2 LAN2
+  switchport mode trunk
+  switchport trunk allowed vlan 200
+  spanning-tree port type edge
+
+interface Ethernet102/1/44
+  description DECOMMISSIONED GNS-203
+  shutdown
+
+interface Ethernet102/1/45
+  description DECOMMISSIONED GNS-203
+  shutdown
+
+interface Ethernet102/1/46
+  description [F] au-mlbdc-chk1073-02 DMZ
+  switchport access vlan 257
+  spanning-tree port type edge
+
+interface Ethernet102/1/47
+  description [F] au-mlbdc-chk1073-02 Internal
+  switchport access vlan 100
+  spanning-tree port type edge
+
+interface Ethernet102/1/48
+  description [F] au-mlbdc-chk1073-02 Sync
+  switchport access vlan 196
+  spanning-tree port type edge
+
+interface Ethernet104/1/1
+  description aumeldcvcm1dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/2
+  description aumeldcvcm2dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/3
+  description sp_mlbupntapfil01-02 sp
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/4
+  description aumeldcvsy1dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/5
+  description aumeldcvsy2dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/6
+  description mlbupntapfil01-02 e0i 
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/7
+  description aumeldcvse2sm Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/8
+  description aumeldcvse1sip Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/9
+  description aumeldcvse2sip Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/10
+  description mlbupntapfil01sw02 
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/11
+  description aumeldcvae1dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/12
+  description aumeldcvae2ilo Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/13
+  description aumeldcvae2dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/14
+  description aumeldcvmm1dom0 Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/15
+  description aumeldcvsb0man Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/16
+  description aumeldcvaa1app Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/17
+  description aumeldcvaa2app Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/18
+  description aumeldcvaa2drac Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/19
+  description aumeldcvcc1app Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+  channel-group 73 mode passive
+
+interface Ethernet104/1/20
+  description aumeldcvcc2app Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+  channel-group 74 mode passive
+
+interface Ethernet104/1/21
+  description aumeldcvcc2drac Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/22
+  description aumeldcvam1app Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+  channel-group 71 mode passive
+
+interface Ethernet104/1/23
+  description aumeldcvam2app Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+  channel-group 72 mode passive
+
+interface Ethernet104/1/24
+  description aumeldcvam2drac Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/25
+  description aumeldcvsb2man Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/26
+  description aumeldcvsb2int Avaya
+  switchport access vlan 505
+  spanning-tree port type edge
+
+interface Ethernet104/1/27
+  description aumeldcvsb2ext Avaya
+  switchport access vlan 280
+  spanning-tree port type edge
+
+interface Ethernet104/1/28
+  description aumeldcvsp1pol Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/29
+  description aumeldcvsp1drac Avaya
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/30
+  description aumeldcvac1con Avaya
+  switchport access vlan 504
+  spanning-tree port type edge
+
+interface Ethernet104/1/31
+  description [F] au-mlbdc-vpn01 0/1
+  lacp rate fast
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  logging event port link-status
+  channel-group 19 mode active
+
+interface Ethernet104/1/32
+  description [F] au-mlbdc-vpn01 0/3
+  lacp rate fast
+  switchport mode trunk
+  switchport trunk allowed vlan 102
+  logging event port link-status
+  channel-group 20 mode active
+
+interface Ethernet104/1/33
+  description AS400 logprodr02
+  switchport access vlan 501
+  spanning-tree port type edge
+
+interface Ethernet104/1/34
+  description au1upcoretsm03-man eth2
+  switchport access vlan 107
+  spanning-tree port type edge
+
+interface Ethernet104/1/35
+  description au1-e2760-001-b
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/36
+  description AS400 melbibmf
+  switchport access vlan 501
+  spanning-tree port type edge
+
+interface Ethernet104/1/37
+  description [F] au-mlbdc-vpn02 0/1
+  lacp rate fast
+  switchport mode trunk
+  switchport trunk allowed vlan 900
+  logging event port link-status
+  channel-group 21 mode active
+
+interface Ethernet104/1/38
+  description [F] au-mlbdc-vpn02 0/3
+  lacp rate fast
+  switchport mode trunk
+  switchport trunk allowed vlan 102
+  logging event port link-status
+  channel-group 22 mode active
+
+interface Ethernet104/1/39
+  description rpa1208-02 LAN (EMC)
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/40
+  description rpa1208-02 WAN (EMC)          
+  switchport access vlan 140
+  spanning-tree port type edge
+
+interface Ethernet104/1/41
+  description Alfresco Snowball APAC
+  switchport access vlan 384
+  spanning-tree port type edge
+  no logging event port link-status
+
+interface Ethernet104/1/42
+  description Alfresco Snowball AUS
+  switchport access vlan 385
+  spanning-tree port type edge
+  no logging event port link-status
+
+interface Ethernet104/1/43
+  description nas3600-1 ext-1 Isilon
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/44
+  description nas3600-2 ext-1 Isilon
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/45
+  description nas3600-3 ext-1 Isilon
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/46
+  description nas3600-4 ext-1 Isilon
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/47
+  description nas3600-5 ext-1 Isilon
+  switchport access vlan 104
+  spanning-tree port type edge
+
+interface Ethernet104/1/48
+  description nas3600-6 ext-1 Isilon
+  switchport access vlan 104
+  spanning-tree port type edge
+line console
+  exec-timeout 20
+line vty
+  session-limit 5
+  session-limit 5
+  exec-timeout 15
+  access-class vty-acl-in in
+boot kickstart bootflash:/n5000-uk9-kickstart.5.2.1.N1.7.bin
+boot system bootflash:/n5000-uk9.5.2.1.N1.7.bin 
+router eigrp 1
+router bgp 64519
+  router-id 172.24.25.2
+  log-neighbor-changes
+  template peer IBGP
+    inherit peer-session IBGP
+    password 3 ec587b7e386043d4e4e50e4f788cdfa8
+    no shutdown
+    address-family ipv4 unicast
+      inherit peer-policy IBGP 10
+  template peer IBGP_RRC
+    inherit peer-session IBGP
+    password 3 ec587b7e386043d4e4e50e4f788cdfa8
+    no shutdown
+    address-family ipv4 unicast
+      inherit peer-policy IBGP 10
+      route-reflector-client
+      next-hop-self
+  template peer INFOBLOX
+    inherit peer-session INFOBLOX
+    no shutdown
+    address-family ipv4 unicast
+      send-community
+      prefix-list INFOBLOX_ANYCAST in
+      prefix-list NO_ROUTES out
+      route-map INFOBLOX_IN in
+  template peer-policy IBGP
+    send-community
+    route-map IBGP_IN in
+  template peer-session BGP
+    update-source loopback0
+    timers 10 30
+  template peer-session IBGP
+    inherit peer-session BGP
+    remote-as 64519
+    password 3 f71ce22c310d59b18586297246b462ccb6447a3d2b1decce
+  template peer-session INFOBLOX
+    inherit peer-session BGP
+    remote-as 65515
+    password 3 25b499e1f6d0a52aa5b4c26fdf881f27
+    ebgp-multihop 2
+  address-family ipv4 unicast
+    redistribute direct route-map DIRECT_TO_BGP
+    redistribute static route-map STATIC_TO_BGP
+    aggregate-address 10.32.168.0/21 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.33.16.0/21 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.45.192.0/19 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.46.0.0/19 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.61.0.0/16 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.111.160.0/22 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.111.171.0/24 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.123.35.0/24 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 10.161.0.0/20 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 159.182.60.0/22 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 168.146.180.0/22 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 172.24.25.0/24 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 172.30.70.0/25 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 192.168.246.0/23 summary-only attribute-map MLBDC_AGGREGATE
+    aggregate-address 192.168.248.0/22 summary-only attribute-map MLBDC_AGGREGATE
+  neighbor 10.161.1.140
+    inherit peer IBGP_RRC
+    description au-mlbdc-rtr07
+    no update-source
+  neighbor 10.161.1.141
+    inherit peer IBGP_RRC
+    description au-mlbdc-rtr08
+    no update-source
+  neighbor 10.161.1.150
+    inherit peer INFOBLOX
+    description ddi-apac-2.ptns.pearson.com
+  neighbor 172.24.25.1
+    inherit peer IBGP
+    description au-mlbdc-nxs5596-core1
+  neighbor 172.28.205.1
+    inherit peer IBGP_RRC
+    description au-mlbdc-rtr07 (VRF: PEARSON)
+  neighbor 172.28.205.2
+    inherit peer IBGP_RRC
+    description au-mlbdc-rtr08 (VRF: PEARSON)
+ip route 0.0.0.0/0 10.161.1.7
+ip route 10.32.168.0/24 10.161.1.4 name bip_web_backend
+ip route 10.32.169.0/24 10.161.1.4 name bip_clm_web_backend
+ip route 10.32.170.0/24 10.161.1.4 name webpcibackend
+ip route 10.32.171.0/24 10.161.1.4 name apppcibackend
+ip route 10.32.172.0/24 10.161.1.4 name bip_app_backend
+ip route 10.32.173.0/24 10.161.1.4 name bip_clm_app_backend
+ip route 10.32.174.0/24 10.161.5.4 name bip_core_backend
+ip route 10.32.175.0/24 10.161.6.4 name bip_clm_core_backend
+ip route 10.33.16.0/25 10.161.1.4 name LBDB_BE_1
+ip route 10.33.18.0/23 10.161.1.4 name EXT_WEB_BE_1
+ip route 10.33.20.0/23 10.161.1.4 name EXT_WEB_BE_2
+ip route 10.46.4.0/24 10.161.1.4 name RandomHouse
+ip route 10.46.30.0/24 10.161.1.4 name RandomHouse
+ip route 10.61.10.0/24 10.161.1.4 name RandomHouse
+ip route 10.61.12.0/22 10.161.1.4 name RandomHouse
+ip route 10.61.28.0/24 10.161.1.4 name app_DMZ
+ip route 10.61.29.0/24 10.161.1.4 name RandomHouseDC-Pearson
+ip route 10.61.30.0/24 10.161.1.4 name DB_DMZ
+ip route 10.61.58.0/23 10.161.1.7 name guestWLC_DMZ
+ip route 10.61.62.32/27 10.161.1.4 name RandomHouse
+ip route 10.61.164.0/23 10.161.1.15 name ANYCONNECT_USER_VPN01
+ip route 10.61.166.0/23 10.161.1.16 name ANYCONNECT_USER_VPN02
+ip route 10.73.128.0/18 10.161.1.4 name myStack
+ip route 10.77.128.0/18 10.161.1.4 name myStack
+ip route 10.80.6.0/24 10.161.1.4 name myStack
+ip route 10.80.16.96/28 10.161.1.4 name myStack
+ip route 10.109.0.0/16 10.161.1.4 name RandomHouseAU3-Pearson
+ip route 10.110.208.0/20 10.161.1.4 name RandomHouseAU1-Pearson
+ip route 10.110.248.0/21 10.161.1.4 name RandomHouseAU2-Pearson
+ip route 10.111.171.0/25 10.161.1.15 name ANYCONNECT_PTNS_VPN01
+ip route 10.111.171.128/25 10.161.1.16 name ANYCONNECT_PTNS_VPN02
+ip route 10.123.35.0/25 10.161.1.15 name ANYCONNECT_SVRADMIN_VPN01
+ip route 10.123.35.128/25 10.161.1.16 name ANYCONNECT_SVRADMIN_VPN02
+ip route 10.125.32.0/24 10.161.1.4 name RandomHouseAU-Pearson
+ip route 10.125.34.0/24 10.161.1.4 name RandomHouseAU-Pearson
+ip route 10.125.48.0/20 10.161.1.4
+ip route 10.158.100.0/24 10.161.1.4
+ip route 10.158.101.0/24 10.161.1.4
+ip route 10.161.9.0/24 10.161.1.4 name clm_app_DMZ
+ip route 10.161.11.0/24 10.161.1.4 name clm_DB_DMZ
+ip route 10.161.12.0/24 10.161.1.4 name dbpci
+ip route 10.161.13.0/24 10.161.1.4 name apppcifrontend
+ip route 10.161.14.0/28 10.161.1.4 name ESX_mgmt_pci
+ip route 10.161.14.128/26 10.161.1.4 name LBDB_FE_1
+ip route 159.182.49.0/24 10.161.1.4 name myStack
+ip route 159.182.60.0/23 10.161.1.4 name web_DMZ
+ip route 159.182.62.0/24 10.161.1.4 name webpcifrontend
+ip route 159.182.63.0/26 10.161.1.4 name INET_POP
+ip route 172.16.5.0/29 10.161.1.4 name EDIFY_Remote_Site
+ip route 172.20.250.0/24 10.161.0.8 name DMVPN_FileServ
+ip route 172.21.247.0/24 10.161.1.4 name RandomHouseAU5-Pearson
+ip route 172.21.248.0/24 10.161.1.4 name RandomHouseAU6-Pearson
+ip route 172.21.249.0/24 10.161.1.4 name RandomHouseAU7-Pearson
+ip route 172.24.25.5/32 10.161.1.7 name irt3925-01
+ip route 172.24.25.6/32 10.161.1.7 name irt3925-02
+ip route 172.28.205.1/32 10.161.1.4 name au-mlbdc-rtr07
+ip route 172.28.205.2/32 10.161.1.4 name au-mlbdc-rtr08
+ip route 172.30.70.49/32 10.161.1.4 name RandomHouse
+ip route 172.30.70.50/32 10.161.1.4 name RandomHouse
+ip route 172.30.70.56/29 10.161.1.4 name RandomHouse
+ip route 192.168.247.128/27 10.161.1.4 name RandomHouse
+ip route 203.19.98.0/25 10.161.1.4 name RandomHouse
+mac address-table aging-time 1500
+logging logfile syslog 5 size 65536
+logging server 10.111.160.5
+logging server 10.111.164.5
+logging timestamp milliseconds
+
+
+au-mlbdc-nxs5596-core2# 

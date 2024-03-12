@@ -1,0 +1,4 @@
+show run
+                             ^
+ERROR: % Invalid input detected at '^' marker.
+us-obia2-fwl01/pri/act> 

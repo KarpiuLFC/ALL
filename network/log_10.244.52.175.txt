@@ -1,0 +1,1010 @@
+show log
+Syslog logging: enabled (0 messages dropped, 207 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 64721 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 64925 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: enabled, url bootflash:/syslog, disk space 1000000 bytes, file size 8192 bytes, batch size 4096 bytes, threshold capacity 0  , immediate  
+
+No active filter modules.
+
+    Trap logging: level informational, 64925 message lines logged
+        Logging Source-Interface:       VRF Name:
+    TLS Profiles: 
+
+Log Buffer (131072 bytes):
+:57.872: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 12:56:06.901: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 12:56:36.901: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 12:56:38.056: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 12:56:38.097: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 12:56:47.111: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 12:57:17.113: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 12:57:17.693: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 12:57:17.729: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 12:57:26.739: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 12:57:56.740: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 12:57:57.319: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 12:57:57.356: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 12:57:57.358: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-163410).
+*Feb 28 12:58:06.369: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 12:58:36.369: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 12:58:37.866: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 12:58:37.905: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 12:58:46.912: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 12:59:16.913: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 12:59:18.068: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 12:59:18.117: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 12:59:27.128: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 12:59:57.129: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 12:59:58.389: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 12:59:58.868: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:00:07.900: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:00:37.900: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:00:38.630: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:00:38.673: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:00:47.684: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:01:17.684: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:01:18.640: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:01:18.696: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:01:27.702: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:01:57.703: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:01:58.749: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:01:58.834: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:02:07.848: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:02:37.851: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:02:38.488: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:02:38.552: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:02:47.568: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:03:17.569: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:03:18.293: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:03:18.357: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:03:27.368: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:03:57.368: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:03:58.601: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:03:58.649: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:04:07.662: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:04:37.663: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:04:38.043: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:04:38.081: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:04:47.094: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:05:17.095: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:05:17.760: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:05:17.812: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:05:26.820: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:05:56.820: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:05:58.928: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:05:58.963: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:06:07.974: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:06:37.975: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:06:38.256: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:06:38.290: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:06:47.296: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:07:17.296: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:07:17.716: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:07:17.753: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:07:26.763: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:07:56.766: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:07:58.311: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:07:58.347: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:07:58.350: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-164411).
+*Feb 28 13:08:07.354: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:08:37.354: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:08:37.917: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:08:37.955: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:08:46.971: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:09:16.971: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:09:17.617: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:09:17.664: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:09:26.674: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:09:56.673: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:09:57.405: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:09:57.443: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:10:06.453: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:10:36.452: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:10:37.750: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:10:37.791: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:10:46.797: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:11:16.798: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:11:17.498: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:11:17.534: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:11:26.546: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:11:56.547: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:11:58.502: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:11:58.549: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:12:07.555: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:12:37.556: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:12:37.873: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:12:37.918: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:12:46.937: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:13:16.938: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:13:17.217: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:13:17.251: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:13:26.258: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:13:56.261: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:13:56.801: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:13:56.841: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:14:05.861: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:14:35.862: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:14:37.998: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:14:38.058: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:14:47.068: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:15:17.067: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:15:17.396: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:15:17.432: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:15:26.444: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:15:56.445: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:15:57.501: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:15:57.540: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:16:06.551: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:16:36.552: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:16:37.888: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:16:37.937: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:16:46.950: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:17:16.953: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:17:18.143: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:17:18.180: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:17:27.188: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:17:57.189: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:17:58.574: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:17:58.616: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:17:58.618: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-165407).
+*Feb 28 13:18:07.628: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:18:37.629: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:18:38.496: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:18:38.556: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:18:47.586: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:19:17.587: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:19:18.239: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:19:18.276: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:19:27.293: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:19:57.293: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:19:58.114: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:19:58.159: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:20:07.167: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:20:37.168: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:20:38.163: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:20:38.205: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:20:47.216: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:21:17.217: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:21:17.822: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:21:17.857: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:21:26.870: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:21:56.870: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:21:57.987: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:21:58.029: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:22:07.045: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:22:37.046: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:22:37.894: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:22:37.933: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:22:46.940: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:23:16.940: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:23:18.047: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:23:18.089: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:23:27.102: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:23:57.103: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:23:57.959: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:23:58.115: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:24:07.128: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:24:37.129: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:24:37.643: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:24:37.690: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:24:46.718: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:25:16.718: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:25:17.471: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:25:17.506: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:25:26.520: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:25:56.521: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:25:57.444: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:25:57.484: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:26:06.497: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:26:36.498: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:26:36.809: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:26:36.842: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:26:45.849: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:27:15.850: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:27:16.204: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:27:16.245: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:27:25.256: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:27:55.257: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:27:56.031: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:27:56.074: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:27:56.077: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-170406).
+*Feb 28 13:28:05.081: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:28:35.082: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:28:35.518: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:28:35.552: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:28:44.563: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:29:14.564: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:29:15.482: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:29:15.523: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:29:24.532: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:29:54.533: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:29:55.361: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:29:55.398: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:30:04.418: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:30:34.419: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:30:36.464: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:30:36.521: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:30:45.533: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:31:15.534: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:31:15.956: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:31:15.996: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:31:25.007: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:31:55.008: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:31:55.688: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:31:55.754: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:32:04.762: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:32:34.763: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:32:36.132: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:32:36.192: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:32:45.203: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:33:15.203: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:33:15.557: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:33:15.598: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:33:24.606: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:33:54.609: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:33:55.439: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:33:55.483: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:34:04.494: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:34:34.494: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:34:35.612: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:34:35.646: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:34:44.655: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:35:14.657: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:35:15.523: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:35:15.560: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:35:24.587: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:35:54.588: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:35:56.108: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:35:56.142: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:36:05.149: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:36:35.150: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:36:35.694: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:36:35.737: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:36:44.749: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:37:14.749: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:37:15.567: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:37:15.604: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:37:24.613: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:37:54.613: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:37:55.975: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:37:56.010: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:37:56.012: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-171406).
+*Feb 28 13:38:05.025: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:38:35.025: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:38:36.083: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:38:36.120: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:38:45.126: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:39:15.127: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:39:15.576: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:39:15.619: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:39:24.631: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:39:54.632: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:39:55.061: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:39:55.101: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:40:04.116: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:40:34.116: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:40:35.842: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:40:35.876: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:40:44.890: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:41:14.891: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:41:15.283: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:41:15.318: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:41:24.327: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:41:54.328: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:41:55.093: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:41:55.128: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:42:04.151: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:42:34.151: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:42:35.634: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:42:35.678: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:42:44.689: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:43:14.690: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:43:15.569: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:43:15.604: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:43:24.615: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:43:54.616: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:43:55.830: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:43:55.866: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:44:04.875: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:44:34.875: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:44:35.426: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:44:35.473: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:44:44.485: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:45:14.486: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:45:15.313: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:45:15.366: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:45:24.375: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:45:54.375: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:45:54.694: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:45:54.731: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:46:03.742: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:46:33.743: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:46:34.658: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:46:34.694: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:46:43.704: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:47:13.705: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:47:15.213: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:47:15.251: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:47:24.260: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:47:54.261: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:47:54.507: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:47:54.540: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:47:54.543: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-172406).
+*Feb 28 13:48:03.559: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:48:33.560: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:48:34.151: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:48:34.191: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:48:43.201: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:49:13.202: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:49:14.768: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:49:14.818: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:49:23.839: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:49:53.839: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:49:54.121: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:49:54.156: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:50:03.171: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:50:33.172: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:50:33.489: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:50:33.532: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:50:42.541: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:51:12.541: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:51:13.093: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:51:13.136: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:51:22.151: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:51:52.152: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:51:52.967: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:51:53.004: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:52:02.011: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:52:32.011: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:52:33.045: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:52:33.082: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:52:42.094: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:53:12.095: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:53:12.635: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:53:12.684: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:53:21.692: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:53:51.693: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:53:51.986: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:53:52.026: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:54:01.039: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:54:31.040: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:54:31.362: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:54:31.396: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:54:40.404: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:55:10.404: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:55:10.883: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:55:10.931: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:55:19.949: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:55:49.951: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:55:51.964: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:55:52.034: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:56:01.044: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:56:31.045: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:56:31.772: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:56:31.838: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:56:40.852: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:57:10.852: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:57:11.210: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:57:11.264: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:57:20.274: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:57:50.278: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:57:51.461: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:57:51.511: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:57:51.514: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-173404).
+*Feb 28 13:58:00.523: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:58:30.524: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:58:31.344: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:58:31.384: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:58:40.393: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:59:10.394: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:59:11.186: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:59:11.228: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:59:20.239: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 13:59:50.242: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 13:59:50.839: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 13:59:50.889: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 13:59:59.897: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:00:29.896: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:00:30.382: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:00:30.417: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:00:39.428: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:01:09.428: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:01:10.349: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:01:10.384: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:01:19.390: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:01:49.391: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:01:50.371: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:01:50.419: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:01:59.442: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:02:29.443: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:02:29.935: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:02:29.972: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:02:38.983: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:03:08.983: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:03:09.431: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:03:09.464: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:03:18.475: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:03:48.475: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:03:48.982: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:03:49.025: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:03:58.033: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:04:28.035: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:04:28.980: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:04:29.045: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:04:38.057: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:05:08.058: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:05:08.836: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:05:08.871: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:05:17.889: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:05:47.889: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:05:48.721: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:05:48.761: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:05:57.777: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:06:27.778: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:06:28.813: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:06:28.864: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:06:37.881: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:07:07.882: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:07:08.438: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:07:08.481: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:07:17.496: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:07:47.497: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:07:49.535: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:07:49.599: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:07:49.602: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-174404).
+*Feb 28 14:07:58.611: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:08:28.611: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:08:29.616: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:08:29.656: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:08:38.689: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:09:08.692: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:09:09.361: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:09:09.407: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:09:18.415: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:09:48.415: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:09:48.765: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:09:48.806: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:09:57.818: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:10:27.821: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:10:28.867: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:10:28.904: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:10:37.919: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:11:07.920: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:11:08.929: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:11:08.997: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:11:18.010: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:11:48.010: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:11:49.136: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:11:49.172: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:11:58.182: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:12:28.182: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:12:29.055: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:12:29.091: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:12:38.105: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:13:08.105: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:13:08.515: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:13:08.554: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:13:17.565: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:13:47.565: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:13:48.090: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:13:48.127: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:13:57.148: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:14:27.147: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:14:28.277: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:14:28.312: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:14:37.323: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:15:07.324: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:15:09.223: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:15:09.286: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:15:18.319: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:15:48.325: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:15:49.388: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:15:49.453: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:15:58.465: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:16:28.466: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:16:29.647: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:16:29.701: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:16:38.729: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:17:08.730: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:17:09.874: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:17:09.919: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:17:18.937: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:17:48.937: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:17:49.430: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:17:49.471: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:17:49.473: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-175401).
+*Feb 28 14:17:58.482: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:18:28.483: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:18:30.144: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:18:30.182: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:18:39.195: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:19:09.195: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:19:10.282: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:19:10.325: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:19:19.356: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:19:49.356: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:19:50.095: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:19:50.138: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:19:59.146: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:20:29.147: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:20:30.024: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:20:30.067: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:20:39.087: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:21:09.088: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:21:09.588: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:21:09.625: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:21:18.637: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:21:48.638: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:21:49.191: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:21:49.234: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:21:58.246: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:22:28.247: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:22:29.095: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:22:29.145: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:22:38.156: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:23:08.156: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:23:09.270: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:23:09.320: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:23:18.336: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:23:48.339: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:23:49.742: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:23:49.783: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:23:58.789: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:24:28.790: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:24:29.303: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:24:29.339: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:24:38.349: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:25:08.349: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:25:09.053: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:25:09.090: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:25:18.098: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:25:48.099: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:25:48.978: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:25:49.018: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:25:58.033: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:26:28.034: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:26:28.931: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:26:28.965: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:26:33.684: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: netadmin] [Source: 10.111.134.59] [localport: 22] at 14:26:33 UTC Wed Feb 28 2024
+*Feb 28 14:26:37.973: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:27:07.972: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:27:08.235: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:27:08.272: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:27:17.282: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:27:18.292: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-180402).
+*Feb 28 14:27:47.282: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:27:48.164: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:27:48.208: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:27:57.216: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:28:27.217: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:28:27.716: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:28:27.750: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:28:36.766: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:29:06.772: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:29:07.677: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:29:07.729: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:29:16.736: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:29:46.737: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:29:47.267: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:29:47.307: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:29:56.330: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:30:26.333: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:30:26.975: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:30:27.016: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:30:36.024: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:31:06.025: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:31:07.200: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:31:07.241: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:31:16.253: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:31:46.253: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:31:47.946: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:31:47.987: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:31:57.001: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:32:27.001: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:32:27.761: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:32:27.799: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:32:36.813: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:33:06.815: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:33:07.458: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:33:07.502: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:33:16.510: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:33:46.511: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:33:47.161: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:33:47.203: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:33:56.217: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:34:26.218: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:34:28.298: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:34:28.334: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:34:37.344: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:35:07.345: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:35:07.685: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:35:07.734: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:35:16.751: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:35:46.752: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:35:47.931: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:35:48.003: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:35:57.014: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:36:27.017: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:36:27.539: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:36:27.575: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:36:35.289: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 434 (10.111.134.59)), user netadmin
+*Feb 28 14:36:35.289: %SYS-6-LOGOUT: User netadmin has exited tty session 434(10.111.134.59)
+*Feb 28 14:36:36.594: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:37:06.601: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:37:06.983: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:37:07.030: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:37:08.030: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-181401).
+*Feb 28 14:37:16.041: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:37:46.043: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:37:46.766: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:37:46.804: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:37:55.817: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:38:25.818: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:38:26.308: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:38:26.344: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:38:35.351: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:39:05.352: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:39:05.983: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:39:06.018: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:39:15.035: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:39:45.036: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:39:45.755: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:39:45.796: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:39:54.805: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:40:24.805: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:40:25.196: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:40:25.231: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:40:34.245: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:41:04.251: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:41:05.375: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:41:05.413: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:41:14.421: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:41:44.421: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:41:44.822: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:41:44.863: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:41:53.881: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:42:23.882: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:42:24.745: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:42:24.788: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:42:33.805: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:43:03.806: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:43:05.056: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:43:05.101: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:43:14.120: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:43:44.120: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:43:45.136: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:43:45.171: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:43:54.179: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:44:24.181: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:44:24.873: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:44:24.908: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:44:33.927: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:45:03.927: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:45:04.640: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:45:04.701: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:45:13.708: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:45:43.709: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:45:45.101: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:45:45.141: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:45:54.154: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:46:24.155: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:46:25.873: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:46:25.921: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:46:34.929: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:47:04.930: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:47:06.746: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:47:06.797: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:47:07.798: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-182359).
+*Feb 28 14:47:15.810: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:47:45.811: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:47:46.650: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:47:46.686: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:47:55.694: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:48:25.694: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:48:26.460: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:48:26.501: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:48:35.514: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:49:05.514: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:49:06.213: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:49:06.249: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:49:15.260: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:49:45.259: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:49:45.823: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:49:45.858: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:49:54.880: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:50:24.881: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:50:25.832: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:50:25.879: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:50:34.888: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:51:04.889: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:51:06.576: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:51:06.631: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:51:15.643: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:51:45.644: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:51:46.831: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:51:46.888: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:51:55.903: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:52:25.903: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:52:26.887: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:52:26.927: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:52:35.938: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:53:05.939: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:53:06.313: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:53:06.365: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:53:15.371: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:53:45.372: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:53:46.202: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:53:46.236: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:53:55.248: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:54:25.249: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:54:26.737: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:54:26.779: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:54:35.788: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:55:05.789: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:55:07.557: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:55:07.617: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:55:16.634: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:55:46.634: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:55:47.824: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:55:47.864: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:55:56.873: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:56:26.874: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:56:27.494: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:56:27.533: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:56:36.544: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:57:06.545: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:57:07.154: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:57:07.197: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:57:08.198: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-183401).
+*Feb 28 14:57:16.205: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:57:46.205: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:57:46.891: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:57:46.926: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:57:55.937: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:58:25.938: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:58:26.572: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:58:26.607: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:58:35.615: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:59:05.617: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:59:06.559: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:59:06.605: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:59:15.623: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 14:59:45.625: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 14:59:46.242: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 14:59:46.286: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 14:59:55.293: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:00:25.293: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:00:25.490: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:00:25.526: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:00:34.538: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:01:04.539: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:01:05.496: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:01:05.535: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:01:14.543: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:01:44.544: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:01:45.485: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:01:45.536: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:01:54.553: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:02:24.554: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:02:25.110: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:02:25.156: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:02:34.164: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:03:04.165: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:03:04.892: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:03:04.931: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:03:13.945: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:03:43.946: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:03:44.447: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:03:44.499: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:03:53.508: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:04:23.508: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:04:23.966: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:04:24.003: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:04:33.026: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:05:03.036: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:05:03.820: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:05:03.855: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:05:12.865: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:05:42.866: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:05:43.275: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:05:43.312: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:05:52.323: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:06:22.325: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:06:23.579: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:06:23.612: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:06:32.619: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:07:02.619: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:07:03.672: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:07:03.713: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:07:04.713: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-184400).
+*Feb 28 15:07:12.724: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:07:42.725: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:07:43.392: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:07:43.428: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:07:52.438: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:08:22.439: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:08:23.869: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:08:23.911: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:08:32.927: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:09:02.928: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:09:03.384: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:09:03.435: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:09:12.446: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:09:42.448: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:09:44.255: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:09:44.290: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:09:53.308: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:10:23.309: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:10:24.396: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:10:24.440: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:10:33.448: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:11:03.449: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:11:04.797: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:11:04.842: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:11:13.864: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:11:43.866: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:11:44.484: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:11:44.549: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:11:53.557: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:12:23.557: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:12:24.748: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:12:24.792: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:12:33.803: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:13:03.804: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:13:05.057: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:13:05.104: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:13:14.116: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:13:44.117: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:13:44.331: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:13:44.380: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:13:53.390: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:14:23.390: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:14:23.888: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:14:23.943: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:14:32.950: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:15:02.951: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:15:03.750: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:15:03.789: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:15:12.811: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:15:42.812: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:15:43.527: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:15:43.564: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:15:52.571: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:16:22.572: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:16:23.202: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:16:23.263: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:16:32.274: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:17:02.276: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:17:03.533: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:17:03.583: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:17:04.584: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-185402).
+*Feb 28 15:17:12.591: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:17:37.828: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: netadmin] [Source: 10.111.134.59] [localport: 22] at 15:17:37 UTC Wed Feb 28 2024
+*Feb 28 15:17:40.110: %SYS-5-CONFIG_I: Configured from console by netadmin on vty0 (10.111.134.59)
+*Feb 28 15:17:40.513: %LINEPROTO-5-UPDOWN: Line protocol on Interface Tunnel0, changed state to down
+*Feb 28 15:17:42.591: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:17:43.910: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:17:43.945: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:17:50.159: %SYS-6-LOGOUT: User netadmin has exited tty session 434(10.111.134.59)
+*Feb 28 15:17:52.960: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:18:22.961: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:18:23.419: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:18:23.460: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:18:32.478: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:19:02.479: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:19:03.529: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:19:03.570: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:19:12.585: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:19:42.585: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:19:44.011: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:19:44.051: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:19:53.059: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:20:23.066: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:20:24.441: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:20:24.513: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:20:33.532: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:21:03.533: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:21:05.021: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:21:05.066: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:21:14.074: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:21:44.075: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:21:44.639: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:21:44.677: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:21:53.691: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:22:23.692: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:22:25.163: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:22:25.198: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:22:34.205: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:23:04.206: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:23:05.154: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:23:05.211: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:23:14.229: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:23:44.230: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:23:45.202: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:23:45.252: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:23:54.264: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:24:24.265: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:24:24.608: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:24:24.658: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:24:33.671: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:25:03.672: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:25:04.266: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:25:04.302: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:25:13.311: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:25:43.312: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:25:44.454: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:25:44.492: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:25:53.504: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:26:23.505: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:26:24.189: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:26:24.233: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:26:33.254: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:26:34.280: %SYS-4-LOGGING_PERSISTENT_OVERRUN: Logging persistent command exceeded its size. Oldest logging-persistent file was deleted (file name: bootflash:/syslog/log_20240227-190405).
+*Feb 28 15:27:03.254: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:27:03.573: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:27:03.616: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:27:12.630: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:27:42.631: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:27:43.470: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:27:43.507: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:27:52.513: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:28:22.514: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:28:23.002: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:28:23.042: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:28:32.056: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:29:02.059: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:29:02.454: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:29:02.511: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:29:11.526: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:29:41.527: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:29:42.021: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:29:42.056: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:29:51.081: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:30:21.082: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:30:21.750: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:30:21.788: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:30:30.794: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:31:00.795: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:31:01.912: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:31:01.947: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:31:10.959: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:31:40.960: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:31:41.385: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:31:41.421: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:31:50.430: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:32:20.430: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:32:20.958: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:32:21.000: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:32:30.016: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:33:00.018: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:33:01.239: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:33:01.279: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:33:10.292: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:33:40.293: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:33:41.012: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:33:41.048: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:33:50.057: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:34:20.058: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:34:21.076: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:34:21.119: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:34:30.127: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:35:00.127: %CRYPTO_ENGINE-5-KEY_DELETED: A key named SLA-KeyPair has been removed from key storage
+*Feb 28 15:35:00.698: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named SLA-KeyPair has been generated or imported by crypto-engine
+*Feb 28 15:35:00.744: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Feb 28 15:35:09.756: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+*Feb 28 15:35:28.279: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: netadmin] [Source: 10.111.134.59] [localport: 22] at 15:35:28 UTC Wed Feb 28 2024
+lab-router-2#
