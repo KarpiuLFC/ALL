@@ -1,0 +1,381 @@
+show run 
+Building configuration...
+
+Current configuration : 8059 bytes
+!
+! Last configuration change at 14:58:59 UTC Mon Apr 15 2024 by gregwigh
+! NVRAM config last updated at 14:59:00 UTC Mon Apr 15 2024 by gregwigh
+!
+version 15.4
+no service pad
+service tcp-keepalives-in
+service tcp-keepalives-out
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+no platform punt-keepalive disable-kernel-core
+!
+hostname us-dn1vw-rtr04
+!
+boot-start-marker
+boot system flash bootflash:asr1001x-universalk9.03.13.07a.S.154-3.S7a-ext.SPA.bin
+boot-end-marker
+!
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+logging buffered 65536 notifications
+enable secret 5 $1$AjoN$/a9quwJEiUIuxovX/Ahu6/
+!
+aaa new-model
+!
+!
+aaa group server tacacs+ TACSERVS
+ server-private 10.111.18.36 key 7 052755170D595A014917
+ server-private 10.111.0.10 key 7 0028401E284E1F0E5F33
+ ip tacacs source-interface Loopback0
+!
+aaa authentication login default group TACSERVS local
+aaa authentication login no_tacacs line
+aaa authentication enable default group TACSERVS enable line
+aaa authorization config-commands
+aaa authorization exec default group TACSERVS if-authenticated 
+aaa authorization commands 1 default group TACSERVS if-authenticated 
+aaa authorization commands 15 default group TACSERVS if-authenticated 
+aaa accounting commands 1 default start-stop group TACSERVS
+aaa accounting commands 15 default start-stop group TACSERVS
+!
+!
+!
+!
+!
+aaa session-id common
+no ip source-route
+no ip gratuitous-arps
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+no ip bootp server
+no ip domain lookup
+ip domain name ptns.pearson.com
+
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid ASR1001-X sn JAE231307R0
+license boot level adventerprise
+file prompt quiet
+spanning-tree extend system-id
+!
+username netadmin privilege 15 secret 5 $1$PCh.$ehf/ZyRAVBT763Hh7Cckd.
+!
+redundancy
+ mode none
+!
+!
+!
+!
+!
+cdp run
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+interface Loopback0
+ description MGMT
+ ip address 172.30.115.21 255.255.255.255
+!
+interface TenGigabitEthernet0/0/0
+ no ip address
+ shutdown
+!
+interface TenGigabitEthernet0/0/1
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0/0
+ description [F] us-dn1vw-swi02 1/4
+ ip address 172.28.49.3 255.255.255.224
+ standby version 2
+ standby 1 ip 172.28.49.1
+ standby 1 timers 1 3
+ standby 1 priority 85
+ standby 1 preempt
+ standby 1 authentication P3ar5on
+ speed 1000
+ no negotiation auto
+ cdp enable
+!
+interface GigabitEthernet0/0/1
+ description [F] us-dn1vw-swr01 1/44
+ ip address 172.28.132.197 255.255.255.254
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ speed 1000
+ no negotiation auto
+ cdp enable
+!
+interface GigabitEthernet0/0/2
+ description [F] us-dn1vw-swr02 1/44
+ ip address 172.28.132.199 255.255.255.254
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ speed 1000
+ no negotiation auto
+ cdp enable
+!
+interface GigabitEthernet0/0/3
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet0/0/4
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet0/0/5
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet0
+ vrf forwarding Mgmt-intf
+ no ip address
+ shutdown
+ negotiation auto
+!
+!
+router eigrp 1
+ network 172.28.49.3 0.0.0.0
+ network 172.28.132.197 0.0.0.0
+ network 172.28.132.199 0.0.0.0
+ network 172.30.115.21 0.0.0.0
+ redistribute bgp 65000 route-map BGP_TO_EIGRP
+ neighbor 172.28.49.2 GigabitEthernet0/0/0
+ neighbor 172.28.49.12 GigabitEthernet0/0/0
+ neighbor 172.28.49.13 GigabitEthernet0/0/0
+ passive-interface default
+ no passive-interface GigabitEthernet0/0/0
+ no passive-interface GigabitEthernet0/0/1
+ no passive-interface GigabitEthernet0/0/2
+!
+router bgp 65000
+ template peer-policy ERG
+  route-map ERG_IN in
+  send-community both
+ exit-peer-policy
+ !
+ template peer-policy INTERNAL
+  route-map INTERNAL_OUT out
+  next-hop-self
+  send-community both
+ exit-peer-policy
+ !
+ template peer-session ERG
+  remote-as 11892
+  password 7 115F142423112A0D570D21777E6A
+  ebgp-multihop 3
+  update-source Loopback0
+  version 4
+  timers 10 30
+ exit-peer-session
+ !
+ template peer-session INTERNAL
+  remote-as 65000
+  password 7 124F083626082D05790C2E7B656C
+  update-source Loopback0
+  version 4
+  timers 10 30
+ exit-peer-session
+ !
+ bgp router-id 172.30.115.21
+ bgp log-neighbor-changes
+ bgp deterministic-med
+ no bgp default ipv4-unicast
+ neighbor 172.28.135.1 inherit peer-session ERG
+ neighbor 172.28.135.1 description us-dn1vw-rtr07
+ neighbor 172.28.135.2 inherit peer-session ERG
+ neighbor 172.28.135.2 description us-dn1vw-rtr08
+ neighbor 172.30.115.20 inherit peer-session INTERNAL
+ neighbor 172.30.115.20 description us-dn1vw-rtr03
+ neighbor 172.30.116.1 inherit peer-session INTERNAL
+ neighbor 172.30.116.1 description us-iowac-rtr03
+ neighbor 172.30.116.2 inherit peer-session INTERNAL
+ neighbor 172.30.116.2 description us-iowac-rtr04
+ !
+ address-family ipv4
+  redistribute eigrp 1 route-map EIGRP_TO_BGP
+  neighbor 172.28.135.1 activate
+  neighbor 172.28.135.1 inherit peer-policy ERG
+  neighbor 172.28.135.2 activate
+  neighbor 172.28.135.2 inherit peer-policy ERG
+  neighbor 172.30.115.20 activate
+  neighbor 172.30.115.20 inherit peer-policy INTERNAL
+  neighbor 172.30.116.1 activate
+  neighbor 172.30.116.1 inherit peer-policy INTERNAL
+  neighbor 172.30.116.2 activate
+  neighbor 172.30.116.2 inherit peer-policy INTERNAL
+ exit-address-family
+!
+ip forward-protocol nd
+!
+ip bgp-community new-format
+ip community-list standard ERG_BACKUP permit 1:900
+no ip http server
+no ip http secure-server
+ip route 172.28.135.1 255.255.255.255 172.28.49.6 name EBGP_us-dn1vw-rtr07
+ip route 172.28.135.2 255.255.255.255 172.28.49.6 name EBGP_us-dn1vw-rtr08
+ip ssh version 2
+!
+ip access-list standard ERG_NEXT_HOP
+ permit 172.28.135.2
+ permit 172.28.135.1
+!
+logging trap notifications
+logging source-interface Loopback0
+logging host 10.111.0.5
+logging host 10.111.18.5
+access-list 98 remark LoginAccess
+access-list 98 permit 10.111.0.0 0.0.255.255
+access-list 99 remark SNMPManager
+access-list 99 permit 10.111.0.0 0.0.255.255
+!
+route-map BGP_TO_EIGRP permit 10
+ description REDISTRIBUTE ONLY LOCAL ERG PREFIXES
+ match ip next-hop ERG_NEXT_HOP
+ set metric 1000000 1 255 1 1500
+ set tag 901
+!
+route-map EIGRP_TO_BGP deny 10
+ description DENY ERG PREFIXES ALREADY REDISTRIBUTED
+ match tag 901
+!
+route-map EIGRP_TO_BGP permit 15
+ description SET COMMUNITY ON IN-REGION INFOBLOX PREFIXES
+ match tag 65515
+ set weight 0
+ set origin igp
+ set community 65515:11892 additive
+!
+route-map EIGRP_TO_BGP permit 20
+ description SET LOW WEIGHT TO PREFER LOCAL ERG PREFIXES
+ set weight 0
+!
+route-map ERG_IN permit 10
+ match community ERG_BACKUP
+ set local-preference 110
+ set community no-export additive
+!
+route-map ERG_IN permit 20
+ set local-preference 120
+ set community no-export additive
+!
+route-map INTERNAL_OUT permit 10
+ description PERMIT ONLY LOCAL ERG PREFIXES
+ match ip next-hop ERG_NEXT_HOP
+!
+snmp-server community Sup3rMan RO 99
+snmp-server community Krypt0n!t3 RW 99
+snmp-server location DN1VW : Cabinet=2.13 
+snmp ifmib ifindex persist
+!
+!
+!
+!
+control-plane
+!
+ !
+ !
+ !
+ !
+!
+!
+!
+!
+banner login ^C
+This device is private property intended for the exclusive use of
+authorized personnel for business purposes. Anyone using this
+system consents to monitoring, review and recording of such
+activity. Passwords must be kept confidential and unauthorized
+access is strictly prohibited. Unauthorized use of this system
+may subject you to criminal prosecution and penalties.
+^C
+!
+line con 0
+ exec-timeout 30 0
+ password 7 070B017E590017554E
+ logging synchronous
+ login authentication no_tacacs
+ stopbits 1
+line aux 0
+ exec-timeout 30 0
+ password 7 141332391B0D247B7D
+ logging synchronous
+ login authentication no_tacacs
+ stopbits 1
+line vty 0 4
+ access-class 98 in
+ exec-timeout 30 0
+ password 7 104A292B121E1C5B55
+ logging synchronous
+ transport input ssh
+!
+ntp source Loopback0
+ntp server 10.111.0.100
+ntp server 10.50.0.100
+ntp server 10.111.18.100
+!
+end
+
+us-dn1vw-rtr04#

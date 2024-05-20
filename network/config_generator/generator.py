@@ -47,7 +47,7 @@ banner login ^C
 #parameters act as dictionary
 parameters = {
     "hostname": "test_router", 
-   # "VLAN_IP": "10.0.32.1",
+    "VLAN_IP": "10.0.32.1",
     "VLAN_IP_MASK": "255.255.255.0",
     "External_IP": "10.0.0.1",
     "Internal_IP": "11.12.13.14",
@@ -63,6 +63,6 @@ result = confgen.render_from_string(
 )
 if not result.render_error:
 	sys.stdout = open(filename + ".txt", "w") #stdout is used to display output directly to the screen console, but with open(file, w - write mode)
-	print(result.template_result) #it print whole output of result = confgen.render_from_string
+	print(result.template_result) #it prints whole output of result = confgen.render_from_string
 else: 
     print("Something went wrong: %s" % result.error_text)
