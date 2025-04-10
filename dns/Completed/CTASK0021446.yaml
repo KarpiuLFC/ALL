@@ -1,0 +1,161 @@
+records:
+- action: delete
+  ips:
+  - 10.25.200.58
+  record_name: icdupcoreesx21m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.147
+  record_name: icdupcoreesx48m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.158
+  record_name: icdupcoreesx54m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.45
+  record_name: icdupcoreesx13m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.62
+  record_name: icdupcoreesx23m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.82
+  record_name: icdupcoreesx33m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.90
+  record_name: icdupcoreesx37m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.200.98
+  record_name: icdupcoreesx53m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.110
+  record_name: icdupcoreesx03m.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.26
+  record_name: icdupcoreesx79m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.33
+  record_name: icdupcoreesx80m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.37
+  record_name: icdupcoreesx82m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.44
+  record_name: icdupcoreesx86m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.46
+  record_name: icdupcoreesx87m.ic.ncs.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.64
+  record_name: icdupcoreesx101m.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.68
+  record_name: icdupcoreesx103m.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.72
+  record_name: icdupcoreesx105m.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.25.201.80
+  record_name: icdupcoreesx109m.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 10.25.200.100
+  record_name: icdupcoreesx49m.ic.ncs.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 10.25.201.78
+  record_name: icdupcoreesx108m.pearsontc.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 10.25.201.82
+  record_name: icdupcoreesx110m.pearsontc.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 10.25.201.83
+  record_name: icdupcoreesx111m.pearsontc.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  dname: icdupcoreesx49m.ic.ncs.com
+  ip: 10.25.200.100
+  record_name: icdupcoreesx49m.ic.ncs.com
+  record_type: ptr
+  view: default
+- action: delete
+  delete_all: ''
+  dname: icdupcoreesx108m.pearsontc.com
+  ip: 10.25.201.78
+  record_name: icdupcoreesx108m.pearsontc.com
+  record_type: ptr
+  view: default
+- action: delete
+  delete_all: ''
+  dname: icdupcoreesx110m.pearsontc.com
+  ip: 10.25.201.82
+  record_name: icdupcoreesx110m.pearsontc.com
+  record_type: ptr
+  view: default
+- action: delete
+  delete_all: ''
+  dname: icdupcoreesx111m.pearsontc.com
+  ip: 10.25.201.83
+  record_name: icdupcoreesx111m.pearsontc.com
+  record_type: ptr
+  view: default

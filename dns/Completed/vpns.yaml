@@ -1,0 +1,37 @@
+records:
+- action: create
+  ips:
+  - 10.54.11.4
+  record_name: snow1-hide-nat.ptns.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.54.11.5
+  record_name: snow2-hide-nat.ptns.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.54.11.6
+  record_name: snow3-hide-nat.ptns.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.54.11.7
+  record_name: snow4-hide-nat.ptns.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.54.11.8
+  record_name: snow5-hide-nat.ptns.pearson.com
+  record_type: host
+  view: default
+- action: create
+  dname: tu2.sg-sg4ex-fwl03.ptns.pearson.com
+  ip: 172.28.203.12
+  record_name: tu2.sg-sg4ex-fwl03.ptns.pearson.com
+  record_type: ptr
+  view: default

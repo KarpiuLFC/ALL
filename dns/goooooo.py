@@ -12,15 +12,21 @@ from io import BytesIO
 source = os.path.expanduser(sys.argv[1]) #define source of file - need to be specify as atribute of python - python multi.py /Users/USZCZRA/Desktop/INC0264729.csv
 read_file = pd.read_excel (source) # Write the dataframe object 
 
-with pd.ExcelFile(source) as xls:  
-    df1 = pd.read_excel(xls, header=0)  
-    print(df1)
-    for row in df1:
-        print(row)
+d = {} # empty dictionary
+output = {'records': []} #define empty dictionary that would be updated with data yaml structure
+index=0 #start counting of generated records based on a number of rows
+
+#with pd.ExcelFile(source) as xls:  
+##    df1 = pd.read_excel(xls)  
+ #   print(df1)
+ #   for row in df1:
+ #       print(row)
 # creates and stores your csv data into a file the csv reader can read (bytes)
-    print(row)
+ #   print(row)
+  
+  
     
-memory_file_in = BytesIO(dupa)
+memory_file_in = BytesIO()
 
 # classic reader
 reader = csv.DictReader(memory_file_in)

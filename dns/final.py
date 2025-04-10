@@ -6,7 +6,8 @@ import re
 import pandas as pd
 import warnings
 
-warnings.simplefilter(action='ignore', category=UserWarning)
+warnings.simplefilter(action='ignore', category=UserWarning) #to avoid warning like below: 
+#python3.11/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed warn(msg)
 
 def open_xlsx():
     global source

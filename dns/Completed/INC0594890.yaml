@@ -1,0 +1,21 @@
+records:
+- action: create
+  canonical: connect-amer.glb.pearson.com
+  record_name: connect-amer.pearson.com
+  record_type: cname
+  view: common
+- action: create
+  canonical: connect-apac.glb.pearson.com
+  record_name: connect-apac.pearson.com
+  record_type: cname
+  view: common
+- action: create
+  canonical: connect-emea.glb.pearson.com
+  record_name: connect-emea.pearson.com
+  record_type: cname
+  view: common
+- action: create
+  canonical: connect-oceania.glb.pearson.com
+  record_name: connect-oceania.pearson.com
+  record_type: cname
+  view: common

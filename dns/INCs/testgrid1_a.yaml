@@ -1,0 +1,32 @@
+records:
+- action: create
+  record_name: eu.pearson.com
+  record_type: a
+  ip: 63.35.23.131
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: a
+  ip: 34.246.144.185
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: a
+  ip: 52.51.131.59
+  view: default
+- action: create
+  record_name: mta.eu.pearson.com
+  record_type: a
+  ip: 13.111.129.28
+  view: default
+- action: create
+  record_name: ntdd2858.pearsonclinical.eu.pearson.com
+  record_type: a
+  ip: 10.151.112.93
+  view: default
+- action: create
+  record_name: ntdd2859.pearsonclinical.eu.pearson.com
+  record_type: a
+  ip: 10.151.112.97
+  view: default
+

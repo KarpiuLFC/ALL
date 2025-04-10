@@ -1,0 +1,25 @@
+records:
+- action: delete
+  delete_all: ''
+  ip: 54.166.93.106
+  record_name: us1relay1.mx.pearson.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 184.73.85.47
+  record_name: us2relay2.mx.pearson.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 18.132.56.54
+  record_name: uk1relay1.mx.pearson.com
+  record_type: a
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 18.175.97.237
+  record_name: uk2relay2.mx.pearson.com
+  record_type: a
+  view: default

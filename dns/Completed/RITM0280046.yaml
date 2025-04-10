@@ -1,0 +1,81 @@
+records:
+- action: create
+  record_name: amazon.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: brunel.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: clinical.ocrm4.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: connacad.ocrm4.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: eportfolio.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: galdev.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: iqswa1.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: iqswa2.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: jira.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: relay.mx.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: remoteinvigilation.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: sparkv2.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: systemstatus.pearson.com
+  record_type: TXT
+  text: v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro
+  view: common
+- action: create
+  record_name: _dmarc.amazon.pearson.com
+  record_type: TXT
+  text: v=DMARC1; p=none;
+  view: common
+- action: create
+  record_name: _dmarc.remoteinvigilation.pearson.com
+  record_type: TXT
+  text: v=DMARC1;p=quarantine;rua=mailto:bb264152e6@rua.easydmarc.us;ruf=mailto:bb264152e6@ruf.easydmarc.us;fo=1;
+  view: common
+- action: create
+  record_name: _dmarc.systemstatus.pearson.com
+  record_type: TXT
+  text: v=DMARC1; p=none; pct=100; rua=mailto:aqdmarcrua@grp.pearson.com
+  view: common

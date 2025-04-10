@@ -1,0 +1,93 @@
+records:
+- action: delete
+  ips:
+  - 10.241.69.13
+  record_name: usrelay1.mx.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.241.69.197
+  record_name: usrelay2.mx.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.245.147.65
+  record_name: ukrelay1.mx.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  ips:
+  - 10.245.147.231
+  record_name: ukrelay2.mx.pearsontc.com
+  record_type: host
+  view: default
+- action: delete
+  delete_all: ''
+  ip: 52.205.138.252
+  record_name: usrelay1.mx.pearsontc.com
+  record_type: a
+  view: external
+- action: delete
+  delete_all: ''
+  ip: 34.193.171.174
+  record_name: usrelay2.mx.pearsontc.com
+  record_type: a
+  view: external
+- action: delete
+  delete_all: ''
+  ip: 18.175.87.166
+  record_name: ukrelay1.mx.pearsontc.com
+  record_type: a
+  view: external
+- action: delete
+  delete_all: ''
+  ip: 13.41.43.41
+  record_name: ukrelay2.mx.pearsontc.com
+  record_type: a
+  view: external
+- action: create
+  ips:
+  - 10.241.69.13
+  record_name: us1relay1.mx.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.241.69.197
+  record_name: us2relay2.mx.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.245.147.65
+  record_name: uk1relay1.mx.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.245.147.231
+  record_name: uk2relay2.mx.pearson.com
+  record_type: host
+  view: default
+- action: create
+  ip: 52.205.138.252
+  record_name: us1relay1.mx.pearson.com
+  record_type: a
+  view: external
+- action: create
+  ip: 34.193.171.174
+  record_name: us2relay2.mx.pearson.com
+  record_type: a
+  view: external
+- action: create
+  ip: 18.175.87.166
+  record_name: uk1relay1.mx.pearson.com
+  record_type: a
+  view: external
+- action: create
+  ip: 13.41.43.41
+  record_name: uk2relay2.mx.pearson.com
+  record_type: a
+  view: external

@@ -1,0 +1,25 @@
+records:
+- action: delete
+  delete_all: 'false'
+  ip: 34.246.144.185
+  record_name: eu.pearson.com
+  record_type: a
+  view: common
+- action: delete
+  delete_all: 'false'
+  ip: 63.35.23.131
+  record_name: eu.pearson.com
+  record_type: a
+  view: common
+- action: delete
+  delete_all: 'false'
+  ip: 52.51.131.59
+  record_name: eu.pearson.com
+  record_type: a
+  view: common
+- action: create
+  record_name: eu.pearson.com
+  record_type: alias
+  target_name: store-venoj14f0m.mybigcommerce.com
+  target_type: A
+  view: common

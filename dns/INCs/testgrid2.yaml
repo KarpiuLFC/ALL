@@ -1,0 +1,51 @@
+records:
+- action: create
+  record_name: eu.pearson.com
+  record_type: txt
+  text: SFMC-jRRtrrZhg6dXauf5oXc0HvAH-RM3nrDwUFO7osEM
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: txt
+  text: SFMC-nE70WO7Seu6JFP_oQg8kkop3tpQIOeqplpKHQtsF
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: txt
+  text: SFMC-7GFhbauZimoz1rppHdfjxKLozTVYw0WiEYm7x-48
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: txt
+  text: SFMC-etTMnzGGvcoKWK6qPuHzu880Qij9k2kTxgXzpWeA
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: txt
+  text: SFMC-XVjpgTbyuazrk1SRGDmPEwxmkSKNyFdUsIgJ5At0
+  view: default
+- action: create
+  record_name: eu.pearson.com
+  record_type: txt
+  text: '"v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro"'
+  view: default
+- action: create
+  record_name: 200608._domainkey.eu.pearson.com
+  record_type: txt
+  text: v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGoQCNwAQdJBy23MrShs1EuHqK/dtDC33QrTqgWd9CJmtM3CK2ZiTYugkhcxnkEtGbzg+IJqcDRNkZHyoRezTf6QbinBB2dbyANEuwKI5DVRBFowQOj9zvM3IvxAEboMlb0szUjAoML94HOkKuGuCkdZ1gbVEi3GcVwrIQphal1QIDAQAB
+  view: default
+- action: create
+  record_name: bounce.eu.pearson.com
+  record_type: txt
+  text: v=spf1 include:cust-spf.exacttarget.com -all
+  view: default
+- action: create
+  record_name: bounce.eu.pearson.com
+  record_type: txt
+  text: '"v=spf1 redirect=_spf.pearson_com._d.easydmarc.pro"'
+  view: default
+- action: create
+  record_name: reply.eu.pearson.com
+  record_type: txt
+  text: v=spf1 include:cust-spf.exacttarget.com -all
+  view: default

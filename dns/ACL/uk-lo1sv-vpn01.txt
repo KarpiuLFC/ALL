@@ -1,0 +1,190 @@
+object-group network AUTOGEN_OG_PEARSON_RFC1918
+ description version-941db1e1426eb45a534857349470a1710f245430
+ network-object 10.0.0.0 255.0.0.0
+ network-object 172.16.0.0 255.240.0.0
+ network-object 192.168.0.0 255.255.0.0
+object-group network AUTOGEN_OG_PEARSON_PUBLIC
+ description version-941db1e1426eb45a534857349470a1710f245430
+ network-object 159.182.0.0 255.255.248.0
+ network-object 159.182.10.0 255.255.255.0
+ network-object 159.182.11.0 255.255.255.0
+ network-object 159.182.120.0 255.255.248.0
+ network-object 159.182.14.0 255.255.254.0
+ network-object 159.182.156.0 255.255.255.0
+ network-object 159.182.21.0 255.255.255.0
+ network-object 159.182.225.0 255.255.255.0
+ network-object 159.182.230.0 255.255.254.0
+ network-object 159.182.232.0 255.255.254.0
+ network-object 159.182.30.0 255.255.254.0
+ network-object 159.182.32.0 255.255.248.0
+ network-object 159.182.40.0 255.255.255.0
+ network-object 159.182.60.0 255.255.252.0
+ network-object 159.182.72.0 255.255.248.0
+ network-object 159.182.89.0 255.255.255.0
+ network-object 159.182.90.0 255.255.254.0
+ network-object 159.182.92.0 255.255.254.0
+ network-object 159.182.210.0 255.255.254.0
+ network-object 159.182.212.0 255.255.254.0
+object-group network AUTOGEN_OG_PEARSON_KRONOS
+ description version-4ab8bd25b5afbdcbb221c2828e682c41b93f52b7
+ network-object host 158.228.136.62
+object-group network AUTOGEN_OG_MICROSOFT_COMMON
+ description version-2024103100
+ network-object host 13.107.140.6
+ network-object host 13.107.18.15
+ network-object host 13.107.6.171
+ network-object host 13.107.6.192
+ network-object host 13.107.9.192
+ network-object host 52.244.37.168
+ network-object 20.190.128.0 255.255.192.0
+ network-object 20.20.32.0 255.255.224.0
+ network-object 20.231.128.0 255.255.224.0
+ network-object 40.126.0.0 255.255.192.0
+ network-object 52.108.0.0 255.252.0.0
+object-group network AUTOGEN_OG_MICROSOFT_SKYPE
+ description version-2024103100
+ network-object host 52.238.119.141
+ network-object host 52.244.160.207
+ network-object 52.112.0.0 255.252.0.0
+ network-object 52.122.0.0 255.254.0.0
+object-group network AUTOGEN_OG_MICROSOFT_SHAREPOINT
+ description version-2024103100
+ network-object 104.146.128.0 255.255.128.0
+ network-object 13.107.136.0 255.255.252.0
+ network-object 150.171.40.0 255.255.252.0
+ network-object 40.108.128.0 255.255.128.0
+ network-object 52.104.0.0 255.252.0.0
+object-group network AUTOGEN_OG_MICROSOFT_EXCHANGE
+ description version-2024103100
+ network-object host 131.253.33.215
+ network-object host 204.79.197.215
+ network-object host 52.238.78.88
+ network-object 104.47.0.0 255.255.128.0
+ network-object 13.107.128.0 255.255.252.0
+ network-object 13.107.18.10 255.255.255.254
+ network-object 13.107.6.152 255.255.255.254
+ network-object 132.245.0.0 255.255.0.0
+ network-object 150.171.32.0 255.255.252.0
+ network-object 23.103.160.0 255.255.240.0
+ network-object 40.104.0.0 255.254.0.0
+ network-object 40.107.0.0 255.255.0.0
+ network-object 40.92.0.0 255.254.0.0
+ network-object 40.96.0.0 255.248.0.0
+ network-object 52.100.0.0 255.252.0.0
+ network-object 52.96.0.0 255.252.0.0
+object-group network AUTOGEN_OG_NFON_VOIP
+ description version-a362ba996386cc7a32c8e4340d4494a8c87c1703
+ network-object 109.68.96.0 255.255.248.0
+object-group network AUTOGEN_OG_ZOOM_MEETINGS
+ description version-9ea466a880c51538f68387da156a8cbdaa35541e
+ network-object 101.36.167.0 255.255.255.0
+ network-object 101.36.170.0 255.255.254.0
+ network-object 103.122.166.0 255.255.254.0
+ network-object 111.33.115.0 255.255.255.128
+ network-object 111.33.181.0 255.255.255.128
+ network-object 115.110.154.192 255.255.255.192
+ network-object 115.114.115.0 255.255.255.192
+ network-object 115.114.131.0 255.255.255.192
+ network-object 115.114.56.192 255.255.255.192
+ network-object 120.29.148.0 255.255.255.0
+ network-object 13.52.6.128 255.255.255.128
+ network-object 134.224.0.0 255.255.0.0
+ network-object 144.195.0.0 255.255.0.0
+ network-object 147.124.96.0 255.255.224.0
+ network-object 149.137.0.0 255.255.128.0
+ network-object 15.220.80.0 255.255.255.0
+ network-object 15.220.81.0 255.255.255.128
+ network-object 156.45.0.0 255.255.128.0
+ network-object 159.124.0.0 255.255.0.0
+ network-object 160.1.56.128 255.255.255.128
+ network-object 161.199.136.0 255.255.252.0
+ network-object 162.12.232.0 255.255.252.0
+ network-object 162.255.36.0 255.255.252.0
+ network-object 165.254.88.0 255.255.254.0
+ network-object 166.108.64.0 255.255.192.0
+ network-object 170.114.0.0 255.255.0.0
+ network-object 173.231.80.0 255.255.240.0
+ network-object 18.254.23.128 255.255.255.128
+ network-object 18.254.61.0 255.255.255.128
+ network-object 192.204.12.0 255.255.252.0
+ network-object 198.251.128.0 255.255.128.0
+ network-object 20.203.158.80 255.255.255.240
+ network-object 20.203.190.192 255.255.255.192
+ network-object 202.177.207.128 255.255.255.224
+ network-object 204.141.28.0 255.255.252.0
+ network-object 204.80.104.0 255.255.248.0
+ network-object 206.247.0.0 255.255.0.0
+ network-object 207.226.132.0 255.255.255.0
+ network-object 209.9.211.0 255.255.255.0
+ network-object 209.9.215.0 255.255.255.0
+ network-object 213.19.144.0 255.255.255.0
+ network-object 213.19.153.0 255.255.255.0
+ network-object 213.244.140.0 255.255.255.0
+ network-object 221.122.63.0 255.255.255.0
+ network-object 221.122.64.0 255.255.255.0
+ network-object 221.122.88.128 255.255.255.128
+ network-object 221.122.88.64 255.255.255.224
+ network-object 221.122.89.128 255.255.255.128
+ network-object 221.123.139.192 255.255.255.224
+ network-object 3.104.34.128 255.255.255.128
+ network-object 3.120.121.0 255.255.255.128
+ network-object 3.127.194.128 255.255.255.128
+ network-object 3.208.72.0 255.255.255.128
+ network-object 3.21.137.128 255.255.255.128
+ network-object 3.235.71.128 255.255.255.128
+ network-object 3.235.72.128 255.255.255.128
+ network-object 3.235.73.0 255.255.255.128
+ network-object 3.235.82.0 255.255.254.0
+ network-object 3.235.96.0 255.255.254.0
+ network-object 3.25.41.128 255.255.255.128
+ network-object 3.7.35.0 255.255.255.128
+ network-object 3.80.20.128 255.255.255.128
+ network-object 4.34.125.128 255.255.255.128
+ network-object 4.35.64.128 255.255.255.128
+ network-object 50.239.202.0 255.255.254.0
+ network-object 50.239.204.0 255.255.255.0
+ network-object 52.202.62.192 255.255.255.192
+ network-object 52.61.100.128 255.255.255.128
+ network-object 64.125.62.0 255.255.255.0
+ network-object 64.211.144.0 255.255.255.0
+ network-object 64.224.32.0 255.255.224.0
+ network-object 65.39.152.0 255.255.255.0
+ network-object 69.174.108.0 255.255.252.0
+ network-object 69.174.57.0 255.255.255.0
+ network-object 8.5.128.0 255.255.254.0
+ network-object 99.79.20.0 255.255.255.128
+ network-object 203.200.219.128 255.255.255.224
+ network-object 121.244.146.0 255.255.255.224
+object-group network AUTOGEN_OG_INTERNAL
+ group-object AUTOGEN_OG_PEARSON_RFC1918
+ group-object AUTOGEN_OG_PEARSON_PUBLIC
+object-group network AUTOGEN_OG_AWS_CONNECT
+ description version-5e3f5e663b18bc7c27456ea566eefbb7a94079a1
+ network-object 13.210.2.192 255.255.255.192
+ network-object 13.236.8.0 255.255.255.128
+ network-object 15.193.0.0 255.255.224.0
+ network-object 15.193.0.0 255.255.255.0
+ network-object 15.193.1.0 255.255.255.0
+ network-object 15.193.10.0 255.255.255.0
+ network-object 15.193.2.0 255.255.255.0
+ network-object 15.193.3.0 255.255.255.0
+ network-object 15.193.4.0 255.255.255.0
+ network-object 15.193.5.0 255.255.255.0
+ network-object 15.193.6.0 255.255.255.0
+ network-object 15.193.7.0 255.255.255.0
+ network-object 15.193.8.0 255.255.255.0
+ network-object 15.193.9.0 255.255.255.0
+ network-object 18.182.96.64 255.255.255.192
+ network-object 18.184.2.128 255.255.255.128
+ network-object 18.236.61.0 255.255.255.128
+ network-object 35.158.127.64 255.255.255.192
+ network-object 52.55.191.224 255.255.255.224
+ network-object 54.190.198.32 255.255.255.240
+object-group network AUTOGEN_OG_FIVE9_VOICE
+ description version-cd2117ff9b2748b2713845899c66c0479a82d94c
+ network-object host 34.241.191.251
+ network-object 103.169.228.0 255.255.255.0
+ network-object 103.169.229.0 255.255.255.0
+ network-object 185.111.43.0 255.255.255.0
+ network-object 209.14.129.0 255.255.255.0
+ network-object 212.187.211.0 255.255.255.0

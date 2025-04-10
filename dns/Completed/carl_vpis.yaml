@@ -1,0 +1,61 @@
+records:
+- action: create
+  ips:
+  - 10.162.43.41
+  record_name: tops_dev_web_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.42
+  record_name: tops_dev_api_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.43
+  record_name: tops_qa_web_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.44
+  record_name: tops_qa_api_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.45
+  record_name: tops_uat_web_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.46
+  record_name: tops_uat_api_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.47
+  record_name: tops_stg_web_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.48
+  record_name: tops_stg_api_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.49
+  record_name: tops_prd_web_svc.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.162.43.50
+  record_name: tops_prd_api_svc.pearsontc.com
+  record_type: host
+  view: default

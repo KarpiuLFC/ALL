@@ -1,0 +1,63 @@
+records:
+- action: create
+  ips:
+  - 10.32.193.4
+  record_name: lo1upcylpapp01.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - '10.32.193.5,
+
+    10.32.193.4'
+  record_name: lo1upcylpapp02.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.193.6
+  record_name: lo1upcylpapp03.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.193.7
+  record_name: lo1upcylpapp04.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.3.4
+  record_name: icdupcylpapp05.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.3.5
+  record_name: icdupcylpapp06.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.3.6
+  record_name: icdupcylpapp07.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.3.7
+  record_name: icdupcylpapp08.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.174.4
+  record_name: au1upcylpapp02.pearsontc.com
+  record_type: host
+  view: default
+- action: create
+  ips:
+  - 10.32.174.5
+  record_name: au1upcylpapp03.pearsontc.com
+  record_type: host
+  view: default

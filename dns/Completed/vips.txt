@@ -1,0 +1,10 @@
+tops_dev_web_svc.pearsontc.com
+tops_dev_api_svc.pearsontc.com
+tops_qa_web_svc.pearsontc.com
+tops_qa_api_svc.pearsontc.com
+tops_uat_web_svc.pearsontc.com
+tops_uat_api_svc.pearsontc.com
+tops_stg_web_svc.pearsontc.com
+tops_stg_api_svc.pearsontc.com
+tops_prd_web_svc.pearsontc.com
+tops_prd_api_svc.pearsontc.com

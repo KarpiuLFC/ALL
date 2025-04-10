@@ -54,16 +54,18 @@ with open(f"convert_{without_extension}.csv", newline='', encoding="utf-8-sig") 
                 case 'a':
                     # dictionary.get(keyname, value) - value: Optional. A value to return if the specified key does not exist. Default value None
                     if not d.get('value', '').lower():
-                        print("Text Value is missing for " + str(d.get("record_name")))
+                        print("IP is missing for " + str(d.get("record_name")))
                         exit()
-                    data["text"] = d.get("value") #add key "text" to data dictionary for TXT record
+                    data["ip"] = d.get("value") #add key "text" to data dictionary for TXT record
                     #if d.get('action','').lower() == "update":
                     if update.search(value):
                         if not d.get('new_value', '').lower():
-                            print("New Text is missing for " + str(d.get("record_name")))
+                            print("New IP is missing for " + str(d.get("record_name")))
                             exit()
                         #data['new_record_name'] = dict.get("New_Record_UPDATE") #add key "new record name " to data dictionary for TXT record and update action - 'new_record_name' not needed for update action
-                        data['new_text'] = d.get("new_value") #add key "new text" to data dictionary for TXT record and update action
+                        data['new_ip'] = d.get("new_value") #add key "new text" to data dictionary for TXT record and update action
+                    if d.get("action") == "delete":
+                        data['delete_all'] = d.get("remove_all_records",'').lower()
                 case 'cname':
                     if not d.get('value', '').lower():
                         print("Canonical value is missing for  " + str(d.get("record_name")))
@@ -75,35 +77,41 @@ with open(f"convert_{without_extension}.csv", newline='', encoding="utf-8-sig") 
                             print("New Canonical is missing for " + str(d.get("record_name")))
                             exit()
                         data['new_canonical'] = d.get("new_value") #but add key "new canonical" to data dictionary for CNAME record and update action
-                case 'arecord':
+                case 'txt':
                     if not d.get('value', '').lower():
                         print("IP address as a value is missing for " + str(d.get("record_name")))
                         exit()
-                    data['ip_address'] = d.get("value") #add key "ip address" to data dictionary for A record
+                    data['text'] = d.get("value") #add key "ip address" to data dictionary for A record
                     if update.search(value):
                         if not d.get('new_value', '').lower():
                             print("New Text Value is missing for " + str(d.get("record_name")))
                             exit()
-                        data['new_ip_address'] = d.get("new_value") #add key "new ip address" to data dictionary for A record and update action
+                        data['new_text'] = d.get("new_value") #add key "new ip address" to data dictionary for A record and update action
                 case 'alias':
                     if not d.get('value', '').lower():
                         print("Target Name as value is missing for " + str(d.get("record_name")))
                         exit()
-                    if not d.get('alias_target', '').lower():
-                        print("Alias Target is missing for " + str(d.get("record_name")))
+                    if not d.get('alias_target_type', '').lower():
+                        print("Alias Target Type is missing for " + str(d.get("record_name")))
                         exit()
-                    data['target_type'] = d.get("alias_target") #add key "target type" to data dictionary for Alias record
+                    data['target_type'] = d.get("alias_target_type") #add key "target type" to data dictionary for Alias record
                     data['target_name'] = d.get("value") #add key "target name" to data dictionary for Alias record
+                    if update.search(value):
+                        if not d.get('new_value', '').lower():
+                            print("New Target Name is missing for " + str(d.get("record_name")))
+                            exit()
+                        data['new_target_name'] = d.get("new_value") #add key "new text" to data dictionary for TXT record and update action
                 case 'host':
                     if not d.get('value', '').lower():
-                        print("IP address as a value is missing for " + str(d.get("record_name")))
+                        print("IP address is missing for " + str(d.get("record_name")))
                         exit()
-                    data['ip_address'] = d.get("value") #add key "ip address" to data dictionary for Host record
+                    for host in [d.get("value")]:
+                        data['ips'] = [d.get("value")] #add key "ip address" to data dictionary for Host record
+                        #print(d.get("value"))
                     if update.search(value):
                         if not d.get('new_value', '').lower():
                             print("New IP Address is missing for " + str(d.get("record_name")))
                             exit()
-                        #data['new_record_name'] = d.get("New_Record_UPDATE") #add key "new record name" to data dictionary for Host record and update action
                         data['new_ip_address'] = d.get("new_value") #add key "new ip address" to data dictionary for Host record and update action
                 case 'mx':
                     if not d.get('value', '').lower():
@@ -113,24 +121,30 @@ with open(f"convert_{without_extension}.csv", newline='', encoding="utf-8-sig") 
                         print("MX preferance is missing for " + str(d.get("record_name")))
                         exit()
                     data['preference'] = int(float(d.get("mx_preference"))) #add key "preference" to data dictionary for MX record
-                    data['mail_exchanger'] = d.get("value") #add key "mail exchanger" to data dictionary for MX record
+                    data['exchanger'] = d.get("value") #add key "mail exchanger" to data dictionary for MX record
                     if update.search(value): 
                         if not d.get('new_value', '').lower():
                             print("New Mail Exchanger is missing for " + str(d.get("record_name")))
                             exit()
                         data.pop('preference') #remove key "preference" to data dictionary for MX record and update action
-                        data['new_mail_exchanger'] = d.get("new_value") #add key "new mail exchanger" to data dictionary for MX record and update action
+                        data['new_exchanger'] = d.get("new_value") #add key "new mail exchanger" to data dictionary for MX record and update action
                         data['new_preference'] = d.get("mx_preferance") #add key "new preference" to data dictionary for MX record and update action
+                    if d.get("action") == "delete":
+                        data['delete_all'] = d.get("remove_all_records",'').lower()
                 case 'ptr':
+                    #data.pop('record_name') NIE DZIALA USUWANIE "record_name" !!!!!!!
+                    data['dname'] = d.get("record_name",'').lower()
                     if not d.get('value', '').lower():
                         print("IP address as a value is missing for " + str(d.get("record_name")))
                         exit()
-                    data['ip_address'] = d.get("value") #add key "ip address" to data dictionary for PTR record
+                    data['ip'] = d.get("value") #add key "ip address" to data dictionary for PTR record
                     if update.search(value): 
                         if not d.get('new_value', '').lower():
                             print("New IP Address is missing for " + str(d.get("record_name")))
                             exit()
-                        data['new_ip_address'] = d.get("new_value") #add key "new ip address" to data dictionary for PTR record and update action
+                        data['new_dname'] = d.get("new_value",'').lower() #add key "new ip address" to data dictionary for PTR record and update action
+                    if d.get("action") == "delete":
+                        data['delete_all'] = d.get("remove_all_records",'').lower()
                 case all:
                     print("Incorrect Record Type for " + str(d.get("record_name")))
                     exit()
